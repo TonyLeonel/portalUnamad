@@ -1,0 +1,113 @@
+
+/*--------------------------------------------------JERARQUIA DOCUMENTOS*/
+
+.jerarquia {
+    text-align: left;
+}
+
+.jerarquia ul {
+    padding-left: 22.5px;
+    list-style: none;
+}
+
+.jerarquia li {
+    padding-left: 22.5px;
+    position: relative;
+}
+
+.jerarquia li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid #c3c3c3;
+    width: 17px;
+    top: 20.5px;
+    left: 0;
+}
+
+.jerarquia li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid #c3c3c3;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.jerarquia li:last-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid #c3c3c3;
+    height: 20.5px;
+    top: 0;
+    left: 0;
+}
+
+.jerarquia-item {
+    display: flex;
+    font-size: 16px;    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+}
+
+a.jerarquia-item:hover {
+    background: #dadadf;
+}
+
+.jerarquia-icono {
+    width: 45px;
+    min-width: 45px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.jerarquia-titulo {
+    padding-right: 10px;
+}
+
+.jerarquia-opciones {
+
+}
+
+.jerarquia-accion {
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: #c1c1c1;
+    color: black;
+    vertical-align: middle;
+}
+
+.jerarquia-accion .icon{
+    vertical-align: text-bottom;
+}
+
+.jerarquia-accion:hover {   
+    background: #a1a1a1;
+    color: black;
+}
+
+/*------------------------------------------------------*/
+
+.interno-item {
+
+}
+
+.interno-item ul {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.interno-item a {
+    padding: 5px 8px;
+    display: block;    
+    border-radius: 3px;
+}
+
+.interno-item a:hover {
+    background: #e1e1e1;
+}
