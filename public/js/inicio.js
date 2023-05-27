@@ -27,4 +27,14 @@ $( document ).ready(function() {
         ]
 
     });
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 3000,
+        touch: true,
+        video:	true,
+        controlNav: false,
+        animationSpeed: 1000,
+        // smoothHeight: true
+    });
 });

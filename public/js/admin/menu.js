@@ -78,7 +78,8 @@ function modificar(iditem)
     var objitem = elementId(iditem, data);
 
     if(objitem != null)
-    {        
+    {
+        // console.log(objitem.flag)        
         $("#nombre").val(objitem.nombre);
         $("#flag").val(objitem.flag);        
         $('#estado').prop('checked', (objitem.estado == 1));
@@ -100,8 +101,10 @@ function guardar()
     if(validar('#form_editar'))
     {
         $("#editar").modal("hide");
-        if(editItem == 0)//nuevo
+        if(editItem == 0)//nuevo        
         {
+            // var xd = typeof $("#flag").val()
+            // console.log(xd)
             $.ajax({
                 type: "POST",
                 url: default_server+"/json/paginas/menus",

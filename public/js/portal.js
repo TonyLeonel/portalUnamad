@@ -550,18 +550,18 @@ initIsotope();
         $(this).parent("li").find("ul").slideToggle(300);
     });
     //   Video------------------
-    var v = $(".background-youtube-wrapper").data("vid");
-    var f = $(".background-youtube-wrapper").data("mv");
-    $(".background-youtube-wrapper").YTPlayer({
-        fitToBackground: true,
-        videoId: v,
-        useOnMobile: true,
-        pauseOnScroll: true,
-        mute: f,
-        callback: function () {
-            var acds = $(".background-youtube-wrapper").data("ytPlayer").player;
-        }
-    });
+    // var v = $(".background-youtube-wrapper").data("vid");
+    // var f = $(".background-youtube-wrapper").data("mv");
+    // $(".background-youtube-wrapper").YTPlayer({
+    //     fitToBackground: true,
+    //     videoId: v,
+    //     useOnMobile: true,
+    //     pauseOnScroll: true,
+    //     mute: f,
+    //     callback: function () {
+    //         var acds = $(".background-youtube-wrapper").data("ytPlayer").player;
+    //     }
+    // });
     var w = $(".background-vimeo").data("vim"),
         bvc = $(".background-vimeo"),
         bvmc = $(".media-container"),

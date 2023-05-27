@@ -2,38 +2,48 @@
 
 @section('titulo', 'Universidad Nacional Amazónica de Madre de Dios')
 
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
+@endsection
+
 @section('js')
+<script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
+<script>
+    var images = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(images, {
+    //     delay: 0,
+    //     orientation: 'down',
+    //     scale: 1.3,
+    //     overflow: true,
+    //     customContainer: '.container',
+    //     customWrapper: '.wrapper'
+    // });
+    new simpleParallax(images,{
+        orientation: 'up',
+        scale: 2
+    });
+
+</script>
 @endsection
 
 @section('contenido')
-<!-- VIDEO -->
-<section class="hero-section hidden-section">
-    <div id="wrap_media" class="media-container bg-parallax-wrap-gradien" style="background: rgb(56, 56, 56);">
-        <div  class="background-youtube-wrapper" data-vid="ftllFobDAhc" data-mv="1"> </div>        
-    </div>
-    <div class="container">
-        <div class="">
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                <div>
-                    <img src="{{ asset('img/logo_withe_shadow.png') }}" alt="" class="logo_central">
-                </div>
-                <div class="titulo_centro">
-                    <h3>UNAMAD</h3>
-                    <span>Universidad Nacional Amazónica de Madre de Dios</span>
-                </div>
-            </div>
-        </div>     
-        <div class="scroll-down-wrap sdw_center">
-            <div class="mousey">
-                <div class="scroller"></div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="{{ asset('img/images/1uuu.jpg')}}" />
+        </li>
+        <li>
+            <img src="{{ asset('img/images/2uuu.jpg')}}" />
+        </li>
+    </ul>
+</div>
 
 <!-- NAVEGACIÓN -->
-<div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap image_bar" style="background: #EDF0F4;">
+{{-- <div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap image_bar" >
     <div class="container">
         <div class="breadcrumbs-list">
             <a href="{{ url('/') }}" title="Inicio">Inicio</a>  <span>Página de inicio</span>
@@ -44,9 +54,15 @@
             </a>            
         </div>
     </div>
-</div>
+</div> --}}
+{{-- <section>
+    <div class="media-container">
+        <img id="imagen" class="thumbnail" src="{{ asset('img/images/1.jpg')}} " alt="image">
+    </div>
+</section> --}}
+
 <!-- SERVICIOS -->
-<section class="small-padding image_complete">
+<section class="small-padding image_complete" >
     <div class="container">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
@@ -225,6 +241,13 @@
 
 <!-- ENLACES -->
 <!-- section -->
+
+<section>
+    <div>
+        <img id="imagen" class="thumbnail" src="{{ asset('img/images/6.jpg')}} " alt="image">
+    </div>
+</section>
+
 <section class="gray-bg small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">

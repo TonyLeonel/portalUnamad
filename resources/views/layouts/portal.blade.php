@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!--  favicons  -->
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
@@ -18,8 +19,8 @@
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-grid.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-utilities.css') }}">
-    <link href="{{ asset('lib/tabler/css/tabler.min.css?1674944402') }}" rel="stylesheet"/>
-    <link href="{{ asset('lib/tabler/css/demo.min.css?1674944402') }}" rel="stylesheet"/>
+    {{-- <link href="{{ asset('lib/tabler/css/tabler.min.css?1674944402') }}" rel="stylesheet"/> --}}
+    {{-- <link href="{{ asset('lib/tabler/css/demo.min.css?1674944402') }}" rel="stylesheet"/> --}}
 
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/homeradar/css/plugins.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/homeradar/css/style.css') }}">
@@ -42,7 +43,9 @@
     <!-- main -->
     <div id="main">
         <!-- header -->
-        <header class="main-header image_bar" style="background-image: url({{ asset('img/pusharo2.png')}});">
+        <header class="main-header image_bar">
+        {{-- <header class="main-header image_bar" style="background-image: url({{ asset('img/tejido.png')}});"> --}}
+        {{-- <header class="main-header image_bar"> --}}
             <!--  logo  -->
             <div class="logo-holder"><a href="{{ url('/') }}" title="Inicio"><img src="{{ asset('img/logo_horizontal_max2.png') }}" alt="Logo horizontal"></a></div>
   
@@ -77,14 +80,14 @@
                     <ul class="no-list-style">
                         @foreach ($menus as $menu)
                             @if ($menu->tipo==1 && $menu->estado==1)
-                                <li>
+                                <li class="nav-principal">
                                     <a href="{{$menu->fuente==0? url(''.$menu->flag.''): $menu->flag}}" {{$menu->fuente==1? 'target="_back"':''}} class="{{ request()->is($menu->flag) ? 'act-link' : '' }}">{{$menu->nombre}}</a>
                                 </li>  
                             @else   
                                 @if ($menu->estado==1)                                                 
-                                    <li class="nav-principal">
+                                    <li>
                                         @if (count($menu->categorias)>0)
-                                            <a  href="#" class="{{ (request()->is($menu->flag.'*')) ? 'act-link' : '' }}">{{$menu->nombre}} <i class="fa fa-caret-down"></i></a>
+                                            <a  href="#" class="{{ (request()->is($menu->flag.'*')) ? 'act-link' : '' }}">{{$menu->nombre}}<i class="fa fa-caret-down"></i></a>
                                             <!--second level -->
                                             <ul>
                                                 @foreach($menu->categorias as $categoria)
@@ -121,21 +124,31 @@
                             
                         @endforeach                       
                         <li class="nav-principal">
-                            <a href="#" class="{{ (request()->is('facultades*')) ? 'act-link' : '' }}">Facultades <i class="fa fa-caret-down"></i></a>
+                            <a href="#" class="{{ (request()->is('facultades*')) ? 'act-link' : '' }}">VRA<i class="fa fa-caret-down"></i></a>
                             <!--second level -->
                             <ul>
-                                @foreach($facultades as $facultad)
                                 <li>
-                                    <a href="#">{{$facultad->nombre}} <i class="fa fa-caret-down"></i></a>
-                                    <!--third  level  -->
+                                    <a href="#">Facultades <i class="fa fa-caret-down"></i></a>
+                                    <!--third level -->
                                     <ul>
-                                        @foreach($facultad->carreras as $carrera)
-                                        <li><a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}">{{$carrera->nombre}}</a></li>
+                                        @foreach($facultades as $facultad)
+                                        <li>
+                                            <a href="#">{{$facultad->nombre}} <i class="fa fa-caret-down"></i></a>
+                                            <!--fourth   level  -->
+                                            <ul>
+                                                @foreach($facultad->carreras as $carrera)
+                                                    <li>
+                                                        <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}">{{$carrera->nombre}}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                            <!--fourth   level end-->
+                                        </li>
                                         @endforeach
                                     </ul>
-                                    <!--third  level end-->
+                                    <!--third level -->
                                 </li>
-                                @endforeach
+                                
                             </ul>
                             <!--second level end-->
                         </li>   
@@ -309,7 +322,7 @@
     <!-- Main end -->
 
     <!-- Scripts -->
-    <script src="{{ asset('lib/tabler/js/tabler.min.js?1674944402') }}"></script>
+    {{-- <script src="{{ asset('lib/tabler/js/tabler.min.js?1674944402') }}"></script> --}}
     <script src="{{ asset('lib/homeradar/js/jquery.min.js') }}"></script>
     <script src="{{ asset('lib/homeradar/js/plugins.js') }}"></script>
     <script src="{{ asset('js/portal.js') }}" defer></script>
