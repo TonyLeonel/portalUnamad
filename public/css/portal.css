@@ -866,5 +866,17 @@ a.link_pink:hover{
 }
 #imagen{
     width: 50%;
-    height: 5%;
+    
+    /* height: 5%; */
+}
+/* .parallaxDiv {
+    background-color: rgba(0, 0, 0, 0.61);
+    filter: blur(1px);
+} */
+.parallaxDiv {
+    background-image: url('../img/images/i1.jpg');
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.61); */
+    /* filter: blur(5px); */
+    border: 1px dotted;
 }

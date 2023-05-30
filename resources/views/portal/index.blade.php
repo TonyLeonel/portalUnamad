@@ -8,53 +8,42 @@
 
 @section('js')
 <script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script>
+{{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
 <script>
-    var images = document.getElementsByClassName('thumbnail');
-    // new simpleParallax(images, {
-    //     delay: 0,
-    //     orientation: 'down',
-    //     scale: 1.3,
-    //     overflow: true,
-    //     customContainer: '.container',
-    //     customWrapper: '.wrapper'
+    // var images = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(images,{
+    //     orientation: 'up',
+    //     scale: 2, // Ajusta el valor según el efecto de parallax deseado
+    //     // orientation: 'up',
+    //     // delay: 1,
+    //     // transition: 'cubic-bezier(0,0,0,1)'
+        
     // });
-    new simpleParallax(images,{
-        orientation: 'up',
-        scale: 2
-    });
-
 </script>
 @endsection
 
 @section('contenido')
 
 
-<div class="flexslider">
+<div class="flexslider" style="border: 1px dotted;">
     <ul class="slides">
         <li>
-            <img src="{{ asset('img/images/1uuu.jpg')}}" />
+            <img src="{{ asset('img/images/5v.jpg')}}" />
         </li>
         <li>
+            <img src="{{ asset('img/images/4v.jpg')}}" />
+        </li>
+        
+        <li>
             <img src="{{ asset('img/images/2uuu.jpg')}}" />
+        </li>
+        <li>
+            <img src="{{ asset('img/images/3v.jpg')}}" />
         </li>
     </ul>
 </div>
 
-<!-- NAVEGACIÓN -->
-{{-- <div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap image_bar" >
-    <div class="container">
-        <div class="breadcrumbs-list">
-            <a href="{{ url('/') }}" title="Inicio">Inicio</a>  <span>Página de inicio</span>
-        </div>
-        <div class="share-holder hid-share">
-            <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('/') }}" class="share-btn">
-                <i class="fas fa-share-alt"></i> Compartir
-            </a>            
-        </div>
-    </div>
-</div> --}}
 {{-- <section>
     <div class="media-container">
         <img id="imagen" class="thumbnail" src="{{ asset('img/images/1.jpg')}} " alt="image">
@@ -62,7 +51,7 @@
 </section> --}}
 
 <!-- SERVICIOS -->
-<section class="small-padding image_complete" >
+<section style="border: 1px dotted;" >
     <div class="container">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
@@ -242,11 +231,13 @@
 <!-- ENLACES -->
 <!-- section -->
 
-<section>
-    <div>
-        <img id="imagen" class="thumbnail" src="{{ asset('img/images/6.jpg')}} " alt="image">
-    </div>
-</section>
+{{-- <section style="border: 1px dotted;"> --}}
+
+<div class="parallaxDiv thumbnail">
+    div with background
+    {{-- <img id="imagen" class="thumbnail" src="{{ asset('img/images/i1.jpg')}} " alt="image"> --}}
+</div>
+{{-- </section> --}}
 
 <section class="gray-bg small-padding">
     <div class="container">

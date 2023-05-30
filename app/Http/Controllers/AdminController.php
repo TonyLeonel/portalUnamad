@@ -138,7 +138,10 @@ class AdminController extends Controller
         $user = Auth::user();        
         $permisos = Permiso::where('user_id', $user->id)->where('elemento', 'PUBLICACION')->get();
         $permiso_ids = $permisos->map(function ($permiso) { return $permiso->elemento_id; });
-        $categorias = Publicacion_categoria::whereIn('id', $permiso_ids)->get();        
+        $categorias = Publicacion_categoria::whereIn('id', $permiso_ids)->get();
+        // print("<pre>".print_r($permisos,true)."</pre>");
+        // print("<pre>".print_r($permiso_ids,true)."</pre>");
+        // print("<pre>".print_r($categorias,true)."</pre>");
         return view('admin.publicaciones', compact('categorias'));
     }
 
