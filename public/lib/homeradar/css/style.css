@@ -6869,7 +6869,7 @@ section.single-par2  .scroll-down-wrap{
     margin-left: 20px;
 }
 }
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1170px) {
 .map-container.column-map , .map-container.column-map.right-position-map  {
     width: 100%;
     left: -100%;

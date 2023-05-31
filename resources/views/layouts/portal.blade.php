@@ -72,11 +72,18 @@
                 <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=13136#.YvEV03ZByUk" target="_blank" class="d-block d-md-none" title="Portal Transparencia UNAMAD">
                     <img src="{{ asset('img/transp_min.jpg') }}" style="height: 30px;" alt="Logo Transparencia">
                 </a>
+                
             </div>
+            {{-- <div class="nav-element">
+                <img src="{{ asset('img/images/separacion.png')}} " >
+            </div> --}}
+            
 
             <!--  navigation --> 
             <div class="nav-holder main-menu">
+                
                 <nav>
+                    
                     <ul class="no-list-style">
                         @foreach ($menus as $menu)
                             @if ($menu->tipo==1 && $menu->estado==1)
@@ -121,39 +128,60 @@
                                     </li>                                  
                                 @endif                                                                 
                             @endif
-                            
-                        @endforeach                       
-                        <li class="nav-principal">
-                            <a href="#" class="{{ (request()->is('facultades*')) ? 'act-link' : '' }}">VRA<i class="fa fa-caret-down"></i></a>
-                            <!--second level -->
-                            <ul>
-                                <li>
-                                    <a href="#">Facultades <i class="fa fa-caret-down"></i></a>
-                                    <!--third level -->
+                            @if ($menu->posicion == 2)
+                                <li class="nav-principal">
+                                    <a href="#" class="{{ (request()->is('facultades*')) ? 'act-link' : '' }}">VRA<i class="fa fa-caret-down"></i></a>
+                                    <!--second level -->
                                     <ul>
-                                        @foreach($facultades as $facultad)
                                         <li>
-                                            <a href="#">{{$facultad->nombre}} <i class="fa fa-caret-down"></i></a>
-                                            <!--fourth   level  -->
+                                            <a href="#">Facultades <i class="fa fa-caret-down"></i></a>
+                                            
+                                            <!--third level -->
                                             <ul>
-                                                @foreach($facultad->carreras as $carrera)
-                                                    <li>
-                                                        <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}">{{$carrera->nombre}}</a>
-                                                    </li>
+                                                @foreach($facultades as $facultad)
+                                                <li>
+                                                    <a href="#">{{$facultad->nombre}} <i class="fa fa-caret-down"></i></a>
+                                                    <!--fourth   level  -->
+                                                    <ul>
+                                                        @foreach($facultad->carreras as $carrera)
+                                                            <li>
+                                                                <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}">{{$carrera->nombre}}</a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                    <!--fourth   level end-->
+                                                </li>
                                                 @endforeach
                                             </ul>
-                                            <!--fourth   level end-->
+                                            
+                                            <!--third level -->
                                         </li>
-                                        @endforeach
+                                        <li>
+                                            <a href="#">Dirección de admisión</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dirección de biblioteca central</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dirección de proyección social y extensión cultural</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dirección de bienestar universitario</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Dirección de asuntos académicos</a>
+                                        </li>
+                                        
                                     </ul>
-                                    <!--third level -->
+                                    <!--second level end-->
                                 </li>
-                                
-                            </ul>
-                            <!--second level end-->
-                        </li>   
+                            @endif
+                            {{-- @if ($menu->posicion == 4)
+                            @endif --}}
+                        @endforeach                       
+                           
                         <li class="nav-principal">
-                            <a href="#"  class="{{ request()->is('transparencia*') ? 'act-link' : '' }}">Transparencia<i class="fa fa-caret-down"></i></a>
+                            <a href="#"  class="{{ request()->is('transparencia*') ? 'act-link' : '' }}">TRANSPARENCIA<i class="fa fa-caret-down"></i></a>
                             <!--second level -->   
                             <ul>
                                 <li><a href="{{ url('transparencia/indicador-55') }}">Indicador 55</a></li>
@@ -171,25 +199,31 @@
                             </ul>
                             <!--second level end-->
                         </li>
+                        
                     </ul>
+                    
                 </nav>
+                
             </div>
             <!-- navigation  end -->
             
 
-
+            
         </header>
+        
         <!-- header end  -->
 
         <!-- WRAPPER  -->	
         <div id="wrapper">
             <!-- CONTENIDO -->	
             <div class="content">
-            @yield('contenido')
+                
+                @yield('contenido')
             </div>
 
             <!-- FOOTER -->
-            <footer class="main-footer fl-wrap image_complete" style="background-image: url({{ asset('img/tejido.png')}});">
+            <footer class="main-footer fl-wrap image_complete">
+            {{-- <footer class="main-footer fl-wrap image_complete" style="background-image: url({{ asset('img/tejido.png')}});"> --}}
                 <div class="footer-inner fl-wrap">
                     <div class="container">
                         <div class="row">

@@ -4,6 +4,9 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
+{{-- <link rel="stylesheet" href="{{ asset('css/styleupc.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/fonts-familiy.css') }}" type="text/css">
+<link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css"> --}}
 @endsection
 
 @section('js')
@@ -26,10 +29,10 @@
 @section('contenido')
 
 
-<div class="flexslider" style="border: 1px dotted;">
+<div class="flexslider">
     <ul class="slides">
         <li>
-            <img src="{{ asset('img/images/5v.jpg')}}" />
+            <img src="{{ asset('img/images/6v.jpg')}}" />
         </li>
         <li>
             <img src="{{ asset('img/images/4v.jpg')}}" />
@@ -51,7 +54,7 @@
 </section> --}}
 
 <!-- SERVICIOS -->
-<section style="border: 1px dotted;" >
+<section>
     <div class="container">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
@@ -233,13 +236,14 @@
 
 {{-- <section style="border: 1px dotted;"> --}}
 
-<div class="parallaxDiv thumbnail">
-    div with background
+{{-- <div class="parallaxDiv thumbnail"> --}}
+    {{-- div with background --}}
     {{-- <img id="imagen" class="thumbnail" src="{{ asset('img/images/i1.jpg')}} " alt="image"> --}}
-</div>
+{{-- </div> --}}
 {{-- </section> --}}
 
-<section class="gray-bg small-padding">
+<img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
+<section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
             <h4>También te puede interesar</h4>
@@ -308,6 +312,7 @@
         </div>
     </div>
 </section>
+<img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " >
 
 
 
@@ -366,8 +371,7 @@
                                             </div>
                                         </div>                    
                                     </article>                                
-                                    <?php $i++;
-                                    ?>                                     
+                                    <?php $i++;?>                                     
                             @endforeach                   
                             <div>
                               <a href="{{url('/comunicados')}}" class="dropdown-item">
@@ -391,12 +395,12 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" alt="" src="{{url($publicacion->imagen)}}">
                                 </div>
-                                $i++;                                    
+                                <?php $i++;?>                                      
                             @else
                                 <div class="carousel-item">
                                     <img class="d-block w-100" alt="" src="{{url($publicacion->imagen)}}">
                                 </div>  
-                                $i++;                               
+                                <?php $i++;?>                                 
                             @endif
                             
                         @endforeach
@@ -411,7 +415,8 @@
 
 <!-- ENLACES -->
 <!-- section -->
-<section class="gray-bg small-padding">
+<img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
+<section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
             <h4>También te puede interesar</h4>
@@ -466,5 +471,6 @@
         </div>
     </div>
 </section>
+<img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " >
 
 @endsection
