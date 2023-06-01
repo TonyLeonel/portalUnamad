@@ -17,6 +17,7 @@
     <title>{{ config('app.name', 'UNAMAD') }} - @yield('titulo')</title>
 
     <!-- Styles -->
+    {{-- <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap.min.css') }}"> --}}
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-grid.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-utilities.css') }}">
     {{-- <link href="{{ asset('lib/tabler/css/tabler.min.css?1674944402') }}" rel="stylesheet"/> --}}
@@ -88,7 +89,9 @@
                         @foreach ($menus as $menu)
                             @if ($menu->tipo==1 && $menu->estado==1)
                                 <li class="nav-principal">
+                                    {{-- inicio --}}
                                     <a href="{{$menu->fuente==0? url(''.$menu->flag.''): $menu->flag}}" {{$menu->fuente==1? 'target="_back"':''}} class="{{ request()->is($menu->flag) ? 'act-link' : '' }}">{{$menu->nombre}}</a>
+                                    
                                 </li>  
                             @else   
                                 @if ($menu->estado==1)                                                 
@@ -101,18 +104,18 @@
                                                     @if ($categoria->pagina_categorias_id==null)
                                                         @if ($categoria->tipo==1)
                                                             @if($categoria->fuente==1)
-                                                                <a href="{{$categoria->tipo==1? $categoria->flag:""}}" target="_back">{{$categoria->nombre}}</a>                                                    
+                                                                <a href="{{$categoria->tipo==1? $categoria->flag:""}}" target="_back"><i class="fa fa-th-large"></i> {{$categoria->nombre}}</a>                                                    
                                                             @else
-                                                                <a href="{{$categoria->tipo==1? url(''.$categoria->flag.'/unamad'):""}}"  class="{{ request()->is($categoria->flag) ? 'act-link' : '' }}">{{$categoria->nombre}}</a>                                                    
+                                                                <a href="{{$categoria->tipo==1? url(''.$categoria->flag.'/unamad'):""}}"  class="{{ request()->is($categoria->flag) ? 'act-link' : '' }}"><i class="fa fa-th-large"></i> {{$categoria->nombre}}</a>                                                    
                                                             @endif
                                                         @else
                                                             <li>
-                                                                <a href="#">{{$categoria->nombre}} <i class="fa fa-caret-down"></i></a>
+                                                                <a href="#">{{'>'.$categoria->nombre}} <i class="fa fa-caret-down"></i></a>
                                                                     <!--third  level  -->
                                                                 <ul>
                                                                     @foreach($categoria->categorias as $items)
                                                                         @if ($items->estado==1)                                                                        
-                                                                            <li><a href="{{ url($items->flag.'/unamad') }}">{{$items->nombre}}</a></li>
+                                                                            <li><a href="{{ url($items->flag.'/unamad') }}"><i class="fa fa-th-large"></i> {{$items->nombre}}</a></li>
                                                                         @endif
                                                                     @endforeach
                                                                 </ul>                                           
@@ -128,13 +131,13 @@
                                     </li>                                  
                                 @endif                                                                 
                             @endif
-                            @if ($menu->posicion == 2)
+                            @if ($menu->posicion == 3)
                                 <li class="nav-principal">
                                     <a href="#" class="{{ (request()->is('facultades*')) ? 'act-link' : '' }}">VRA<i class="fa fa-caret-down"></i></a>
                                     <!--second level -->
                                     <ul>
                                         <li>
-                                            <a href="#">Facultades <i class="fa fa-caret-down"></i></a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Facultades <i class="fa fa-caret-down"></i></a>
                                             
                                             <!--third level -->
                                             <ul>
@@ -145,7 +148,7 @@
                                                     <ul>
                                                         @foreach($facultad->carreras as $carrera)
                                                             <li>
-                                                                <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}">{{$carrera->nombre}}</a>
+                                                                <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}"><i class="fa fa-th-large"></i> {{$carrera->nombre}}</a>
                                                             </li>
                                                         @endforeach
                                                     </ul>
@@ -157,19 +160,19 @@
                                             <!--third level -->
                                         </li>
                                         <li>
-                                            <a href="#">Dirección de admisión</a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Admisión</a>
                                         </li>
                                         <li>
-                                            <a href="#">Dirección de biblioteca central</a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Biblioteca Central</a>
                                         </li>
                                         <li>
-                                            <a href="#">Dirección de proyección social y extensión cultural</a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Proyección Social y Extensión Cultural</a>
                                         </li>
                                         <li>
-                                            <a href="#">Dirección de bienestar universitario</a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Bienestar Universitario</a>
                                         </li>
                                         <li>
-                                            <a href="#">Dirección de asuntos académicos</a>
+                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Asuntos Académicos</a>
                                         </li>
                                         
                                     </ul>
@@ -184,18 +187,18 @@
                             <a href="#"  class="{{ request()->is('transparencia*') ? 'act-link' : '' }}">TRANSPARENCIA<i class="fa fa-caret-down"></i></a>
                             <!--second level -->   
                             <ul>
-                                <li><a href="{{ url('transparencia/indicador-55') }}">Indicador 55</a></li>
-                                <li><a href="{{ url('transparencia/licenciamiento') }}" class="lh-sm">Licenciamiento Institucional</a></li>
+                                <li><a href="{{ url('transparencia/indicador-55') }}"><i class="fa fa-th-large"></i> Indicador 55</a></li>
+                                <li><a href="{{ url('transparencia/licenciamiento') }}" class="lh-sm"><i class="fa fa-th-large"></i> Licenciamiento Institucional</a></li>
                                 <li>
-                                    <a href="#" class="lh-sm">Acceso a Información <br> Pública <i class="fa fa-caret-down"></i></a>
+                                    <a href="#" class="lh-sm"><i class="fa fa-th-large"></i> Acceso a Información Pública <i class="fa fa-caret-down"></i></a>
                                     <!--third  level  -->
                                     <ul>
-                                        <li><a href="https://facilita.gob.pe/t/3371" target="_blank">Formulario Virtual</a></li>
-                                        <li><a href="https://drive.google.com/file/d/1tStD8HiMChMZO8QmnepBPU3evR920xGz/view?usp=sharing" target="_blank">Descargar Formato</a></li>
+                                        <li><a href="https://facilita.gob.pe/t/3371" target="_blank"><i class="fa fa-th-large"></i> Formulario Virtual</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1tStD8HiMChMZO8QmnepBPU3evR920xGz/view?usp=sharing" target="_blank"><i class="fa fa-th-large"></i> Descargar Formato</a></li>
                                     </ul>
                                     <!--third  level end-->
                                 </li>
-                                <li><a href="{{ url('documentos') }}" class="lh-sm">Documentos Normativos y de Gestión</a></li>
+                                <li><a href="{{ url('documentos') }}" class="lh-sm"><i class="fa fa-th-large"></i> Documentos Normativos y de Gestión</a></li>
                             </ul>
                             <!--second level end-->
                         </li>

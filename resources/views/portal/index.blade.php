@@ -54,18 +54,61 @@
 </section> --}}
 
 <!-- SERVICIOS -->
+{{-- <section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section> --}}
 <section>
-    <div class="container">
+    <div class="container-fluid">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
             <h4>Conoce todos</h4>
             <h2>Nuestros servicios</h2>
         </div>
+        {{-- <div class="col-12 col-sm-12 col-md-6 col-lg-6"> --}}
+                {{-- <div class="col-12 col-sm-6 col-md-6 col-lg-6"> --}}
         <!--Listado 01--> 
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -78,12 +121,13 @@
                                         <p class="text-center">Alumnos, Docentes, Matrículas, Notas, Horarios, Aulas y otros.</p>                                
                                     </div>
                                 </a>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
-                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            {{-- <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>"> --}}
                             <div class="tarjeta_wrapper">
                                 <a href="https://admision.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
@@ -91,15 +135,13 @@
                                             <i class="fal fa-users-cog"></i>
                                         </div>
                                         <h4>PORTAL DE ADMISIÓN</h4>
-                                        <p class="text-center">Resultados de Admisión, Vacantes, Carreras, Requisitos y otros.</p>                                
+                                        {{-- <p class="text-center">Resultados de Admisión, Vacantes, Carreras, Requisitos y otros.</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -109,13 +151,13 @@
                                             <img src="{{ asset('img/cepre.png') }}" alt="" style="width: 35px;">
                                         </div>
                                         <h4>PORTAL CEPRE</h4>
-                                        <p class="text-center">Resultados de Exámenes, Carreras, Constancias, Horarios, Costos y otros.</p>                                
+                                        {{-- <p class="text-center">Resultados de Exámenes, Carreras, Constancias, Horarios, Costos y otros.</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -125,17 +167,19 @@
                                             <img src="https://portal.unamad.edu.pe/img/logo_pink.png" alt="" style="width: 35px;">
                                         </div>
                                         <h4>OCRI</h4>
-                                        <p class="text-center">Oficina de Cooperación y Relaciones Internacionales</p>                                
+                                        {{-- <p class="text-center">Oficina de Cooperación y Relaciones Internacionales</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{-- <div class="row">
+                </div> --}}
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -145,11 +189,13 @@
                                             <img src="https://portal.unamad.edu.pe/img/logo_pink.png" alt="" style="width: 35px;">
                                         </div>
                                         <h4>Centro de Idiomas</h4>
-                                        <p class="text-center">Centro de formación académica.</p>                                
+                                        {{-- <p class="text-center">Centro de formación académica.</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-3">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -163,13 +209,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-md-6">
                         <div class="tarjeta_container mb-3">
                             <div>
                                 <div class="mb-3">
                                     <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                                 </div>
-                                <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                                {{-- <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>"> --}}
                             </div>                    
                             <div class="tarjeta_wrapper">
                                 <div class="tarjeta tarjeta_white" style="background: #eeeef1 !important;">

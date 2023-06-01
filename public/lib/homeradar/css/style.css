@@ -904,7 +904,7 @@ blockquote p {
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	min-width:150px;
+	min-width:360px;
 	top: 57px;
 	left: 0;
 	z-index: 1;

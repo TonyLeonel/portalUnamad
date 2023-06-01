@@ -603,7 +603,8 @@ initIsotope();
     });
     function mobMenuInit() {
         var ww = $(window).width();
-        if (ww < 1054) {
+        if (ww < 1171) {
+        // if (ww < 1054) {
             $(".menusb , .add-list_mob , .header-opt-modal-container_mob").remove();
             $(".main-menu").removeClass("nav-holder");
             $(".main-menu nav").clone().addClass("menusb").appendTo(".main-menu");
