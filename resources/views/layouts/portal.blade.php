@@ -60,7 +60,8 @@
             <!-- ENLACES -->
             <div class="nav-element">                
                 <a href="https://www.gob.pe/unamad" target="_blank" class="d-none d-md-block" title="Portal GOB.PE UNAMAD">
-                    <img src="{{ asset('img/gobpe.png') }}" style="height: 30px;" alt="Logo GOB.PE">
+                    {{-- <img src="{{ asset('img/gobpe.png') }}" style="height: 30px;" alt="Logo GOB.PE"> --}}
+                    <img src="{{ asset('img/images/gob.png') }}" style="height: 30px;" alt="Logo Transparencia">
                 </a>
                 <a href="https://www.gob.pe/unamad" target="_blank" class="d-block d-md-none" title="Portal GOB.PE UNAMAD">
                     <img src="{{ asset('img/gobpe_min.jpg') }}" style="height: 30px;" alt="Logo GOB.PE">
@@ -68,9 +69,20 @@
             </div>            
             <div class="nav-element">                
                 <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=13136#.YvEV03ZByUk" target="_blank" class="d-none d-md-block" title="Portal Transparencia UNAMAD">
-                    <img src="{{ asset('img/transp.png') }}" style="height: 40px;" alt="Logo Transparencia">
+                    {{-- <img src="{{ asset('img/transp.png') }}" style="height: 40px;" alt="Logo Transparencia"> --}}
+                    <img src="{{ asset('img/images/transparencia.png') }}" style="height: 40px;" alt="Logo Transparencia">
                 </a>
                 <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=13136#.YvEV03ZByUk" target="_blank" class="d-block d-md-none" title="Portal Transparencia UNAMAD">
+                    <img src="{{ asset('img/transp_min.jpg') }}" style="height: 30px;" alt="Logo Transparencia">
+                </a>
+                
+            </div>
+            <div class="nav-element">                
+                <a href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=13136#.YvEV03ZByUk" target="_blank" class="d-none d-md-block" title="Portal Transparencia UNAMAD">
+                    {{-- <img src="{{ asset('img/transp.png') }}" style="height: 40px;" alt="Logo Transparencia"> --}}
+                    <img src="{{ asset('img/images/acceso_info_publica.png') }}" style="height: 40px;" alt="Logo Transparencia">
+                </a>
+                <a href="https://www.produce.gob.pe/index.php/formularios-de-atencion-al-ciudadano/solicitud-de-acceso-a-la-informacion-publica" target="_blank" class="d-block d-md-none" title="Portal Transparencia UNAMAD">
                     <img src="{{ asset('img/transp_min.jpg') }}" style="height: 30px;" alt="Logo Transparencia">
                 </a>
                 
@@ -104,9 +116,9 @@
                                                     @if ($categoria->pagina_categorias_id==null)
                                                         @if ($categoria->tipo==1)
                                                             @if($categoria->fuente==1)
-                                                                <a href="{{$categoria->tipo==1? $categoria->flag:""}}" target="_back"><i class="fa fa-th-large"></i> {{$categoria->nombre}}</a>                                                    
+                                                                <a href="{{$categoria->tipo==1? $categoria->flag:""}}" target="_back"><i class="far fa-globe"></i> {{$categoria->nombre}}</a>                                                    
                                                             @else
-                                                                <a href="{{$categoria->tipo==1? url(''.$categoria->flag.'/unamad'):""}}"  class="{{ request()->is($categoria->flag) ? 'act-link' : '' }}"><i class="fa fa-th-large"></i> {{$categoria->nombre}}</a>                                                    
+                                                                <a href="{{$categoria->tipo==1? url(''.$categoria->flag.'/unamad'):""}}"  class="{{ request()->is($categoria->flag) ? 'act-link' : '' }}"><i class="far fa-globe"></i> {{$categoria->nombre}}</a>                                                    
                                                             @endif
                                                         @else
                                                             <li>
@@ -115,7 +127,7 @@
                                                                 <ul>
                                                                     @foreach($categoria->categorias as $items)
                                                                         @if ($items->estado==1)                                                                        
-                                                                            <li><a href="{{ url($items->flag.'/unamad') }}"><i class="fa fa-th-large"></i> {{$items->nombre}}</a></li>
+                                                                            <li><a href="{{ url($items->flag.'/unamad') }}"><i class="far fa-globe"></i> {{$items->nombre}}</a></li>
                                                                         @endif
                                                                     @endforeach
                                                                 </ul>                                           
@@ -137,7 +149,7 @@
                                     <!--second level -->
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Facultades <i class="fa fa-caret-down"></i></a>
+                                            <a href="#"><i class="fas fa-stream"></i> Facultades <i class="fa fa-caret-down"></i></a>
                                             
                                             <!--third level -->
                                             <ul>
@@ -148,7 +160,7 @@
                                                     <ul>
                                                         @foreach($facultad->carreras as $carrera)
                                                             <li>
-                                                                <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}"><i class="fa fa-th-large"></i> {{$carrera->nombre}}</a>
+                                                                <a href="{{ url('facultades/'.$facultad->flag.'/'.$carrera->abreviatura) }}"><i class="far fa-globe"></i> {{$carrera->nombre}}</a>
                                                             </li>
                                                         @endforeach
                                                     </ul>
@@ -160,19 +172,19 @@
                                             <!--third level -->
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Admisión</a>
+                                            <a href="#"><i class="far fa-globe"></i> Dirección de Admisión</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Biblioteca Central</a>
+                                            <a href="#"><i class="far fa-globe"></i> Dirección de Biblioteca Central</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Proyección Social y Extensión Cultural</a>
+                                            <a href="#"><i class="far fa-globe"></i> Dirección de Proyección Social y Extensión Cultural</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Bienestar Universitario</a>
+                                            <a href="#"><i class="far fa-globe"></i> Dirección de Bienestar Universitario</a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fa fa-th-large"></i> Dirección de Asuntos Académicos</a>
+                                            <a href="#"><i class="far fa-globe"></i> Dirección de Asuntos Académicos</a>
                                         </li>
                                         
                                     </ul>
@@ -187,18 +199,18 @@
                             <a href="#"  class="{{ request()->is('transparencia*') ? 'act-link' : '' }}">TRANSPARENCIA<i class="fa fa-caret-down"></i></a>
                             <!--second level -->   
                             <ul>
-                                <li><a href="{{ url('transparencia/indicador-55') }}"><i class="fa fa-th-large"></i> Indicador 55</a></li>
-                                <li><a href="{{ url('transparencia/licenciamiento') }}" class="lh-sm"><i class="fa fa-th-large"></i> Licenciamiento Institucional</a></li>
+                                <li><a href="{{ url('transparencia/indicador-55') }}"><i class="far fa-globe"></i> Indicador 55</a></li>
+                                <li><a href="{{ url('transparencia/licenciamiento') }}" class="lh-sm"><i class="far fa-globe"></i> Licenciamiento Institucional</a></li>
                                 <li>
-                                    <a href="#" class="lh-sm"><i class="fa fa-th-large"></i> Acceso a Información Pública <i class="fa fa-caret-down"></i></a>
+                                    <a href="#" class="lh-sm"><i class="fas fa-stream"></i> Acceso a Información Pública <i class="fa fa-caret-down"></i></a>
                                     <!--third  level  -->
                                     <ul>
-                                        <li><a href="https://facilita.gob.pe/t/3371" target="_blank"><i class="fa fa-th-large"></i> Formulario Virtual</a></li>
-                                        <li><a href="https://drive.google.com/file/d/1tStD8HiMChMZO8QmnepBPU3evR920xGz/view?usp=sharing" target="_blank"><i class="fa fa-th-large"></i> Descargar Formato</a></li>
+                                        <li><a href="https://facilita.gob.pe/t/3371" target="_blank"><i class="far fa-globe"></i> Formulario Virtual</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1tStD8HiMChMZO8QmnepBPU3evR920xGz/view?usp=sharing" target="_blank"><i class="far fa-globe"></i> Descargar Formato</a></li>
                                     </ul>
                                     <!--third  level end-->
                                 </li>
-                                <li><a href="{{ url('documentos') }}" class="lh-sm"><i class="fa fa-th-large"></i> Documentos Normativos y de Gestión</a></li>
+                                <li><a href="{{ url('documentos') }}" class="lh-sm"><i class="far fa-globe"></i> Documentos Normativos y de Gestión</a></li>
                             </ul>
                             <!--second level end-->
                         </li>
