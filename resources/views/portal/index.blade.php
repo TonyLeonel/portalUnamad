@@ -4,30 +4,18 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
-{{-- <link rel="stylesheet" href="{{ asset('css/styleupc.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ asset('css/fonts-familiy.css') }}" type="text/css">
-<link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css"> --}}
 @endsection
 
 @section('js')
 <script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
 {{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
-<script>
-    // var images = document.getElementsByClassName('thumbnail');
-    // new simpleParallax(images,{
-    //     orientation: 'up',
-    //     scale: 2, // Ajusta el valor según el efecto de parallax deseado
-    //     // orientation: 'up',
-    //     // delay: 1,
-    //     // transition: 'cubic-bezier(0,0,0,1)'
-        
-    // });
-</script>
 @endsection
 
 @section('contenido')
-
+{{-- <p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
+<p id="window">Ventana del navegador: ancho: , altura: .</p>
+<p id="page">Página web: ancho: , altura: .</p> --}}
 
 <div class="flexslider">
     <ul class="slides">
@@ -54,49 +42,9 @@
 </section> --}}
 
 <!-- SERVICIOS -->
-{{-- <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img style="width: 300px;" src="{{ asset('img/images/r.jpg')}}" class="card-img-top" alt="">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section> --}}
+
 <section>
-    <div class="container-fluid">
+    <div class="container">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
             <h4>Conoce todos</h4>
@@ -104,30 +52,30 @@
         </div>
         {{-- <div class="col-12 col-sm-12 col-md-6 col-lg-6"> --}}
                 {{-- <div class="col-12 col-sm-6 col-md-6 col-lg-6"> --}}
+                    {{-- <div class="col-12 col-sm-3 col-md-3 col-lg-3"> --}}
         <!--Listado 01--> 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
-                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <img class="img_fix_height" style="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
                                 <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_pink" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fal fa-graduation-cap"></i>      
                                         </div>
-                                        <h4>CAMPUS VIRTUAL</h4>
-                                        <p class="text-center">Alumnos, Docentes, Matrículas, Notas, Horarios, Aulas y otros.</p>                                
+                                        <h4>CAMPUS VIRTUAL</h4>                       
                                     </div>
                                 </a>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
-                            {{-- <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>"> --}}
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
                                 <a href="https://admision.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
@@ -135,13 +83,12 @@
                                             <i class="fal fa-users-cog"></i>
                                         </div>
                                         <h4>PORTAL DE ADMISIÓN</h4>
-                                        {{-- <p class="text-center">Resultados de Admisión, Vacantes, Carreras, Requisitos y otros.</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -151,13 +98,12 @@
                                             <img src="{{ asset('img/cepre.png') }}" alt="" style="width: 35px;">
                                         </div>
                                         <h4>PORTAL CEPRE</h4>
-                                        {{-- <p class="text-center">Resultados de Exámenes, Carreras, Constancias, Horarios, Costos y otros.</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -167,19 +113,12 @@
                                             <img src="https://portal.unamad.edu.pe/img/logo_pink.png" alt="" style="width: 35px;">
                                         </div>
                                         <h4>OCRI</h4>
-                                        {{-- <p class="text-center">Oficina de Cooperación y Relaciones Internacionales</p>                                 --}}
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                {{-- <div class="row">
-                </div> --}}
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -195,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
@@ -209,7 +148,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://reclamos.servicios.gob.pe/?institution_id=224" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="" >                                    
+                                            <img src="{{ asset('img/reclamaciones.png') }}" alt="" style="width: 80%;">                             
+                                        </div>                                                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="tarjeta_container mb-3">
                             <div>
                                 <div class="mb-3">
@@ -218,9 +175,9 @@
                                 {{-- <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>"> --}}
                             </div>                    
                             <div class="tarjeta_wrapper">
-                                <div class="tarjeta tarjeta_white" style="background: #eeeef1 !important;">
+                                <div class="tarjeta tarjeta_yellow">
                                     <div class="tarjeta_centro">                                
-                                        <h4>Documentos normativos<br>y de gestión</h4>
+                                        <h4>DOCUMENTOS NORMATIVOS Y DE GESTIÓN</h4>
                                         
                                         <ul class="lista_simple">
                                             <li>
@@ -262,7 +219,7 @@
                                                 </a>
                                             </li>
                                         </ul> 
-                                        <a href="{{ url('documentos') }}" class="tarjeta_link_pink">Ver más documentos</a> 
+                                        <a href="{{ url('documentos') }}" class="tarjeta_link_white">Ver más documentos</a> 
                                     </div>
                                 </div>
                             </div>                    
@@ -474,43 +431,43 @@
         <div id="externo-slider" class="testimonials-slider">
             <!--slick-item -->
             <div class="slick-item">
-                <a href="http://www.cienciactiva.gob.pe/" class="externo_item" target="_blank" title="cienciactiva">
-                    <img src="{{ asset('img/logo-cienciactiva-pie.png') }}" alt="cienciactiva" srcset="">
+                <a href="https://portalanterior.prociencia.gob.pe/" class="externo_item" target="_blank" title="prociencia">
+                    <img src="{{ asset('img/prociencia.png') }}" alt="prociencia" srcset="">
                 </a>
             </div>
             <!--slick-item end -->							
             <!--slick-item -->
             <div class="slick-item">
                 <a href="https://portal.concytec.gob.pe/" class="externo_item" target="_blank" title="concytec">
-                    <img src="{{ asset('img/logo-concyte-pie.png') }}" alt="concytec" srcset="">
+                    <img src="{{ asset('img/concytec.png') }}" alt="concytec" srcset="">
                 </a>
             </div>
             <!--slick-item end -->
             <!--slick-item -->
             <div class="slick-item">
-                <a href="https://dina.concytec.gob.pe/appDirectorioCTI/" class="externo_item" target="_blank" title="dina">
-                    <img src="{{ asset('img/logo-dina-pie.png') }}" alt="dina" srcset="">
+                <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/" class="externo_item" target="_blank" title="ctivitae">
+                    <img src="{{ asset('img/ctivitae.png') }}" alt="ctivitae" srcset="">
                 </a>
             </div>
             <!--slick-item end -->								
             <!--slick-item -->
             <div class="slick-item">
-                <a href="http://www.sanciones.gob.pe:8081/transparencia/" class="externo_item" target="_blank" title="transparencia">
-                    <img src="{{ asset('img/logo-rnsdd-pie.png') }}" alt="transparencia" srcset="">
+                <a href="https://www.sanciones.gob.pe/rnssc/#/transparencia/acceso" class="externo_item" target="_blank" title="rnssc">
+                    <img src="{{ asset('img/rnssc.png') }}" alt="rnssc" srcset="">
                 </a>
             </div>
             <!--slick-item end -->		
             <!--slick-item -->
             <div class="slick-item">
                 <a href="https://www.sunedu.gob.pe/" class="externo_item" target="_blank" title="sunedu">
-                    <img src="{{ asset('img/logo-sunedu-pie.png') }}" alt="sunedu" srcset="">
+                    <img src="{{ asset('img/sunedu.png') }}" alt="sunedu" srcset="">
                 </a>
             </div>
             <!--slick-item end -->			
             <!--slick-item -->
             <div class="slick-item">
                 <a href="http://rpu.edu.pe/" class="externo_item" target="_blank">
-                    <img src="{{ asset('img/red-peruana-de-universidades.png') }}" alt="" srcset="">
+                    <img src="{{ asset('img/rpu.png') }}" alt="" srcset="">
                 </a>
             </div>
             <!--slick-item end -->						
