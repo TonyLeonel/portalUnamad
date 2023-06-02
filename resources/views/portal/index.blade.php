@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
-                            <img class="img_fix_height" style="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
                                 <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_pink" target="_blank">
                                     <div class="tarjeta_centro">
@@ -77,14 +77,32 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://admision.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-users-cog"></i>
+                                            {{-- <i class="fal fa-graduation-cap"></i> --}}
+                                            <i class="fa fa-book" aria-hidden="true"></i>     
                                         </div>
-                                        <h4>PORTAL DE ADMISIÓN</h4>
+                                        <h4>BIBLIOTECA VIRTUAL</h4>                       
                                     </div>
                                 </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fa fa-language" aria-hidden="true"></i>     
+                                        </div>
+                                        <h4>CENTRO DE IDIOMAS</h4>                       
+                                    </div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -107,42 +125,110 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            {{-- <i class="fa fa-terminal" aria-hidden="true"></i>       --}}
+                                            {{-- <i class="fa fa-desktop" aria-hidden="true"></i> --}}
+                                            <i class="fa-solid fa-droplet"></i>
+                                        </div>
+                                        <h4>CENTRO DE INFORMÁTICA</h4>                       
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>TALLERES EN ACTIVIDADES ARTÍSTICAS Y CULTURALES</h4>                       
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>BECAS</h4>                       
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>CENTRO DE SALUD INTEGRAL</h4>                       
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>COMEDOR<br>UNIVERSITARIO</h4>                       
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://admision.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-users-cog"></i>
+                                        </div>
+                                        <h4>PORTAL DE ADMISIÓN</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
                                 <a href="https://portal.unamad.edu.pe/ocri" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <img src="https://portal.unamad.edu.pe/img/logo_pink.png" alt="" style="width: 35px;">
                                         </div>
                                         <h4>OCRI</h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="tarjeta_container mb-3">
-                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
-                            <div class="tarjeta_wrapper">
-                                <a href="https://portal.unamad.edu.pe/centro-de-idiomas" class="tarjeta tarjeta_white">
-                                    <div class="tarjeta_centro">
-                                        <div class="tarjeta_icon">
-                                            <img src="https://portal.unamad.edu.pe/img/logo_pink.png" alt="" style="width: 35px;">
-                                        </div>
-                                        <h4>Centro de Idiomas</h4>
-                                        {{-- <p class="text-center">Centro de formación académica.</p>                                 --}}
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="tarjeta_container mb-3">
-                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
-                            <div class="tarjeta_wrapper">
-                                <a href="https://reclamos.servicios.gob.pe/?institution_id=224" class="tarjeta tarjeta_white" target="_blank">
-                                    <div class="tarjeta_centro">
-                                        <div class="" >                                    
-                                            <img src="{{ asset('img/reclamaciones.png') }}" alt="" style="width: 80%;">                             
-                                        </div>                                                       
                                     </div>
                                 </a>
                             </div>

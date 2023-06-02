@@ -294,7 +294,7 @@ body{
 .tarjeta h4 {
     font-weight: 800;
     color: #144273;
-    font-size: auto;
+    font-size: 10px;
     padding-bottom: 10px;
 }
 
@@ -305,8 +305,11 @@ body{
 
 .tarjeta_white {
     background: #fff;
-    border: 1px solid #e6e6e6;
+    border: 2px solid #e6e6e6;
     color: #878C9F;
+    /* width: 100%; */
+    /* min-width: 100px; */
+    /* max-width: 100px; */
 }
 
 .tarjeta_white p{
