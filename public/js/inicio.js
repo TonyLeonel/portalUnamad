@@ -39,6 +39,7 @@ $( document ).ready(function() {
     });
 });
 
+
 // Función para actualizar los tamaños en el documento HTML
 function actualizarTamaños() {
     // Obtener el tamaño de la pantalla del dispositivo
@@ -81,3 +82,4 @@ window.onresize = actualizarTamaños;
 //     // transition: 'cubic-bezier(0,0,0,1)'
     
 // });
+$('.img-holder').imageScroll();

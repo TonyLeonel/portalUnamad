@@ -8,14 +8,15 @@
 
 @section('js')
 <script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
+<script src="https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js" type="text/javascript"></script>
 {{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('contenido')
-{{-- <p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
+<p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
 <p id="window">Ventana del navegador: ancho: , altura: .</p>
-<p id="page">Página web: ancho: , altura: .</p> --}}
+<p id="page">Página web: ancho: , altura: .</p>
 
 <div class="flexslider">
     <ul class="slides">
@@ -42,6 +43,7 @@
 </section> --}}
 
 <!-- SERVICIOS -->
+
 
 <section>
     <div class="container">
@@ -337,6 +339,9 @@
     </div>
 </section>
 
+{{-- <div class="xd" data-image="{{ asset('img/images/i1.jpg')}}"></div> --}}
+
+
 <!-- ENLACES -->
 <!-- section -->
 
@@ -352,6 +357,7 @@
 {{-- </section> --}}
 
 <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
+<div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900"></div>
 <section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
@@ -450,9 +456,13 @@
         </div>
     </div>
 </section>
+
+
 <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " >
 
-
+<div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/japan_digital_nature-1680x1050.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/japan_digital_nature-800x500.jpg" data-width="1680" data-height="1050">
+    <p class="componentheading" style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">Contamos con</p>
+</div>
 
 <!-- ACTIVIDADES -->
 <section class="small-padding image_complete" >
@@ -554,6 +564,9 @@
 <!-- ENLACES -->
 <!-- section -->
 <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
+{{-- <img style="width:100%;" src="" alt=""> --}}
+<div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/german_landscapes-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/german_landscapes-800x450.jpg"></div>
+
 <section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
