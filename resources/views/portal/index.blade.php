@@ -8,15 +8,16 @@
 
 @section('js')
 <script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
-<script src="https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js" type="text/javascript"></script>
+<script src="{{ asset('js/jquery.imageScroll.min.js') }}" type="text/javascript"></script>
+{{-- <script src="https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js" type="text/javascript"></script> --}}
 {{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('contenido')
-<p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
+{{-- <p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
 <p id="window">Ventana del navegador: ancho: , altura: .</p>
-<p id="page">Página web: ancho: , altura: .</p>
+<p id="page">Página web: ancho: , altura: .</p> --}}
 
 <div class="flexslider">
     <ul class="slides">
@@ -356,8 +357,67 @@
 {{-- </div> --}}
 {{-- </section> --}}
 
-<img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
-<div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg" data-width="1600" data-height="900"></div>
+<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
+{{-- <div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg"></div> --}}
+
+<div class="img-holder" data-image={{ asset('img/images/maloka1.jpg')}}>
+    <p></p>
+    <p></p>
+    <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  Formando profesionales de</p>
+    <p></p>
+    <p></p>
+    <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  CALIDAD y COMPETENCIA</p>
+    <div class="filtro"></div>
+    <div class="container mb-4">
+		<div class="row numeros-container justify-content-center">
+			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
+				<img src={{ asset('img/images/xd.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
+				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">2, 212</h2>
+				<p class="text-center text-shadow-numeros mb-0">
+					Docentes <br />
+					
+				</p>
+			</div>
+			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
+				<img src={{ asset('img/images/investigadores.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+					
+				</h2>
+				<p class="text-center text-shadow-numeros mb-0">
+					
+				</p>
+			</div>
+			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+				{{-- <img src="./img/iconos/estadisticas/estadisticas-primer-puesto-pagina-web-unmsm.svg" alt="icono-docentes-investigadores-san-marcos-en-numeros" class="sm-numeros" /> --}}
+				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+					
+				</h2>
+				<p class="text-center text-shadow-numeros mb-0">
+					
+				</p>
+			</div>
+			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+				{{-- <img src="./img/iconos/estadisticas/estadisticas-carreras-pagina-web-unmsm.svg" alt="icono-ranking-webometrics-san-marcos-en-numeros" class="sm-numeros" /> --}}
+				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+					
+				</h2>
+				<p class="text-center text-shadow-numeros mb-0">
+					
+				</p>
+			</div>
+			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+				{{-- <img src="./img/iconos/estadisticas/estadisticas-tesis-pagina-web-unmsm.svg" alt="icono-tesis-san-marcos-en-numeros" class="sm-numeros" /> --}}
+				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+					15, 158 TESIS
+				</h2>
+				<p class="text-center text-shadow-numeros mb-0">
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 <section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
@@ -458,14 +518,14 @@
 </section>
 
 
-<img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
+<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
 
-<div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/japan_digital_nature-1680x1050.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/japan_digital_nature-800x500.jpg" data-width="1680" data-height="1050">
-    <p class="componentheading" style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">Contamos con</p>
-</div>
+
+{{-- <div class="img-holder" data-image={{ asset('img/images/maloka.jpg')}}> --}}
 
 <!-- ACTIVIDADES -->
-<section class="small-padding image_complete" >
+<section class="small-padding" >
     <div class="container">
         <!--Titulo-->
          <!--Titulo-->
@@ -563,9 +623,9 @@
 
 <!-- ENLACES -->
 <!-- section -->
-<img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " >
-{{-- <img style="width:100%;" src="" alt=""> --}}
-<div class="img-holder" data-image="https://raw.github.com/pederan/ImageScroll/master/demo/img/german_landscapes-1600x900.jpg" data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/german_landscapes-800x450.jpg"></div>
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
+<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+
 
 <section class="small-padding">
     <div class="container">
@@ -622,6 +682,8 @@
         </div>
     </div>
 </section>
-<img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
+<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <div class="img-holder" data-image={{ asset('img/images/comedor.jpg')}}> --}}
 
 @endsection

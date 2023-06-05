@@ -35,41 +35,34 @@ $( document ).ready(function() {
         video:	true,
         controlNav: false,
         animationSpeed: 1000,
+        pauseOnAction: false
         // smoothHeight: true
     });
 });
 
 
 // Función para actualizar los tamaños en el documento HTML
-function actualizarTamaños() {
-    // Obtener el tamaño de la pantalla del dispositivo
-    var screenWidth = screen.width;
-    var screenHeight = screen.height;
+// function actualizarTamaños() {
+//     var screenWidth = screen.width;
+//     var screenHeight = screen.height;
 
-    // Obtener el tamaño de la ventana del navegador
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
+//     var windowWidth = window.innerWidth;
+//     var windowHeight = window.innerHeight;
 
-    // Obtener el tamaño de toda la página web
-    var pageWidth = document.documentElement.scrollWidth;
-    var pageHeight = document.documentElement.scrollHeight;
+//     var pageWidth = document.documentElement.scrollWidth;
+//     var pageHeight = document.documentElement.scrollHeight;
 
-    // Actualizar los mensajes en el documento HTML
-    var x = document.getElementById("screen");
-    x.innerHTML = "Pantalla del dispositivo: ancho: " + screenWidth + ", altura: " + screenHeight + ".";
+//     var x = document.getElementById("screen");
+//     x.innerHTML = "Pantalla del dispositivo: ancho: " + screenWidth + ", altura: " + screenHeight + ".";
 
-    var y = document.getElementById("window");
-    y.innerHTML = "Ventana del navegador: ancho: " + windowWidth + ", altura: " + windowHeight + ".";
+//     var y = document.getElementById("window");
+//     y.innerHTML = "Ventana del navegador: ancho: " + windowWidth + ", altura: " + windowHeight + ".";
 
-    var z = document.getElementById("page");
-    z.innerHTML = "Página web: ancho: " + pageWidth + ", altura: " + pageHeight + ".";
-}
-  
-// Llamar a la función para actualizar los tamaños al cargar la página
-actualizarTamaños();
-
-// Llamar a la función actualizarTamaños cada vez que se redimensione la ventana del navegador
-window.onresize = actualizarTamaños;
+//     var z = document.getElementById("page");
+//     z.innerHTML = "Página web: ancho: " + pageWidth + ", altura: " + pageHeight + ".";
+// }
+// actualizarTamaños();
+// window.onresize = actualizarTamaños;
 
 
 
@@ -82,4 +75,7 @@ window.onresize = actualizarTamaños;
 //     // transition: 'cubic-bezier(0,0,0,1)'
     
 // });
-$('.img-holder').imageScroll();
+// $('.img-holder').imageScroll();
+$('.img-holder').imageScroll({
+    coverRatio: 0.3
+});
