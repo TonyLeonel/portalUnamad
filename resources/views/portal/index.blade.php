@@ -9,15 +9,18 @@
 @section('js')
 <script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/jquery.imageScroll.min.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/counter.min.js') }}" type="text/javascript"></script>
 {{-- <script src="https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js" type="text/javascript"></script> --}}
 {{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('contenido')
+
 {{-- <p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
 <p id="window">Ventana del navegador: ancho: , altura: .</p>
 <p id="page">Página web: ancho: , altura: .</p> --}}
+
 
 <div class="flexslider">
     <ul class="slides">
@@ -27,7 +30,6 @@
         <li>
             <img src="{{ asset('img/images/2.png')}}" />
         </li>
-        
         <li>
             <img src="{{ asset('img/images/3.png')}}" />
         </li>
@@ -354,69 +356,58 @@
 {{-- </div> --}}
 {{-- </section> --}}
 
-<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
 {{-- <div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg"></div> --}}
 
 {{-- https://boxy-svg.com/app/disk:PeEn8Z79dz --}}
-<div class="img-holder" data-image={{ asset('img/images/maloka1.jpg')}}>
+<section class="img-holder" data-image={{ asset('img/images/maloka2.jpg')}}>
     <div style="-webkit-transform: translateZ(1px);">
-
-    
-        <p></p>
-        <p></p>
-        <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  Formando profesionales de</p>
-        <p></p>
-        <p></p>
-        <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  CALIDAD y COMPETENCIA</p>
-        <div class="filtro"></div>
-        <div class="container mb-4">
-            <div class="row numeros-container justify-content-center">
-                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
-                    <img src={{ asset('img/images/xdddd.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">2, 212</h2>
-                    <p class="text-center text-shadow-numeros mb-0">
-                        Docentes <br />
-                        
-                    </p>
+        <div class="section-numeros mt-2">
+            <div class="container mb-4">
+                <div class="row numeros-container justify-content-center">
+                    <div class="col-12 mb-3 mb-md-0 col-md-12 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <h2  class="marco title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">La unamad en cifras: </h2>
+                    </div>
                 </div>
-                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
-                    <img src={{ asset('img/images/investigadores.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-                        
-                    </h2>
-                    <p class="text-center text-shadow-numeros mb-0">
-                        
-                    </p>
-                </div>
-                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-                        
-                    </h2>
-                    <p class="text-center text-shadow-numeros mb-0">
-                        
-                    </p>
-                </div>
-                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-                        
-                    </h2>
-                    <p class="text-center text-shadow-numeros mb-0">
-                        
-                    </p>
-                </div>
-                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-                        15, 158 TESIS
-                    </h2>
-                    <p class="text-center text-shadow-numeros mb-0">
-                        
-                    </p>
+                <div class="row numeros-container justify-content-center">
+                    <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <img src={{ asset('img/images/investigadores.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
+                        <h2 data-counter-target="24" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                        <p  class="marco text-center text-shadow-numeros mb-0">DOCENTES</p>
+                        <p  class="text-center text-shadow-numeros mb-0">INVESTIGADORES</p>
+                    </div>
+                    <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <img src={{ asset('img/images/fundacion.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                        <h2 id="counter-target" data-counter-target="0" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                        <p class="marco text-center text-shadow-numeros mb-0">AÑOS DE FUNDACIÓN</p>
+                        <p class="text-center text-shadow-numeros mb-0">INSTITUCIONAL</p>
+                    </div>
+                    <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <img src={{ asset('img/images/matriculados.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                        <h2 data-counter-target="3917" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                        <p class="marco text-center text-shadow-numeros mb-0">ESTUDIANTES</p>
+                        <p class="text-center text-shadow-numeros mb-0">MATRICULADOS</p>
+                    </div>
+                    <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <img src={{ asset('img/images/escuelas.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                        <h2 data-counter-target="10" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                        <p class="marco text-center text-shadow-numeros mb-0">ESCUELAS</p>
+                        <p class="text-center text-shadow-numeros mb-0">PROFESIONALES</p>
+                    </div>
+                    <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                        <img src={{ asset('img/images/convenio.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                        <h2 data-counter-target="139" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                        <p class="marco text-center text-shadow-numeros mb-0">CONVENIOS</p>
+                        <p class="text-center text-shadow-numeros mb-0">INSTITUCIONALES</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="filtro"></div>
+</section>
+
 <section class="small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
@@ -424,6 +415,7 @@
             <h2>Otros enlaces</h2>
         </div>
     </div>
+    
     <div class="row">
         <div class="col-3 row">
             <!--slick-item -->
@@ -520,7 +512,7 @@
 
 
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
-<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 
 
 {{-- <div class="img-holder" data-image={{ asset('img/images/maloka.jpg')}}> --}}
@@ -625,7 +617,7 @@
 <!-- ENLACES -->
 <!-- section -->
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
-<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 
 
 <section class="small-padding">
@@ -706,7 +698,7 @@
     </div>
 </section>
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
-<img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " >
+{{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 {{-- <div class="img-holder" data-image={{ asset('img/images/comedor.jpg')}}> --}}
 
 @endsection

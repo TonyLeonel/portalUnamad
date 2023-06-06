@@ -935,3 +935,55 @@ a.link_pink:hover{
     text-align: inherit;
 }
 
+.section-principal-home .section-numeros {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+  
+}
+.fix_div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.section-principal-home .section-numeros .numeros-container {
+    opacity: 1;
+    -webkit-transition: 0.5s opacity ease;
+    transition: 0.5s opacity ease;
+}
+
+section.section-principal-home .section-numeros h2.text-shadow-numeros {
+    font-size: 20px;
+}
+
+.text-shadow-numeros {
+    text-shadow: 0px 3px 5px #000000;
+    font-weight: 600;
+    color: #fff;
+}
+.title-section {
+    font-size: 24px;
+}
+
+.marco{
+    background:#ed145b;
+    border-radius: 4px;
+    padding: 5px
+}
+
+/* .marco {
+    background: transparent;
+    border-bottom: 5px solid #ed145b;
+    border-radius: 4px;
+    padding: 5px;
+} */
+
+/* .img-holder{
+    height: 00px;
+} */
+

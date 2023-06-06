@@ -28,6 +28,8 @@ $( document ).ready(function() {
 
     });
 
+    
+
     $('.flexslider').flexslider({
         animation: "fade",
         slideshowSpeed: 3000,
@@ -38,6 +40,17 @@ $( document ).ready(function() {
         pauseOnAction: false
         // smoothHeight: true
     });
+
+    
+
+    var fechaActual = new Date();
+    var fecha2000 = new Date(2000, 6, 5);
+    var diferenciaAnios = fechaActual.getFullYear() - fecha2000.getFullYear();
+    $("#counter-target").attr("data-counter-target", diferenciaAnios);
+    console.log(diferenciaAnios);
+
+    new Counter('.counter');
+
 });
 
 
@@ -79,3 +92,16 @@ $( document ).ready(function() {
 $('.img-holder').imageScroll({
     coverRatio: 0.3
 });
+
+
+// window.addEventListener('load', function() {
+//     // Mostrar el contenido una vez que se haya cargado completamente
+//     var flexsliderElements = document.getElementsByClassName('flexslider');
+//     for (var i = 0; i < flexsliderElements.length; i++) {
+//       flexsliderElements[i].style.display = 'block';
+//     }
+//   });
+// window.addEventListener('load', function() {
+//     var flexsliderElement = document.querySelector('.flexslider');
+//     flexsliderElement.classList.add('show');
+//   });
