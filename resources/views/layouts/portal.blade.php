@@ -31,20 +31,20 @@
 </head>
 <body>
     <!--loader-->
-    <div class="loader-wrap">
+    {{-- <div class="loader-wrap">
         <div class="loader-inner-alt">
             <img src="{{ asset('img/logo_single_min.png') }}" alt="Logo simple" style="">
             <div class="stage">
                 <div class="dot-flashing"></div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--loader end-->
 
     <!-- main -->
     <div id="main">
         <!-- header -->
-        <header class="main-header image_bar">
+        <header class="main-header">
         {{-- <header class="main-header image_bar" style="background-image: url({{ asset('img/tejido.png')}});"> --}}
         {{-- <header class="main-header image_bar"> --}}
             <!--  logo  -->

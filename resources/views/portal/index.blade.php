@@ -53,9 +53,6 @@
             <h4>Conoce todos</h4>
             <h2>Nuestros Servicios</h2>
         </div>
-        {{-- <div class="col-12 col-sm-12 col-md-6 col-lg-6"> --}}
-                {{-- <div class="col-12 col-sm-6 col-md-6 col-lg-6"> --}}
-                    {{-- <div class="col-12 col-sm-3 col-md-3 col-lg-3"> --}}
         <!--Listado 01--> 
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-9">
@@ -361,62 +358,64 @@
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
 {{-- <div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg"></div> --}}
 
+{{-- https://boxy-svg.com/app/disk:PeEn8Z79dz --}}
 <div class="img-holder" data-image={{ asset('img/images/maloka1.jpg')}}>
-    <p></p>
-    <p></p>
-    <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  Formando profesionales de</p>
-    <p></p>
-    <p></p>
-    <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  CALIDAD y COMPETENCIA</p>
-    <div class="filtro"></div>
-    <div class="container mb-4">
-		<div class="row numeros-container justify-content-center">
-			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
-				<img src={{ asset('img/images/xd.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
-				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">2, 212</h2>
-				<p class="text-center text-shadow-numeros mb-0">
-					Docentes <br />
-					
-				</p>
-			</div>
-			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
-				<img src={{ asset('img/images/investigadores.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-					
-				</h2>
-				<p class="text-center text-shadow-numeros mb-0">
-					
-				</p>
-			</div>
-			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-				{{-- <img src="./img/iconos/estadisticas/estadisticas-primer-puesto-pagina-web-unmsm.svg" alt="icono-docentes-investigadores-san-marcos-en-numeros" class="sm-numeros" /> --}}
-				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-					
-				</h2>
-				<p class="text-center text-shadow-numeros mb-0">
-					
-				</p>
-			</div>
-			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-				{{-- <img src="./img/iconos/estadisticas/estadisticas-carreras-pagina-web-unmsm.svg" alt="icono-ranking-webometrics-san-marcos-en-numeros" class="sm-numeros" /> --}}
-				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-					
-				</h2>
-				<p class="text-center text-shadow-numeros mb-0">
-					
-				</p>
-			</div>
-			<div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
-				{{-- <img src="./img/iconos/estadisticas/estadisticas-tesis-pagina-web-unmsm.svg" alt="icono-tesis-san-marcos-en-numeros" class="sm-numeros" /> --}}
-				<h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
-					15, 158 TESIS
-				</h2>
-				<p class="text-center text-shadow-numeros mb-0">
-					
-				</p>
-			</div>
-		</div>
-	</div>
+    <div style="-webkit-transform: translateZ(1px);">
+
+    
+        <p></p>
+        <p></p>
+        <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  Formando profesionales de</p>
+        <p></p>
+        <p></p>
+        <p style="-webkit-transform: translateZ(1px);font-size: 36pt; color: #ffffff; text-shadow: 3px 3px 3px #101010;">  CALIDAD y COMPETENCIA</p>
+        <div class="filtro"></div>
+        <div class="container mb-4">
+            <div class="row numeros-container justify-content-center">
+                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
+                    <img src={{ asset('img/images/xdddd.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">2, 212</h2>
+                    <p class="text-center text-shadow-numeros mb-0">
+                        Docentes <br />
+                        
+                    </p>
+                </div>
+                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center">
+                    <img src={{ asset('img/images/investigadores.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+                        
+                    </h2>
+                    <p class="text-center text-shadow-numeros mb-0">
+                        
+                    </p>
+                </div>
+                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+                        
+                    </h2>
+                    <p class="text-center text-shadow-numeros mb-0">
+                        
+                    </p>
+                </div>
+                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+                        
+                    </h2>
+                    <p class="text-center text-shadow-numeros mb-0">
+                        
+                    </p>
+                </div>
+                <div class="col-6 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center" >
+                    <h2 class="title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros" >
+                        15, 158 TESIS
+                    </h2>
+                    <p class="text-center text-shadow-numeros mb-0">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <section class="small-padding">
     <div class="container">
@@ -515,7 +514,9 @@
             <!--slick-item end -->						
         </div>
     </div>
+    
 </section>
+<h4 class="title">hola</h4>
 
 
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
@@ -659,9 +660,31 @@
             </div>
             <!--slick-item end -->								
             <!--slick-item -->
+            
+            <div class="slick-item">
+                <a href="https://www.pronabec.gob.pe/beca-18/" class="externo_item" target="_blank" title="pronabec">
+                    <img src="{{ asset('img/logoPronabec_hd.png') }}" alt="pronabec" srcset="">
+                </a>
+            </div>
+            <!--slick-item end -->								
+            <!--slick-item -->
             <div class="slick-item">
                 <a href="https://www.sanciones.gob.pe/rnssc/#/transparencia/acceso" class="externo_item" target="_blank" title="rnssc">
                     <img src="{{ asset('img/rnssc.png') }}" alt="rnssc" srcset="">
+                </a>
+            </div>
+            <!--slick-item end -->
+            <!--slick-item -->
+            <div class="slick-item">
+                <a href="https://www.scopus.com/" class="externo_item" target="_blank" title="scopus">
+                    <img src="{{ asset('img/scopus.png') }}" alt="scopus" srcset="">
+                </a>
+            </div>
+            <!--slick-item end -->
+            <!--slick-item -->
+            <div class="slick-item">
+                <a href="https://reclamos.servicios.gob.pe/" class="externo_item" target="_blank" title="libro_reclamaciones">
+                    <img src="{{ asset('img/libro_reclamaciones.png') }}" alt="libro_reclamaciones" srcset="">
                 </a>
             </div>
             <!--slick-item end -->		

@@ -1,9 +1,9 @@
 $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">'); 
-$(".loader-wrap").fadeOut(300, function () {
-    $("#main").animate({
-        opacity: "1"
-    }, 600);
-});
+// $(".loader-wrap").fadeOut(300, function () {
+//     $("#main").animate({
+//         opacity: "1"
+//     }, 600);
+// });
 //   Background image ------------------
 var a = $(".bg");
 a.each(function () {
