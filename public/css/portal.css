@@ -347,7 +347,7 @@ body{
 }
 
 .tarjeta_black {
-    background: #000000;  /*#1c1a19;*/
+    background: #272626;  /*#1c1a19;*/
 
 }
 
@@ -971,7 +971,7 @@ section.section-principal-home .section-numeros h2.text-shadow-numeros {
 }
 
 .marco{
-    background:#ed145b;
+    background:#144273;
     border-radius: 4px;
     padding: 5px
 }
@@ -986,4 +986,12 @@ section.section-principal-home .section-numeros h2.text-shadow-numeros {
 /* .img-holder{
     height: 00px;
 } */
+
+.objeto_deforme{
+    position: absolute;
+    z-index: 24;
+    top:0;
+    left:0;
+    margin:0;
+}
 

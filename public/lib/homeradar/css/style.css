@@ -2405,12 +2405,20 @@ nav li ul a:before , nav li ul a:after {
 	left: 40px;
 }
 /*------section ------------------------------------------------*/
-section {
+.relative-padding {
 	position: relative;
 	float: left;
 	width: 100%;
-	padding: 30px 0 10px 0;
-	background: #fff;
+	padding: 30px 0 30px 0;
+	background: transparent;
+	overflow: hidden;
+}
+.wave-section {
+	position: relative;
+	float: left;
+	width: 100%;
+	/* padding: 30px 0 10px 0; */
+	/* background: #fff; */
 	overflow: hidden;
 }
 .hidden-section {
@@ -2431,6 +2439,10 @@ section.single-par2 {
 }
 .small-padding {
 	padding: 50px 0;
+}
+.blue-section {
+	background-color: #ffc136;
+	/* border: 1px solid black; */
 }
 .no-padding-section {
 	padding: 0;

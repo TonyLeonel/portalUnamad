@@ -48,7 +48,7 @@
 <!-- SERVICIOS -->
 
 
-<section>
+<section class="relative-padding">
     <div class="container">
          <!--Titulo-->
         <div class="section-title st-center fl-wrap">
@@ -71,7 +71,6 @@
                                         <h4>CAMPUS VIRTUAL</h4>                       
                                     </div>
                                 </a>
-                                
                             </div>
                         </div>
                     </div>
@@ -335,9 +334,19 @@
                     </div>
                 </div>
             </div>
-        </div>             
+        </div>
+                     
     </div>
 </section>
+<section class="wave-section">
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L507.56,166.82 L-8.23,167.80 Z" style="stroke: none; fill: #ffc136;"></path></svg></div>
+    {{-- <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-33.63,114.66 C196.04,201.26 372.12,-105.79 500.00,49.85 L667.83,199.29 L-0.00,149.60 Z" style="stroke: none; fill: #ffc136;"></path></svg></div> --}}
+</section>
+
+
+
+
+
 
 {{-- <div class="xd" data-image="{{ asset('img/images/i1.jpg')}}"></div> --}}
 
@@ -361,7 +370,7 @@
 {{-- <div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg"></div> --}}
 
 {{-- https://boxy-svg.com/app/disk:PeEn8Z79dz --}}
-<section class="img-holder" data-image={{ asset('img/images/maloka2.jpg')}}>
+{{-- <section class="img-holder" data-image={{ asset('img/images/maloka2.jpg')}}>
     <div style="-webkit-transform: translateZ(1px);">
         <div class="section-numeros mt-2">
             <div class="container mb-4">
@@ -406,119 +415,248 @@
         </div>
     </div>
     <div class="filtro"></div>
+</section> --}}
+<section class="relative-padding blue-section small-padding">
+    <div class="section-numeros mt-2">
+        <div class="container mb-4">
+            <div class="row numeros-container justify-content-center">
+                <div class="col-12 mb-3 mb-md-0 col-md-12 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <h2  class="marco title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">La unamad en cifras: </h2>
+                </div>
+            </div>
+            <div class="row numeros-container justify-content-center">
+                <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <img src={{ asset('img/images/investigadores.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 data-counter-target="24" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <p  class="marco text-center text-shadow-numeros mb-0">DOCENTES</p>
+                    <p  class="marco text-center text-shadow-numeros mb-0">INVESTIGADORES</p>
+                </div>
+                <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <img src={{ asset('img/images/fundacion.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 id="counter-target" data-counter-target="0" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <p class="marco text-center text-shadow-numeros mb-0">AÑOS DE FUNDACIÓN</p>
+                    <p class="marco text-center text-shadow-numeros mb-0">INSTITUCIONAL</p>
+                </div>
+                <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <img src={{ asset('img/images/matriculados.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 data-counter-target="3917" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <p class="marco text-center text-shadow-numeros mb-0">ESTUDIANTES</p>
+                    <p class="marco text-center text-shadow-numeros mb-0">MATRICULADOS</p>
+                </div>
+                <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <img src={{ asset('img/images/escuelas.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 data-counter-target="10" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <p class="marco text-center text-shadow-numeros mb-0">ESCUELAS</p>
+                    <p class="marco text-center text-shadow-numeros mb-0">PROFESIONALES</p>
+                </div>
+                <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
+                    <img src={{ asset('img/images/convenio.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
+                    <h2 data-counter-target="139" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <p class="marco text-center text-shadow-numeros mb-0">CONVENIOS</p>
+                    <p class="marco text-center text-shadow-numeros mb-0">INSTITUCIONALES</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="small-padding">
+<section class="wave-section">
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 271.37,-49.85 500.00,49.85 L500.00,0.00 L-0.00,0.00 Z" style="stroke: none; fill: #ffc136;"></path></svg></div>
+</section>
+
+<section class="relative-padding small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
             <h4>También te puede interesar</h4>
             <h2>Otros enlaces</h2>
         </div>
+    
+    
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://www.gob.pe/institucion/unamad/funcionarios" class="tarjeta tarjeta_pink" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-user-tie"></i>      
+                                        </div>
+                                        <h4>DIRECTORIO DE FUNCIONARIOS</h4>
+                                        <p class="text-center">Datos de contacto e información del personal de la UNAMAD.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_black" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-file-download"></i>      
+                                        </div>
+                                        <h4>REPOSITORIO DIGITAL</h4>
+                                        <p class="text-center">Información intelectual producida y compilada por la comunidad universitaria.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_yellow" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-bullhorn"></i>      
+                                        </div>
+                                        <h4>CONVOCATORIAS</h4>
+                                        <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>                    
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_blue" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-book"></i>      
+                                        </div>
+                                        <h4>REVISTAS CIENTIFICAS</h4>
+                                        <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_red" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>EGRESADOS Y BOLSA DE TRABAJO</h4>                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_black" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>LIBRO DE RECLACIONES</h4>                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_blue" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>CONVENIOS</h4>                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_black" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-bullhorn"></i>      
+                                        </div>
+                                        <h4>MESA DE PARTES VIRTUAL</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_pink" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-graduation-cap"></i>      
+                                        </div>
+                                        <h4>RUTA - GPS BUS</h4>                       
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="tarjeta_container mb-3">
+                            <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
+                            <div class="tarjeta_wrapper">
+                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_yellow" target="_blank">
+                                    <div class="tarjeta_centro">
+                                        <div class="tarjeta_icon">
+                                            <i class="fal fa-bullhorn"></i>      
+                                        </div>
+                                        <h4>OBSERVATORIO PARQUE CIENTIFICO</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="row">
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">
-                <div class="tarjeta_container mb-3">
-                    <a href="https://www.gob.pe/institucion/unamad/funcionarios"  class="hover-none externo_item" target="_blank">
-                        <div class="tarjeta_icon">                                    
-                            <i class="fal fa-user-tie"></i>                                
-                        </div>
-                        <h4>Directorio de funcionarios</h4>
-                        <p class="text-center">Datos de contácto e información del personal de la UNAMAD.</p>   
-                    </a>
-                </div>
-            </div>
-            <!--slick-item end -->						
-        </div>
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">
-                <a href="http://www.cienciactiva.gob.pe/" class="hover-none externo_item" target="_blank" title="cienciactiva">
-                    <div class="tarjeta_icon">
-                        <i class="fal fa-file-download"></i>
-                    </div>
-                    <h4>REPOSITORIO DIGITAL</h4>
-                    <p class="text-center">Información intelectual producida y compilada por la comunidad universitaria de la UNAMAD.</p>                                
-
-                </a>
-            </div>
-            <!--slick-item end -->						
-        </div>
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">
-                <div class="tarjeta_container mb-3">
-                    <a href="https://www.gob.pe/institucion/unamad/funcionarios"  class="hover-none externo_item" target="_blank">
-                        <div class="tarjeta_icon">                                    
-                            <i class="fal fa-user-tie"></i>                                
-                        </div>
-                        <h4>Directorio de funcionarios</h4>
-                        <p class="text-center">Datos de contácto e información del personal de la UNAMAD.</p>   
-                    </a>
-                </div>
-            </div>
-            <!--slick-item end -->						
-        </div>
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">
-                <a href="http://www.cienciactiva.gob.pe/" class="hover-none externo_item" target="_blank" title="cienciactiva">
-                    <div class="tarjeta_icon">
-                        <i class="fal fa-file-download"></i>
-                    </div>
-                    <h4>REPOSITORIO DIGITAL</h4>
-                    <p class="text-center">Información intelectual producida y compilada por la comunidad universitaria de la UNAMAD.</p>                                
-
-                </a>
-            </div>
-            <!--slick-item end -->						
-        </div>
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">                
-                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="hover-none externo_item" target="_blank">
-                    <div class="tarjeta_centro">
-                        <div class="tarjeta_icon">
-                            <i class="fal fa-bullhorn"></i>                                            
-                        </div>
-                        <h4>CONVOCATORIAS</h4>
-                        <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>                                
-                    </div>
-                </a>
-            </div>
-            <!--slick-item end -->						
-        </div>
-        <div class="col-3 row">
-            <!--slick-item -->
-            <div class="slick-item">
-                <a href="http://www.cienciactiva.gob.pe/" class="hover-none externo_item" target="_blank" title="cienciactiva">
-                    <div class="tarjeta_centro">
-                        <div class="tarjeta_icon">
-                            <i class="fal fa-book"></i>
-                        </div>
-                        <h4>REVISTAS CIENTIFICAS</h4>
-                        <p class="text-center">Conjunto de revistas científicas temáticas de publicación semestral.</p>                                
-                    </div>
-                </a>
-            </div>
-            <!--slick-item end -->						
-        </div>
-    </div>
     
 </section>
-<h4 class="title">hola</h4>
 
-
-{{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
-{{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
-
+{{-- <section class="relative-padding small-padding"> --}}
+<div class="objeto_deforme" style="height: 150px; overflow: hidden;">
+    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">                    <defs><linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0"><stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop><stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop></linearGradient></defs><path fill="url(#sw-gradient)" d="M25.7,-32.7C30.9,-26.2,31.2,-15.9,32.9,-5.8C34.7,4.2,38,14,35.1,21.4C32.2,28.7,23.1,33.6,13.8,36.2C4.5,38.9,-5,39.4,-13.8,36.7C-22.6,34,-30.7,28.2,-33.7,20.6C-36.7,13,-34.6,3.6,-32,-4.6C-29.3,-12.9,-26.1,-20,-20.6,-26.5C-15.2,-33,-7.6,-38.8,1.3,-40.4C10.2,-41.9,20.4,-39.2,25.7,-32.7Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path></svg>
+</div>
+{{-- </section> --}}
 
 {{-- <div class="img-holder" data-image={{ asset('img/images/maloka.jpg')}}> --}}
 
 <!-- ACTIVIDADES -->
-<section class="small-padding" >
+<section class="relative-padding small-padding" >
     <div class="container">
         <!--Titulo-->
          <!--Titulo-->
@@ -527,13 +665,14 @@
         </div>
         <!--Listado 03-->
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-12">
-                        <div class="dropdown-menu dropdown-menu-demo"style="padding-bottom: 0px;">
-                            <div class="section-title card-header"style="margin-bottom: 5px;">
-                              <h2 class="card-title">Videos</h2>
-                            </div>
+                    
+                    <div class="dropdown-menu dropdown-menu-demo"style="padding-bottom: 0px;">
+                        <div class="section-title card-header"style="margin-bottom: 5px;">
+                            <h2 class="card-title">Videos</h2>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
                             <div class="tarjeta_container mb-3" style="margin-bottom: 0px !important;">
                                 <div class="youtube_fix_height"></div>
                                 <div class="tarjeta_wrapper">
@@ -545,9 +684,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="tarjeta_container mb-3" style="margin-bottom: 0px !important;">
+                                <div class="youtube_fix_height"></div>
+                                <div class="tarjeta_wrapper">
+                                    <div class="tarjeta tarjeta_black p-0">
+                                        <div class="tarjeta_centro">
+                                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/76vJy7lCK1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>                    <!--Listado-->  
-            </div> 
+            </div>
+        </div>
+        <div class="row"> 
             <div class="col-lg-4">
                 <div class="row">
                     <div class="col-sm-12 col-lg-12">
@@ -560,14 +713,13 @@
                                 @foreach ($comunicados as $comunicado)  
                                     <article class="com_item " style="margin: 0;">
                                         <div class="com_imagen row"style="{{$i==0? 'padding:15px':'padding: 0px 15px 10px 15px'}};margin: 0 -10px;">
-                                            <div class="col-2" style="bottom: 10px;left: 10px;background: #ed145b;padding-top: 15px;">
+                                            <div class="col-2" style="bottom: 10px;left: 10px;background: #ed145b;padding-top: 15px;padding-bottom: 15px;">
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('d')}}</p>
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('M')}}</p>
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('Y')}}</p>
                                             </div>                       
                                             <div class="col-10">
-                                                <a href="{{ url('comunicados/detalle/'.$comunicado->id)}}" class="com_link" target="_blank">                                                                                                        
-                                                     {{substr($comunicado->titulo,0,150)}}                                                    
+                                                <a href="{{ url('comunicados/detalle/'.$comunicado->id)}}" style="vertical-allign: middle" class="com_link"  target="_blank">       {{substr($comunicado->titulo,0,150)}}                                                    
                                                 </a>
                                             </div>
                                         </div>                    
@@ -581,7 +733,9 @@
                         </div>
                     </div>
                 </div>                    <!--Listado-->  
-            </div> 
+            </div>
+        </div>
+        <div class="row"> 
             <div class="col-lg-4">
                 <div class="card">
                   <div class="section-title card-header"style="margin-bottom: 5px;">
@@ -620,7 +774,7 @@
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 
 
-<section class="small-padding">
+<section class="relative-padding small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
             <h4>También te puede interesar</h4>

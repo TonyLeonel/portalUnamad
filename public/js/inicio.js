@@ -90,7 +90,7 @@ $( document ).ready(function() {
 // });
 // $('.img-holder').imageScroll();
 $('.img-holder').imageScroll({
-    coverRatio: 0.3
+    coverRatio: 0.5
 });
 
 
