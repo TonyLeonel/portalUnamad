@@ -19,7 +19,7 @@
     </div>
 </div>
 <!-- CONTENIDO -->
-<section class="gray-bg small-padding fl-wrap">
+<section class="relative-padding gray-bg small-padding fl-wrap">
     <div class="container">
         <div class="row">
             <div class="col-md-8">

@@ -1,13 +1,13 @@
 @extends('layouts.portal')
 
-@section('titulo', 'Presentación')
+@section('titulo', 'Infraestructura')
 @section('js')
 <script src="./dist/js/tabler.min.js?1674944402" defer></script>
 
 @endsection
 @section('contenido')
 <!-- HEADER -->
-<section class="hidden-section single-par2  " data-scrollax-parent="true">
+<section class="relative-padding hidden-section single-par2  " data-scrollax-parent="true">
     <div class="bg-wrap bg-parallax-wrap-gradien">
         <div class="bg par-elem " data-bg="{{ asset('img/paginas/idiomas.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
     </div>
@@ -38,7 +38,7 @@
     </div>
 </div>
     <!-- CONTENIDO -->
-<section class="gray-bg small-padding fl-wrap">
+<section class="relative-padding gray-bg small-padding fl-wrap">
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-3">

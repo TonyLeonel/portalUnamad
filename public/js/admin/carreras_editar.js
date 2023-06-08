@@ -75,8 +75,9 @@ function guardar() {
                 perfil:perfil,       
             },
             success: function(result){  
-                alerta(result.message, true); 
-                location.href = default_server+'/admin/carreras';
+                alerta(result.message, true);
+                console.log(result.message);
+                // location.href = default_server+'/admin/carreras';
             },
             error: function(error) {                
                 alerta(response_helper(error), false);        

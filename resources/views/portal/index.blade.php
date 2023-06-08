@@ -21,7 +21,6 @@
 <p id="window">Ventana del navegador: ancho: , altura: .</p>
 <p id="page">Página web: ancho: , altura: .</p> --}}
 
-
 <div class="flexslider">
     <ul class="slides">
         <li>
@@ -38,16 +37,7 @@
         </li>
     </ul>
 </div>
-
-{{-- <section>
-    <div class="media-container">
-        <img id="imagen" class="thumbnail" src="{{ asset('img/images/1.jpg')}} " alt="image">
-    </div>
-</section> --}}
-
 <!-- SERVICIOS -->
-
-
 <section class="relative-padding">
     <div class="container">
          <!--Titulo-->
@@ -342,35 +332,23 @@
     <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L507.56,166.82 L-8.23,167.80 Z" style="stroke: none; fill: #ffc136;"></path></svg></div>
     {{-- <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-33.63,114.66 C196.04,201.26 372.12,-105.79 500.00,49.85 L667.83,199.29 L-0.00,149.60 Z" style="stroke: none; fill: #ffc136;"></path></svg></div> --}}
 </section>
-
-
-
-
-
-
 {{-- <div class="xd" data-image="{{ asset('img/images/i1.jpg')}}"></div> --}}
-
-
 <!-- ENLACES -->
 <!-- section -->
-
 <!-- ENLACES -->
 <!-- section -->
-
 {{-- <section style="border: 1px dotted;"> --}}
-
 {{-- <div class="parallaxDiv thumbnail"> --}}
     {{-- div with background --}}
     {{-- <img id="imagen" class="thumbnail" src="{{ asset('img/images/i1.jpg')}} " alt="image"> --}}
 {{-- </div> --}}
 {{-- </section> --}}
-
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
 {{-- <div class="img-holder" data-image={{ asset('img/images/i1.jpg')}} data-image-mobile="https://raw.github.com/pederan/ImageScroll/master/demo/img/autumn_season-800x450.jpg"></div> --}}
 
 {{-- https://boxy-svg.com/app/disk:PeEn8Z79dz --}}
-{{-- <section class="img-holder" data-image={{ asset('img/images/maloka2.jpg')}}>
+{{-- <section class="relative-padding img-holder" data-image={{ asset('img/images/maloka2.jpg')}}>
     <div style="-webkit-transform: translateZ(1px);">
         <div class="section-numeros mt-2">
             <div class="container mb-4">
@@ -416,7 +394,7 @@
     </div>
     <div class="filtro"></div>
 </section> --}}
-<section class="relative-padding blue-section small-padding">
+<section class="relative-padding yellow-section small-padding">
     <div class="section-numeros mt-2">
         <div class="container mb-4">
             <div class="row numeros-container justify-content-center">
@@ -479,10 +457,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://www.gob.pe/institucion/unamad/funcionarios" class="tarjeta tarjeta_pink" target="_blank">
+                                <a href="https://www.gob.pe/institucion/unamad/funcionarios" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-user-tie"></i>      
+                                            <i class="fas fa-user-tie"></i>      
                                         </div>
                                         <h4>DIRECTORIO DE FUNCIONARIOS</h4>
                                         <p class="text-center">Datos de contacto e información del personal de la UNAMAD.</p>
@@ -495,10 +473,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_black" target="_blank">
+                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-file-download"></i>      
+                                            <i class="fas fa-download"></i>      
                                         </div>
                                         <h4>REPOSITORIO DIGITAL</h4>
                                         <p class="text-center">Información intelectual producida y compilada por la comunidad universitaria.</p>
@@ -507,10 +485,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    </div>
+                    {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"> --}}
+                    {{-- </div> --}}
+                    {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"> --}}
+                    {{-- </div> --}}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
@@ -518,7 +496,7 @@
                                 <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_yellow" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-bullhorn"></i>      
+                                            <i class="fas fa-bullhorn"></i>      
                                         </div>
                                         <h4>CONVOCATORIAS</h4>
                                         <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>                    
@@ -531,10 +509,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_blue" target="_blank">
+                                <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-book"></i>      
+                                            <i class="fas fa-books"></i>      
                                         </div>
                                         <h4>REVISTAS CIENTIFICAS</h4>
                                         <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>
@@ -543,16 +521,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    </div>
+                    {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"> --}}
+                    {{-- </div> --}}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_red" target="_blank">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-graduation-cap"></i>      
+                                            <i class="fas fa-graduation-cap"></i>      
                                         </div>
                                         <h4>EGRESADOS Y BOLSA DE TRABAJO</h4>                       
                                     </div>
@@ -560,33 +538,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    </div>
+                    {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"> --}}
+                    {{-- </div> --}}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_black" target="_blank">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-graduation-cap"></i>      
+                                            <i class="fas fa-book-open"></i>      
                                         </div>
-                                        <h4>LIBRO DE RECLACIONES</h4>                       
+                                        <h4>LIBRO DE RECLAMACIONES</h4>                       
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                    </div>
+                    {{-- <div class="col-12 col-sm-6 col-md-4 col-lg-4"> --}}
+                    {{-- </div> --}}
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_blue" target="_blank">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-graduation-cap"></i>      
+                                            <i class="fas fa-bookmark"></i>      
                                         </div>
                                         <h4>CONVENIOS</h4>                       
                                     </div>
@@ -598,10 +576,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_black" target="_blank">
+                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-bullhorn"></i>      
+                                            <i class="fas fa-paperclip"></i>    
                                         </div>
                                         <h4>MESA DE PARTES VIRTUAL</h4>
                                     </div>
@@ -613,10 +591,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_pink" target="_blank">
+                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-graduation-cap"></i>      
+                                            <i class="fas fa-bus"></i>      
                                         </div>
                                         <h4>RUTA - GPS BUS</h4>                       
                                     </div>
@@ -628,10 +606,10 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_yellow" target="_blank">
+                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-bullhorn"></i>      
+                                            <i class="fas fa-flask-potion"></i>      
                                         </div>
                                         <h4>OBSERVATORIO PARQUE CIENTIFICO</h4>
                                     </div>
@@ -773,8 +751,11 @@
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion2.png')}} " > --}}
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 
+<section class="wave-section">
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-33.63,114.66 C196.04,201.26 372.12,-105.79 500.00,49.85 L667.83,199.29 L-0.00,149.60 Z" style="stroke: none; fill: #f0f0f0;"></path></svg></div>
+</section>
 
-<section class="relative-padding small-padding">
+<section class="gray-section relative-padding small-padding">
     <div class="container">
         <div class="section-title st-center fl-wrap">
             <h4>También te puede interesar</h4>
@@ -851,6 +832,7 @@
         </div>
     </div>
 </section>
+
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion.png')}} " > --}}
 {{-- <img style="width:100%;" src="{{ asset('img/images/separacion4.png')}} " > --}}
 {{-- <div class="img-holder" data-image={{ asset('img/images/comedor.jpg')}}> --}}

@@ -4,7 +4,7 @@
 
 @section('contenido')
 <!-- HEADER -->
-<section class="hidden-section single-par2  " data-scrollax-parent="true">
+<section class="relative-padding  hidden-section single-par2  " data-scrollax-parent="true">
     <div class="bg-wrap bg-parallax-wrap-gradien">
         <div class="bg par-elem " data-bg="{{ asset('img/paginas/idiomas.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
     </div>
@@ -35,7 +35,7 @@
     </div>
 </div>
 <!-- CONTENIDO -->
-<section class="gray-bg small-padding fl-wrap">
+<section class="relative-padding  gray-bg small-padding fl-wrap">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -43,21 +43,25 @@
                     <div class="list-single-main-item">                        
                         <div class="pagina_contenido">
                             <div class="row">
+                                <div class="col-4 center mr-3">
+                                    <img style="margin-right:15px" src="/img/IMG_21333.JPG" alt="">
+                                    {{-- <div class="col-6 center"> --}}
+                                        <h5><strong>Dr. Hugo Dueñas Liranes</strong></h5>
+                                        <h5><strong>Rector</strong></h5>
+                                        <span>fduenas@unamad.edu.pe</span>
+                                    {{-- </div> --}}
+                                </div>
                                 <div class="col-8 mt-3">
                                     <h2 style="padding-bottom: 50px;">
                                         <strong style="color: rgb(237, 20, 91);" >Presentación</strong>
                                     </h2>
-                                    <p class="text-justify">La Universidad Nacional Amazónica de Madre de Dios – UNAMAD, es una comunidad académica orientada a la investigación y a la docencia, que brinda una formación humanista, científica, y tecnológica con una clara conciencia de nuestro país como realidad multicultural. Adopta el concepto de educación como derecho fundamental y servicio público esencial. Está integrado por docentes, estudiantes y graduados.</p>
-                                    <p class="text-justify">La UNAMAD es persona jurídica de derecho público, cuenta con autonomía normativa. De gobierno, académica, administrativa y económica de conformidad con lo establecido en la Constitución Política del Perú, la Ley Universitaria y demás normativa aplicable.</p>
+                                    <p class="text-justify">La Universidad Nacional Amazónica de Madre de Dios (UNAMAD) es la primera casa de estudios y líder en la región de Madre de Dios; es una universidad pública de alto crecimiento de esta última década, nuestro impacto en las personas, en nuestra región y en el Perú es profundo, pues hemos sido desafiantes, caracterizándonos por el impulso a la innovación y el desarrollo.</p>
+                                    <p class="text-justify">La investigación en la Universidad ha abierto nuevos caminos, impulsado los límites del conocimiento, hecho que ha generado un impacto en las vidas de las personas.</p>
+                                    <p class="text-justify">Hoy, nuestros estudiantes y profesores trabajan conjuntamente para convertir las ideas en el impacto y en el proceso de transformar vidas y por qué no, nuestro mundo; convirtiéndonos en una comunidad académica vibrante y diversa, centrada en la enseñanza y el aprendizaje, el descubrimiento de nuevos conocimientos y el servicio a la región Madre de Dios y mucho más allá.</p>
+                                    <p class="text-justify">Asumimos un nuevo reto y esperamos no defraudarlos, los invitamos a hacer un recorrido por nuestro portal a fin de que conozcan nuestros logros y sean parte de la UNAMAD.</p>
                                 </div>
-                                <div class="col-4 center mr-3">
-                                    <img style="margin-left:15px" src="/img/IMG_2500.JPG" alt="">
-                                </div>
-                                <div class="col-6 center">
-                                    <h5><strong>Dr. Hugo Dueñas Liranes, Rector</strong></h5> 
-                                    <span>Rector</span></br>
-                                    <span>fduenas@unamad.edu.pe</span>
-                                </div>
+                                
+                                
                             </div>
                         </div>
                     </div>  

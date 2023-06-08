@@ -20,13 +20,15 @@
     {{-- <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap.min.css') }}"> --}}
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-grid.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-utilities.css') }}">
-    {{-- <link href="{{ asset('lib/tabler/css/tabler.min.css?1674944402') }}" rel="stylesheet"/> --}}
-    {{-- <link href="{{ asset('lib/tabler/css/demo.min.css?1674944402') }}" rel="stylesheet"/> --}}
+    <link href="{{ asset('lib/tabler/css/tabler.min.css?1674944402') }}" rel="stylesheet"/>
+    <link href="{{ asset('lib/tabler/css/demo.min.css?1674944402') }}" rel="stylesheet"/>
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css"> --}}
 
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/homeradar/css/plugins.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/homeradar/css/style.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('lib/homeradar/css/color.css') }}">
     <link href="{{ asset('css/portal.css') }}" rel="stylesheet">
+    
     @yield('css')
 </head>
 <body>
@@ -237,7 +239,7 @@
             </div>
 
             <!-- FOOTER -->
-            <footer class="main-footer fl-wrap image_complete">
+            <footer class="gray-section main-footer fl-wrap image_complete">
             {{-- <footer class="main-footer fl-wrap image_complete" style="background-image: url({{ asset('img/tejido.png')}});"> --}}
                 <div class="footer-inner fl-wrap">
                     <div class="container">
@@ -371,8 +373,9 @@
     <!-- Main end -->
 
     <!-- Scripts -->
-    {{-- <script src="{{ asset('lib/tabler/js/tabler.min.js?1674944402') }}"></script> --}}
+    <script src="{{ asset('lib/tabler/js/tabler.min.js?1674944402') }}"></script>
     <script src="{{ asset('lib/homeradar/js/jquery.min.js') }}"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script> --}}
     <script src="{{ asset('lib/homeradar/js/plugins.js') }}"></script>
     <script src="{{ asset('js/portal.js') }}" defer></script>
     @yield('js')

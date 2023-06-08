@@ -382,7 +382,8 @@ body{
 }
 
 .tarjeta_icon i,.tarjeta_icon img{
-    font-size: 40px;
+    padding: 10px;
+    font-size: 30px;
     color: #ed145b;
     position: absolute;
     top: 50%;
@@ -993,5 +994,9 @@ section.section-principal-home .section-numeros h2.text-shadow-numeros {
     top:0;
     left:0;
     margin:0;
+}
+
+.table-container {
+    overflow-x: auto;
 }
 

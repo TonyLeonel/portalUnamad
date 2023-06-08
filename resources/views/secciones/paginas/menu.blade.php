@@ -4,9 +4,26 @@
         <div class="faq-nav scroll-init fl-wrap mb-0">
             <ul>
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura)) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->abreviatura.'/'.$carrera->abreviatura) }}">INICIO</a></li>
-                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/vision-y-mision')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/vision-y-mision') }}">VISIÓN, MISIÓN Y OBJETIVOS</a></li>
-                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/perfil')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/perfil') }}">PERFIL</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/resena')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/resena') }}">RESEÑA HISTÓRICA</a></li>
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/reglamentos')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/reglamentos') }}">REGLAMENTOS</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/directivas')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/directivas') }}">DIRECTIVAS</a></li>
+                
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/malla')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/malla') }}">MALLA CURRICULAR</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/vision-y-mision')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/vision-y-mision') }}">VISIÓN Y MISIÓN</a></li>
+                
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/perfil')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/perfil') }}">PERFIL PROFESIONAL</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/campo')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/campo') }}">CAMPO OCUPACIONAL</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/plan')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/plan') }}">PLAN DE ESTUDIOS</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/areas')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/areas') }}">ÁREAS CURRICULARES</a></li>
+
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/objetivos')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/objetivos') }}">OBJETIVOS ACADÉMICOS</a></li>
+                
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/docentes')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/docentes') }}">DOCENTES</a></li>
             </ul>
         </div>                      

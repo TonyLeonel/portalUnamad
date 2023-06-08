@@ -15,19 +15,28 @@ class CreateCarrerasTable extends Migration
     {
         Schema::create('carreras', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('nombre'); // 'carrera'
             $table->text('abreviatura')->nullable();
-            $table->text('vision')->nullable();
-            $table->text('mision')->nullable();
+            $table->text('vision')->nullable(); // 'carrera_vision'
+            $table->text('mision')->nullable(); // 'carrera_vision'
             $table->text('objetivo')->nullable();
-            $table->text('perfil')->nullable();
+            $table->text('perfil')->nullable(); // 'perfil'
             $table->string('imagen')->nullable();
-            $table->text('malla')->nullable();
+            $table->text('malla')->nullable(); // 'malla'
             $table->text('descripcion')->nullable();
             $table->unsignedBigInteger('facultad_id');
 
             $table->foreign('facultad_id')->references('id')->on('facultades');
             $table->timestamps();
+
+                
+                // 'resena'
+                // 'reglamentos'
+                // 'directivas'
+                // 'campo'
+                // 'plan'
+                // 'areas'
+                // 'objetivos'
 
         });
     }

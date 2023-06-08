@@ -34,8 +34,8 @@ class DocenteController extends Controller
 
         try 
         {            
-            $ruta = $request->file('file')->store('public');
-            $resultado = str_replace('public/','storage/', $ruta); 
+            $ruta = $request->file('file')->store('');
+            $resultado = 'storage/'. $ruta;; 
             $docente = new Docente;
             $docente->nombre = $request->nombre;
             $docente->carrera_id = $request->carrera_id;
@@ -66,8 +66,8 @@ class DocenteController extends Controller
         {                
             $docente = Docente::find($id);
             if($request->has('file')) {
-                $ruta = $request->file('file')->store('public');
-                $resultado = str_replace('public/','storage/', $ruta); 
+                $ruta = $request->file('file')->store('');
+                $resultado = 'storage/'. $ruta; 
                 $docente->imagen = $resultado;
             }
         

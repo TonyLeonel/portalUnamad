@@ -231,12 +231,53 @@ class PaginaController extends Controller
      * CARRERAS
      */
 
+    // 'carrera'
+    // 'resena'
+    // 'reglamentos'
+    // 'directivas'
+    // 'malla'
+    // 'carrera_vision'
+    // 'perfil'
+    // 'campo'
+    // 'plan'
+    // 'areas'
+    // 'objetivos'
+    // 'docentes'
+
     public function carrera(Request $request,$facultad,$nombre)
     {
         $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
         $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
         return view('portal.paginas.facultades.carreras.carrera' ,compact('facultades','menus','carrera'));
+    }
+    public function resena(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.resena' ,compact('facultades','menus','carrera'));
+    }
+    public function reglamentos(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.reglamentos' ,compact('facultades','menus','carrera'));
+    }
+    public function directivas(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.directivas' ,compact('facultades','menus','carrera'));
+    }
+    public function malla(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.malla' ,compact('facultades','menus','carrera'));
     }
     public function carrera_vision(Request $request,$facultad,$nombre)
     {
@@ -245,7 +286,6 @@ class PaginaController extends Controller
         $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
         return view('portal.paginas.facultades.carreras.vision_mision' ,compact('facultades','menus','carrera'));
     }
-
     public function perfil(Request $request,$facultad,$nombre)
     {
         $facultades=Facultad::with('carreras')->get();
@@ -253,7 +293,34 @@ class PaginaController extends Controller
         $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
         return view('portal.paginas.facultades.carreras.perfil' ,compact('facultades','menus','carrera'));
     }
-
+    public function campo(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.campo' ,compact('facultades','menus','carrera'));
+    }
+    public function plan(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.plan' ,compact('facultades','menus','carrera'));
+    }
+    public function areas(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.areas' ,compact('facultades','menus','carrera'));
+    }
+    public function objetivos(Request $request,$facultad,$nombre)
+    {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $carrera=Carrera::with('facultad')->where('abreviatura',$nombre)->get()->first();
+        return view('portal.paginas.facultades.carreras.objetivos' ,compact('facultades','menus','carrera'));
+    }
     public function docentes(Request $request,$facultad,$nombre)
     {
         $facultades=Facultad::with('carreras')->get();
@@ -386,27 +453,48 @@ class PaginaController extends Controller
      */    
      public function presentacion(Request $reaquest)
      {
-         $facultades=Facultad::with('carreras')->get();
+        $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-         return view('portal.paginas.universidad.presentacion' ,compact('facultades','menus'));
+        return view('portal.paginas.universidad.presentacion' ,compact('facultades','menus'));
      }  
      public function vision(Request $reaquest)
      {
-         $facultades=Facultad::with('carreras')->get();
+        $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-         return view('portal.paginas.universidad.vision' ,compact('facultades','menus'));
+        return view('portal.paginas.universidad.vision' ,compact('facultades','menus'));
      }
+
+     public function autoridades(Request $reaquest)
+     {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        return view('portal.paginas.universidad.autoridades' ,compact('facultades','menus'));
+     }
+     public function historia(Request $reaquest)
+     {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        return view('portal.paginas.universidad.historia' ,compact('facultades','menus'));
+     }
+
+     public function convenios(Request $reaquest)
+     {
+        $facultades=Facultad::with('carreras')->get();
+        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        return view('portal.paginas.universidad.convenios' ,compact('facultades','menus'));
+     }
+
      public function organizacion(Request $reaquest)
      {
-         $facultades=Facultad::with('carreras')->get();
+        $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-         return view('portal.paginas.universidad.organizacion' ,compact('facultades','menus'));
+        return view('portal.paginas.universidad.organizacion' ,compact('facultades','menus'));
      }
      public function infraestructura(Request $reaquest)
      {
-         $facultades=Facultad::with('carreras')->get();
+        $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-         return view('portal.paginas.universidad.infraestructura' ,compact('facultades','menus'));
+        return view('portal.paginas.universidad.infraestructura' ,compact('facultades','menus'));
      }
     //Genera paginas desde la base de datos
      public function pagina(Request $request,$flag)

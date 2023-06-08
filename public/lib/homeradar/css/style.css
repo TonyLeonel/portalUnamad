@@ -2440,8 +2440,16 @@ section.single-par2 {
 .small-padding {
 	padding: 50px 0;
 }
-.blue-section {
+.yellow-section {
 	background-color: #ffc136;
+	/* border: 1px solid black; */
+}
+.blue-section {
+	background-color: #08f;
+	/* border: 1px solid black; */
+}
+.gray-section {
+	background-color: #f0f0f0;
 	/* border: 1px solid black; */
 }
 .no-padding-section {

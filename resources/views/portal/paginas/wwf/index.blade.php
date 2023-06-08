@@ -4,7 +4,7 @@
 
 @section('contenido')
 <!-- HEADER -->
-<section class="hidden-section single-par2  " data-scrollax-parent="true">
+<section class="relative-padding hidden-section single-par2  " data-scrollax-parent="true">
     <div class="bg-wrap bg-parallax-wrap-gradien">
         <div class="bg par-elem " data-bg="{{ asset('img/paginas/wwf.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
     </div>
@@ -36,7 +36,7 @@
     </div>
 </div>
     <!-- CONTENIDO -->
-<section class="gray-bg small-padding fl-wrap">
+<section class="relative-padding gray-bg small-padding fl-wrap">
     <div class="container">
         <div class="row">
             <div class="col-md-4">  

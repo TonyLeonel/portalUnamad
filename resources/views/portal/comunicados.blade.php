@@ -14,7 +14,7 @@
 
 @section('contenido')
 <!-- HEADER -->
-<section class="hidden-section single-par2  " data-scrollax-parent="true">
+<section class="relative-padding hidden-section single-par2  " data-scrollax-parent="true">
     <div class="bg-wrap bg-parallax-wrap-gradien">
         <div class="bg par-elem " data-bg="{{ asset('img/comunicados2.jpg') }}" data-scrollax="properties: { translateY: '30%' }"></div>
     </div>
@@ -46,7 +46,7 @@
     </div>
 </div>
 <!-- CONTENIDO -->
-<section class="small-padding image_complete">
+<section class="relative-padding small-padding image_complete">
     <div class="container">    
         <div class="section-title fl-wrap"style="margin-bottom: 0px;">
             <h2>Comunicados</h2>

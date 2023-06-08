@@ -40,6 +40,9 @@ Route::get('universidad/presentacion/unamad', [App\Http\Controllers\PaginaContro
 Route::get('universidad/autoridades/unamad', [App\Http\Controllers\PaginaController::class, 'autoridades']);
 Route::get('universidad/vision/unamad', [App\Http\Controllers\PaginaController::class, 'vision']);
 Route::get('universidad/organizacion/unamad', [App\Http\Controllers\PaginaController::class, 'organizacion']);
+Route::get('universidad/historia/unamad', [App\Http\Controllers\PaginaController::class, 'historia']);
+Route::get('universidad/convenios/unamad', [App\Http\Controllers\PaginaController::class, 'convenios']);
+Route::get('universidad/sedes/unamad', [App\Http\Controllers\PaginaController::class, 'sedes']);
 Route::get('universidad/infraestructura/unamad', [App\Http\Controllers\PaginaController::class, 'infraestructura']);
 
 //Bienestar universitario
@@ -101,9 +104,20 @@ Route::get('facultades/ecoturismo/contabilidad', [App\Http\Controllers\PaginaCon
 Route::get('facultades/ecoturismo/ecoturismo', [App\Http\Controllers\PaginaController::class, 'ecoturismo']);
 */
 Route::get('facultades/{facultad}/{nombre}', [App\Http\Controllers\PaginaController::class, 'carrera']);
+Route::get('facultades/{facultad}/{nombre}/resena', [App\Http\Controllers\PaginaController::class, 'resena']);
+Route::get('facultades/{facultad}/{nombre}/reglamentos', [App\Http\Controllers\PaginaController::class, 'reglamentos']);
+Route::get('facultades/{facultad}/{nombre}/directivas', [App\Http\Controllers\PaginaController::class, 'directivas']);
+Route::get('facultades/{facultad}/{nombre}/malla', [App\Http\Controllers\PaginaController::class, 'malla']);
 Route::get('facultades/{facultad}/{nombre}/vision-y-mision', [App\Http\Controllers\PaginaController::class, 'carrera_vision']);
 Route::get('facultades/{facultad}/{nombre}/perfil', [App\Http\Controllers\PaginaController::class, 'perfil']);
+Route::get('facultades/{facultad}/{nombre}/campo', [App\Http\Controllers\PaginaController::class, 'campo']);
+Route::get('facultades/{facultad}/{nombre}/plan', [App\Http\Controllers\PaginaController::class, 'plan']);
+Route::get('facultades/{facultad}/{nombre}/areas', [App\Http\Controllers\PaginaController::class, 'areas']);
+Route::get('facultades/{facultad}/{nombre}/objetivos', [App\Http\Controllers\PaginaController::class, 'objetivos']);
 Route::get('facultades/{facultad}/{nombre}/docentes', [App\Http\Controllers\PaginaController::class, 'docentes']);
+
+
+
 
 //paginas creadas por base de datos
 Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
