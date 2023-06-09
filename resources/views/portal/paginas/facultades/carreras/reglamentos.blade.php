@@ -69,7 +69,7 @@
                                                         <td>Reglamento Institucional.</td>
                                                         <td>03/04/2023</td>
                                                         <td style="position:relative;">
-                                                            <div class="tarjeta_icon">
+                                                            <div class="tarjeta_icon1">
                                                                 <i class="fas fa-file-pdf"></i>
                                                             </div>
                                                         </td>
@@ -79,7 +79,7 @@
                                                         <td>Reglamento general.</td>
                                                         <td>01/02/2023</td>
                                                         <td style="position:relative;">
-                                                            <div class="tarjeta_icon">
+                                                            <div class="tarjeta_icon1">
                                                                 <i class="fas fa-file-pdf"></i>
                                                             </div>
                                                         </td>

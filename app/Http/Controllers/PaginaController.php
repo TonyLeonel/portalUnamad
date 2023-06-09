@@ -231,19 +231,6 @@ class PaginaController extends Controller
      * CARRERAS
      */
 
-    // 'carrera'
-    // 'resena'
-    // 'reglamentos'
-    // 'directivas'
-    // 'malla'
-    // 'carrera_vision'
-    // 'perfil'
-    // 'campo'
-    // 'plan'
-    // 'areas'
-    // 'objetivos'
-    // 'docentes'
-
     public function carrera(Request $request,$facultad,$nombre)
     {
         $facultades=Facultad::with('carreras')->get();
@@ -505,6 +492,15 @@ class PaginaController extends Controller
         $facultades=Facultad::with('carreras')->get();
         $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
         return view('portal.pagina', compact('pagina','facultades','menus','lista_paginas','categoria'));
+     }
+
+     public function biblioteca_virtual(Request $reaquest)
+     {
+        return view('portal.paginas.inicio.biblioteca_virtual');
+     }
+     public function bus(Request $reaquest)
+     {
+        return view('portal.paginas.inicio.bus');
      }
 
 }

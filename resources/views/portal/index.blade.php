@@ -68,7 +68,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="inicio/bibliotecaVirtual" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             {{-- <i class="fal fa-graduation-cap"></i> --}}
@@ -527,7 +527,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-graduation-cap"></i>      
@@ -544,7 +544,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-book-open"></i>      
@@ -561,7 +561,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-bookmark"></i>      
@@ -576,7 +576,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-paperclip"></i>    
@@ -591,7 +591,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="inicio/bus" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-bus"></i>      
@@ -606,7 +606,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fas fa-flask-potion"></i>      
@@ -679,7 +679,7 @@
             </div>
         </div>
         <div class="row"> 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="row">
                     <div class="col-sm-12 col-lg-12">
                         <div class="dropdown-menu dropdown-menu-demo">
@@ -712,9 +712,7 @@
                     </div>
                 </div>                    <!--Listado-->  
             </div>
-        </div>
-        <div class="row"> 
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="card">
                   <div class="section-title card-header"style="margin-bottom: 5px;">
                     <h2 class="card-title">Eventos</h2>

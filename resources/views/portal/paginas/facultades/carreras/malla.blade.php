@@ -68,7 +68,7 @@
                                                         <td>Malla curricular 1.</td>
                                                         <td>03/04/2012</td>
                                                         <td style="position:relative;">
-                                                            <div class="tarjeta_icon">
+                                                            <div class="tarjeta_icon1">
                                                                 <i class="fas fa-file-pdf"></i>
                                                             </div>
                                                         </td>
@@ -78,7 +78,7 @@
                                                         <td>Malla curricular 2.</td>
                                                         <td>01/02/2017</td>
                                                         <td style="position:relative;">
-                                                            <div class="tarjeta_icon">
+                                                            <div class="tarjeta_icon1">
                                                                 <i class="fas fa-file-pdf"></i>
                                                             </div>
                                                         </td>

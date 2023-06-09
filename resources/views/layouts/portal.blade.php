@@ -193,6 +193,11 @@
                                     <!--second level end-->
                                 </li>
                             @endif
+                            @if ($menu->posicion == 6)
+                                <li class="nav-principal">
+                                    <a href="#" class="{{ (request()->is('posgrado*')) ? 'act-link' : '' }}">POSGRADO</a>
+                                </li>
+                            @endif
                             {{-- @if ($menu->posicion == 4)
                             @endif --}}
                         @endforeach                       

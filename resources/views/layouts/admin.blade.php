@@ -255,7 +255,7 @@
                           Versión {{ config('app.version') }}                          
                         </li>
                         <li class="list-inline-item">
-                          <a href="https://www.linkedin.com/in/jos%C3%A9-cortijo-bellido-49a513b5" target="_blank" class="link-secondary" rel="noopener">
+                          <a href="#" target="_blank" class="link-secondary" rel="noopener">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="7 8 3 12 7 16" /><polyline points="17 8 21 12 17 16" /><line x1="14" y1="4" x2="10" y2="20" /></svg>
                             Desarrollo
                           </a>
@@ -265,10 +265,10 @@
                     <div class="col-12 col-lg-auto mt-3 mt-lg-0">
                       <ul class="list-inline list-inline-dots mb-0">
                         <li class="list-inline-item">
-                          UNAMAD &copy; 2022
+                          UNAMAD &copy; 2023
                         </li>
                         <li class="list-inline-item">                          
-                          Oficina de Tecnológias de la Información
+                          Oficina de Tecnologías de la Información
                         </li>                        
                       </ul>
                     </div>

@@ -82,6 +82,10 @@ Route::get('transparencia/indicador-55', [App\Http\Controllers\PaginaController:
 Route::get('transparencia/articulo-11', [App\Http\Controllers\PaginaController::class, 'articulo_11']);
 Route::get('transparencia/licenciamiento', [App\Http\Controllers\PaginaController::class, 'licenciamiento']);
 
+
+Route::get('inicio/bibliotecaVirtual', [App\Http\Controllers\PaginaController::class, 'biblioteca_virtual']);
+Route::get('inicio/bus', [App\Http\Controllers\PaginaController::class, 'bus']);
+
 /*Facultades
 Route::get('facultades/ingenieria/agroindustrial', [App\Http\Controllers\PaginaController::class, 'agroindustrial']);
 Route::get('facultades/ingenieria/agroindustrial/vision-y-mision', [App\Http\Controllers\PaginaController::class, 'agroindustrial_vision']);

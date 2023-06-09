@@ -382,6 +382,15 @@ body{
 }
 
 .tarjeta_icon i,.tarjeta_icon img{
+    font-size: 40px;
+    color: #ed145b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tarjeta_icon1 i,.tarjeta_icon1 img{
     padding: 10px;
     font-size: 30px;
     color: #ed145b;

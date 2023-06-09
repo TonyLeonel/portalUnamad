@@ -68,7 +68,7 @@
                                                             <td><p style="text-align: justify;pading:10px">Convenio marco de cooperación interinstitucional entre la unidad ejecutora n° 118 mejoramiento de la Calidad Educativa Básica y Superior y la Universidad Nacional Amazónica de Madre de Dios.</p></td>
                                                             <td>09/05/2023</td>
                                                             <td style="position:relative;">
-                                                                <div class="tarjeta_icon">
+                                                                <div class="tarjeta_icon1">
                                                                     <i class="fas fa-file-pdf"></i>
                                                                 </div>
                                                             </td>
@@ -88,7 +88,7 @@
                                                             <td><p style="text-align: justify;pading:10px">Convenio Marco De Cooperación Interinstitucional entre la Universidad Católica De Santa María, Arequipa y la Universidad Nacional Amazónica De Madre De Dios.</p></td>
                                                             <td>09/05/2023</td>
                                                             <td style="position:relative;">
-                                                                <div class="tarjeta_icon">
+                                                                <div class="tarjeta_icon1">
                                                                     <i class="fas fa-file-pdf"></i>
                                                                 </div>
                                                             </td>
@@ -98,7 +98,7 @@
                                                             <td><p style="text-align: justify;pading:10px">Convenio Marco De Cooperación Interinstitucional entre la Universidad Nacional Amazónica de Madre de Dios Y Bosques Amazónicos.</p></td>
                                                             <td>09/05/2023</td>
                                                             <td style="position:relative;">
-                                                                <div class="tarjeta_icon">
+                                                                <div class="tarjeta_icon1">
                                                                     <i class="fas fa-file-pdf"></i>
                                                                 </div>
                                                             </td>
@@ -108,7 +108,7 @@
                                                             <td><p style="text-align: justify;pading:10px">Convenio Marco de Cooperación Interinstitucional entre la Universidad Nacional Amazónica de Madre de Dios y Ana.</p></td>
                                                             <td>09/05/2023</td>
                                                             <td style="position:relative;">
-                                                                <div class="tarjeta_icon">
+                                                                <div class="tarjeta_icon1">
                                                                     <i class="fas fa-file-pdf"></i>
                                                                 </div>
                                                             </td>
