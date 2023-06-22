@@ -1,7 +1,9 @@
 
 /*--------------------------------------------------------CARGANDO*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500');
 body{
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    /* font-family: 'Roboto', Helvetica, Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 .text-justify{
     text-align: justify;
@@ -83,11 +85,11 @@ body{
 .fondo-verde{
     background: #ff4187;
 }
-.foto-organizacion{   
+.foto-organizacion{
     display: inherit;
-    align-items: center; 
+    align-items: center;
 }
-.foto-decano{    
+.foto-decano{
     height: 150px;
     width: 110px;
 }
@@ -100,7 +102,7 @@ body{
       background-color: #f9b8cd;
     }
   }
-  
+
   @keyframes dot-flashing {
     0% {
       background-color: #ed145b;
@@ -163,7 +165,7 @@ body{
 .com_item {
     border-radius: 5px;
     margin-bottom: 15px;
-    overflow: hidden;    
+    overflow: hidden;
     position: relative;
 }
 
@@ -204,7 +206,7 @@ body{
     padding-left: inherit;
     bottom: 25px;
 }
-.text-fecha{        
+.text-fecha{
     color: white;
     padding: 0;
     line-height: 1;
@@ -217,7 +219,7 @@ body{
     overflow: hidden;
     width: 0;
     height: 0;
-    opacity: 0;    
+    opacity: 0;
     display: block;
     padding: 0;
     margin: 0;
@@ -229,11 +231,11 @@ body{
     text-decoration: none;
 }
 .espacio-cero{
-    
+
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.com_item:hover{    
+.com_item:hover{
     color: inherit;
     text-decoration: none;
     background-color: rgba(98,105,118,.06);
@@ -372,7 +374,7 @@ body{
     height: 70px;
     line-height: 70px;
     color: #fff;
-    border-radius: 4px;    
+    border-radius: 4px;
     font-size: 22px;
     background: #db0455;
 }
@@ -475,7 +477,7 @@ body{
     top: 13px;
     right: 20px;
     cursor: pointer;
-    color: #ed145b;    
+    color: #ed145b;
     font-weight: 500;
 }
 
@@ -528,11 +530,11 @@ body{
 .compartir-boton span{
     display: block;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
     height: 50px;
     width: 50px;
     background: red;
-    border-radius: 50%;    
+    border-radius: 50%;
     text-align: center;
     font-size: 24px;
     padding-top: 8px;
@@ -589,7 +591,7 @@ body{
 
 .jerarquia-item {
     display: flex;
-    font-size: 16px;    
+    font-size: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 3px;
@@ -679,7 +681,7 @@ a.jerarquia-item:hover {
     text-align: left;
 }
 
-.pagina_contenido p {    
+.pagina_contenido p {
     font-size: 1rem;
     color: #313338;
     line-height: 1.2;
@@ -721,7 +723,7 @@ a.jerarquia-item:hover {
 }
 
 .pagina_contenido li {
-    list-style: disc;    
+    list-style: disc;
     margin-bottom: .7rem;
 }
 
@@ -749,7 +751,7 @@ a.jerarquia-item:hover {
 
 
 /*--------------------------------------------------PAGINA ESTILO*/
-.pagina_estilo_correcion {    
+.pagina_estilo_correcion {
     text-align: justify;
     text-align: left;
 }
@@ -760,7 +762,7 @@ a.jerarquia-item:hover {
 }
 
 .pagina_estilo_correcion li {
-    list-style: disc;    
+    list-style: disc;
 }
 
 .pagina_estilo_correcion a {
@@ -797,7 +799,7 @@ a.jerarquia-item:hover {
 
 /*--------------------------------------------------NAV PILLS*/
 .nav_pills {
-    font-size: 0;    
+    font-size: 0;
     margin: 0 2.5px 5px 2.5px;
 }
 
@@ -805,7 +807,7 @@ a.jerarquia-item:hover {
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #eee;
-    background: #fff;    
+    background: #fff;
     color: #144273;
     border-radius: 4px;
     font-weight: 500;
@@ -867,14 +869,14 @@ a.link_pink:hover{
 /*--------------------------------------------------BREACKPOINTS*/
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) 
-{ 
+@media (min-width: 576px)
+{
 
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) 
-{ 
+@media (min-width: 768px)
+{
     .main-share-holder {
         padding: 0;
     }
@@ -882,25 +884,25 @@ a.link_pink:hover{
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) 
-{ 
+@media (min-width: 992px)
+{
 
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) 
-{ 
+@media (min-width: 1200px)
+{
 
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) 
-{ 
+@media (min-width: 1400px)
+{
 
 }
 #imagen{
     width: 50%;
-    
+
     /* height: 5%; */
 }
 /* .parallaxDiv {
@@ -950,7 +952,7 @@ a.link_pink:hover{
     width: 100%;
     bottom: 0;
     color: #fff;
-  
+
 }
 .fix_div{
     position: relative;

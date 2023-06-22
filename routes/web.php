@@ -162,6 +162,7 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::get('docentes', [App\Http\Controllers\AdminController::class, 'docentes']);
     Route::get('docentes/nuevo', [App\Http\Controllers\AdminController::class, 'docentes_nuevo']);
     Route::get('docentes/modificar/{id}', [App\Http\Controllers\AdminController::class, 'docentes_editar']);
+    Route::get('analytics', [App\Http\Controllers\AdminController::class, 'analytics']);
 });
 
 /**

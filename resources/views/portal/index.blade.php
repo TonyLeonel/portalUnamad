@@ -24,7 +24,7 @@
 <div class="flexslider">
     <ul class="slides">
         <li>
-            <img src="{{ asset('img/images/1.png')}}" />
+            <img src="{{ asset('img/images/1.png')}}" alt="rectores" />
         </li>
         <li>
             <img src="{{ asset('img/images/2.png')}}" />

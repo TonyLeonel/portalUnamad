@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @yield('meta')
     <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Titulo') }} - @yield('titulo')</title>    
+    <title>{{ config('app.name', 'Titulo') }} - @yield('titulo')</title>
+    <link type="text/css" rel="stylesheet" href="{{ asset('lib/bootstrap5/css/bootstrap-grid.css') }}">
     <link href="{{ asset('lib/tabler/css/tabler.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('lib/tabler/css/tabler-vendors.min.css') }}" rel="stylesheet"/>    
+    <link href="{{ asset('lib/tabler/css/tabler-vendors.min.css') }}" rel="stylesheet"/>
     <link href="{{ asset('css/admin.css?v='.config('app.version')) }}" rel="stylesheet"/>
     @yield('css')
 </head>
 <body>
-    @php 
+    @php
       $user = Auth::user();
     @endphp
     <div class="wrapper">
@@ -25,13 +27,13 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <!--LOGO-->
-            <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">     
-              <a href="{{ url('/') }}">          
-                <img src="{{ asset('img/logo_horizontal.png') }}" height="36" alt="Tabler" class="navbar-brand-image">   
-              </a>              
+            <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+              <a href="{{ url('/') }}">
+                <img src="{{ asset('img/logo_horizontal.png') }}" height="36" alt="Tabler" class="navbar-brand-image">
+              </a>
             </h1>
             <!--MENU DERECHA-->
-            <div class="navbar-nav flex-row order-md-last"> 
+            <div class="navbar-nav flex-row order-md-last">
               <div class="nav-item dropdown">
                 <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
                   <span class="avatar avatar-sm">
@@ -43,9 +45,9 @@
                   </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                  <!--<a href="{{ url('admin/perfil') }}" class="dropdown-item">Perfil</a>              
+                  <!--<a href="{{ url('admin/perfil') }}" class="dropdown-item">Perfil</a>
                   <div class="dropdown-divider"></div>-->
-                  <a href="{{ url('logout') }}" class="dropdown-item"                          
+                  <a href="{{ url('logout') }}" class="dropdown-item"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();" >
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon dropdown-item-icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 6a7.75 7.75 0 1 0 10 0" /><line x1="12" y1="4" x2="12" y2="12" /></svg>
@@ -56,10 +58,10 @@
                   </form>
                 </div>
               </div>
-            </div>            
+            </div>
           </div>
         </header>
-        <!--HEADER SECUNDARIO-->        
+        <!--HEADER SECUNDARIO-->
         <div class="navbar-expand-md">
           <div class="collapse navbar-collapse menu-navegacion" id="navbar-menu">
             <div class="navbar navbar-light">
@@ -106,7 +108,7 @@
                           <rect x="4" y="4" width="16" height="16" rx="1"></rect>
                           <line x1="4" y1="8" x2="20" y2="8"></line>
                           <line x1="8" y1="4" x2="8" y2="8"></line>
-                        </svg>                      
+                        </svg>
                       </span>
                       <span class="nav-link-title">
                         Páginas
@@ -120,17 +122,17 @@
                       <a class="dropdown-item {{ (request()->is('admin/paginas/categorias')) ? 'active' : '' }}" href="{{ url('admin/paginas/categorias') }}">
                         Categorias
                       </a>
-                      @endif                    
+                      @endif
                       <a class="dropdown-item {{ (request()->is('admin/paginas')) ? 'active' : '' }}" href="{{ url('admin/paginas') }}">
                         Páginas
-                      </a>                        
+                      </a>
                     </div>
                   </li>
 
                   <!-- Administración de comunicados -->
                   <li class="nav-item dropdown {{ (request()->is('admin/comunicados*')) ? 'active' : '' }}">
                     <a class="nav-link dropdown-toggle" href="#comunicados" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
-                      <span class="nav-link-icon d-md-none d-lg-inline-block">                        
+                      <span class="nav-link-icon d-md-none d-lg-inline-block">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-speakerphone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                           <path d="M18 8a3 3 0 0 1 0 6"></path>
@@ -146,18 +148,18 @@
                       @if($user->tipo == 1)
                       <a class="dropdown-item {{ (request()->is('admin/comunicados/categorias')) ? 'active' : '' }}" href="{{ url('admin/comunicados/categorias') }}">
                         Categorias
-                      </a>  
-                      @endif                       
+                      </a>
+                      @endif
                       <a class="dropdown-item {{ (request()->is('admin/comunicados')) ? 'active' : '' }}" href="{{ url('admin/comunicados') }}">
                         Comunicados
-                      </a>                        
+                      </a>
                     </div>
                   </li>
 
                   <!-- Administración de publicaciones -->
                   <li class="nav-item dropdown {{ (request()->is('admin/publicaciones*')) ? 'active' : '' }}">
                     <a class="nav-link dropdown-toggle" href="#publicaciones" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
-                      <span class="nav-link-icon d-md-none d-lg-inline-block">                        
+                      <span class="nav-link-icon d-md-none d-lg-inline-block">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                           <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"></path>
@@ -174,11 +176,11 @@
                       @if($user->tipo == 1)
                       <a class="dropdown-item {{ (request()->is('admin/publicaciones/categorias')) ? 'active' : '' }}" href="{{ url('admin/publicaciones/categorias') }}">
                         Categorias
-                      </a>   
-                      @endif                      
+                      </a>
+                      @endif
                       <a class="dropdown-item {{ (request()->is('admin/publicaciones')) ? 'active' : '' }}" href="{{ url('admin/publicaciones') }}">
                         Publicaciones
-                      </a>                        
+                      </a>
                     </div>
                   </li>
 
@@ -201,7 +203,7 @@
                     </a>
                   </li>
                   @endif
-                  
+
                   <!-- Administración de carreras profesionales -->
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('admin/carreras') }}">
@@ -218,7 +220,7 @@
                         Carreras
                       </span>
                     </a>
-                  </li>    
+                  </li>
                   <!-- Administración de docentes de las carreras profesionales -->
                   <li class="nav-item">
                     <a class="nav-link" href="{{ url('admin/docentes') }}">
@@ -235,9 +237,25 @@
                         Docentes
                       </span>
                     </a>
-                  </li>                 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url('admin/analytics') }}">
+                      <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/ghost -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <circle cx="9" cy="7" r="4"></circle>
+                          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                        </svg>
+                      </span>
+                      <span class="nav-link-title">
+                        Google Analytics
+                      </span>
+                    </a>
+                  </li>
 
-                </ul>                
+                </ul>
               </div>
             </div>
           </div>
@@ -250,9 +268,9 @@
                 <div class="container-xl">
                   <div class="row text-center align-items-center flex-row-reverse">
                     <div class="col-lg-auto ms-lg-auto">
-                      <ul class="list-inline list-inline-dots mb-0">                        
+                      <ul class="list-inline list-inline-dots mb-0">
                         <li class="list-inline-item">
-                          Versión {{ config('app.version') }}                          
+                          Versión {{ config('app.version') }}
                         </li>
                         <li class="list-inline-item">
                           <a href="#" target="_blank" class="link-secondary" rel="noopener">
@@ -267,9 +285,9 @@
                         <li class="list-inline-item">
                           UNAMAD &copy; 2023
                         </li>
-                        <li class="list-inline-item">                          
+                        <li class="list-inline-item">
                           Oficina de Tecnologías de la Información
-                        </li>                        
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -282,7 +300,7 @@
               </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <div id="mensaje_container"></div>
     <!-- MODAL -->
@@ -296,8 +314,8 @@
         headers: {
           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
-      });       
+      });
     </script>
-    @yield('js')  
+    @yield('js')
 </body>
 </html>

@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500');
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .box{
     display: block;
     border: 1px solid red;
@@ -14,13 +17,13 @@
     overflow: hidden;
     width: 0;
     height: 0;
-    opacity: 0;    
+    opacity: 0;
     display: block;
     padding: 0;
     margin: 0;
 }
 
-.mayuscula 
+.mayuscula
 {
     text-transform: uppercase;
 }
@@ -73,9 +76,9 @@
     z-index: 1097;
 }
 
-.codigo { 
-	font-family: Consolas,monaco,monospace; 
-}
+/* .codigo {
+	font-family: Consolas,monaco,monospace;
+} */
 
 .navbar-expand-md .navbar-collapse .dropdown-menu .dropdown-item.active,
 .navbar-expand-md .navbar-collapse .dropdown-menu .dropdown-item:active{
@@ -147,10 +150,10 @@
 */
 
 .bg-interno{
-    /*background: #fff9b1;*/    
+    /*background: #fff9b1;*/
     box-shadow: 3px 0px 0px 0px #f59f00 inset;
     -webkit-box-shadow: 3px 0px 0px 0px #f59f00 inset;
-    -moz-box-shadow: 3px 0px 0px 0px #f59f00 inset;    
+    -moz-box-shadow: 3px 0px 0px 0px #f59f00 inset;
 }
 
 .w-40
@@ -260,12 +263,12 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-    
+@media (max-width: 575.98px) {
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) 
+@media (max-width: 767.98px)
 {
     .movil
     {
@@ -281,11 +284,11 @@
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-    
+@media (max-width: 991.98px) {
+
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {
 
 }
