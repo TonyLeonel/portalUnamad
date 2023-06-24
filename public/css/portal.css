@@ -1,10 +1,25 @@
 
 /*--------------------------------------------------------CARGANDO*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext'); */
 body{
-    /* font-family: 'Roboto', Helvetica, Arial, sans-serif; */
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Roboto', Helvetica, Arial, sans-serif; */
+   font-family: 'Poppins', sans-serif;
+   /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3cpath d='M436.29 589.13C591.09 578.03 675.66 289.87 972.81 276.84 1269.97 263.81 1366.09 78.53 1509.34 75.24' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M164.19 565.29C284.68 562.72 389.28 399.77 616.9 399.64 844.51 399.51 843.25 469.64 1069.6 469.64 1295.96 469.64 1407.79 399.85 1522.31 399.64' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M673.34 577.18C794.22 546.91 733.53 230.08 1019.5 218.53 1305.47 206.98 1536.02 95.81 1711.82 95.33' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M250.15 586.41C445.45 558.23 549.17 100.61 869.99 97.76 1190.8 94.91 1329.98 253.35 1489.82 254.56' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M577.64 641.58C704.22 633.15 774.76 402.73 1019.47 392 1264.18 381.27 1342.66 221.48 1461.3 218.4' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+   /* font-size: 16px; */
+   /* font-weight: 400; */
 }
+
+/* body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #212112;
+   background-color: #ffffff;
+   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23dedede' fill-opacity='0.11' fill-rule='evenodd'/%3E%3C/svg%3E");
+} */
+
 .text-justify{
     text-align: justify;
 }
