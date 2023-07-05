@@ -23,24 +23,19 @@ class CarreraController extends Controller
     }
     public function nuevo(Request $request)
     {
-       
-        $validator = Validator::make($request->all(), [ 
-            'nombre' => 'required',            
+
+        $validator = Validator::make($request->all(), [
+            'nombre' => 'required',
         ]);
-    
+
         if ($validator->fails()) {
             return response()->json(['message'=>$validator->errors()], 500);
-        }      
+        }
 
-        try 
-        {            
+        try
+        {
             $carrera = new Carrera;
             $carrera->nombre = $request->nombre;
-            $carrera->vision = $request->vision;
-            $carrera->mision = $request->mision;
-            $carrera->perfil = $request->perfil;
-            $carrera->descripcion = $request->descripcion;
-            $carrera->malla = $request->malla;
             $carrera->abreviatura = $request->abreviatura;
             $carrera->facultad_id = $request->facultad_id;
             $carrera->telefono = $request->telefono;
@@ -48,12 +43,26 @@ class CarreraController extends Controller
             $carrera->direccion = $request->direccion;
             $carrera->facebook = $request->facebook;
             $carrera->whatsapp = $request->whatsapp;
-            
+
+            $carrera->descripcion = $request->descripcion;
+            $carrera->resena = $request->resena;
+            $carrera->reglamentos = $request->reglamentos;
+            $carrera->directivas = $request->directivas;
+            $carrera->malla = $request->malla;
+            $carrera->vision = $request->vision;
+            $carrera->mision = $request->mision;
+            $carrera->perfil = $request->perfil;
+            $carrera->campo = $request->campo;
+            $carrera->plan = $request->plan;
+            $carrera->areas = $request->areas;
+            $carrera->objetivo = $request->objetivos;
+            $carrera->docentes = $request->docentes;
+
             if($carrera->save()){
                 return response()->json(['data'=>$carrera, 'message'=>'Registrado correctamente'], 200);
             }
-            else 
-                return response()->json(['message'=>'No se pudo registrar'], 500);            
+            else
+                return response()->json(['message'=>'No se pudo registrar'], 500);
         }
         catch (\Exception $e) {
             return response()->json(['message'=>$e->getMessage()], 500);
@@ -61,23 +70,18 @@ class CarreraController extends Controller
     }
     public function modificar(Request $request,$id)
     {
-        $validator = Validator::make($request->all(), [ 
-            'nombre' => 'required',            
+        $validator = Validator::make($request->all(), [
+            'nombre' => 'required',
         ]);
-    
+
         if ($validator->fails()) {
             return response()->json(['message'=>$validator->errors()], 500);
-        }      
+        }
 
-        try 
-        {            
+        try
+        {
             $carrera = Carrera::find($id);
             $carrera->nombre = $request->nombre;
-            $carrera->vision = $request->vision;
-            $carrera->mision = $request->mision;
-            $carrera->perfil = $request->perfil;
-            $carrera->descripcion = $request->descripcion;
-            $carrera->malla = $request->malla;
             $carrera->abreviatura = $request->abreviatura;
             $carrera->facultad_id = $request->facultad_id;
             $carrera->telefono = $request->telefono;
@@ -85,11 +89,26 @@ class CarreraController extends Controller
             $carrera->direccion = $request->direccion;
             $carrera->facebook = $request->facebook;
             $carrera->whatsapp = $request->whatsapp;
+
+            $carrera->descripcion = $request->descripcion;
+            $carrera->resena = $request->resena;
+            $carrera->reglamentos = $request->reglamentos;
+            $carrera->directivas = $request->directivas;
+            $carrera->malla = $request->malla;
+            $carrera->vision = $request->vision;
+            $carrera->mision = $request->mision;
+            $carrera->perfil = $request->perfil;
+            $carrera->campo = $request->campo;
+            $carrera->plan = $request->plan;
+            $carrera->areas = $request->areas;
+            $carrera->objetivo = $request->objetivos;
+            $carrera->docentes = $request->docentes;
+
             if($carrera->save()){
                 return response()->json(['data'=>$carrera, 'message'=>'Registrado correctamente'], 200);
             }
-            else 
-                return response()->json(['message'=>'No se pudo registrar'], 500);            
+            else
+                return response()->json(['message'=>'No se pudo registrar'], 500);
         }
         catch (\Exception $e) {
             return response()->json(['message'=>$e->getMessage()], 500);

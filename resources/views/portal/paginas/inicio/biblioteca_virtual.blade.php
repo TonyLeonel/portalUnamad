@@ -274,7 +274,7 @@
                   </div>
                   <div class="row">
                      <div class="col-12">
-                        <p data-chaffle="en" data-chaffle-onLoad>UNAMAD</p>
+                        <p style="font-weight: 600;" data-chaffle="en" data-chaffle-onLoad>UNAMAD</p>
                      </div>
                   </div>
                   <div class="row">
@@ -282,7 +282,7 @@
                         <span id="myElement"></span>
                      </div>
                   </div>
-                  
+
                </div>
             </div>
 
@@ -314,7 +314,7 @@
             </div>
          </div>
       </div> --}}
-      
+
 
       <div class="my-5 py-5">
       </div>

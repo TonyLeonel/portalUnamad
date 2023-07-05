@@ -24,7 +24,7 @@
                 <h2 class="page-title">
                     Categorías de comunicado
                 </h2>
-            </div> 
+            </div>
             <div class="col-auto ms-auto">
                 <div class="btn-list">
                     <a href="javascript:void(0);" onclick="nuevo();" class="btn btn-primary d-sm-inline-block" >
@@ -32,7 +32,7 @@
                         Agregar
                     </a>
                 </div>
-            </div>           
+            </div>
         </div>
     </div>
 </div>
@@ -44,12 +44,12 @@
                     <div id="t_principal">
                         <table id="t_categorias" class="table card-table table-vcenter text-nowrap datatable" width="100%">
                             <thead>
-                                <tr>    
+                                <tr>
                                     <th>NOMBRE</th>
                                     <th>DESCIPCIÓN</th>
                                     <th title="REGISTROS">REG.</th>
                                     <th>ESTADO</th>
-                                    <th>ACCIONES</th>     
+                                    <th>ACCIONES</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,8 +57,8 @@
                                     <td colspan="4">Cargando...</td>
                                 </tr>
                             </tbody>
-                        </table>   
-                    </div>                    
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,16 +75,16 @@
                 <h5 id="titulo_editar" class="modal-title">Nuevo</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div id="form_editar" class="modal-body">  
+            <div id="form_editar" class="modal-body">
                 <div class="form-group form-required mb-3">
                     <label class="form-label">Nombre</label>
                     <input id="nombre" type="text" class="form-control mayuscula" placeholder="">
-                </div> 
+                </div>
                 <div class="form-group form-required">
                     <label class="form-label">Descripción</label>
                     <textarea id="descripcion" class="form-control mayuscula" rows="3"></textarea>
-                </div>                            
-            </div>   
+                </div>
+            </div>
             <div class="modal-footer">
                 <div>
                     <label class="form-check form-switch mb-0">
@@ -94,7 +94,7 @@
                 </div>
                 <button type="button" class="btn btn-link link-secondary ms-auto" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary" onclick="guardar()">Guardar</button>
-            </div>       
+            </div>
         </div>
     </div>
 </div>

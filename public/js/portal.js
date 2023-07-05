@@ -1,9 +1,9 @@
 //   all ------------------
 function initHomeradar() {
     "use strict";
-	$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">'); 
+	$('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">');
     //   loader ------------------
-    // $(".loader-wrap").fadeOut(300, function () { 
+    // $(".loader-wrap").fadeOut(300, function () {
     //     $("#main").animate({
     //         opacity: "1"
     //     }, 600);
@@ -51,7 +51,7 @@ function initHomeradar() {
             epi.attr("type", "password");
         }
     });
-    
+
     //   Checkboxes ------------------
     var myDiv = $(".geodir-category-content p");
     myDiv.text(myDiv.text().substring(0, 90) + '...');
@@ -89,8 +89,8 @@ function initHomeradar() {
     $(".stats").appear(function () {
         $(".num").countTo();
     });
-    
-    
+
+
     // Share   ------------------
     $(".sfcs").on("click", function (e) {
         e.preventDefault();
@@ -129,7 +129,7 @@ function initHomeradar() {
         $(this).parents(".tabs-act").find(".tab-content").not(b).css("display", "none");
         $(b).fadeIn();
     });
-    //   ionRangeSlider------------------	
+    //   ionRangeSlider------------------
     var sliders_init = $(".price-range");
     sliders_init.ionRangeSlider({
         type: "single",
@@ -241,7 +241,7 @@ function initHomeradar() {
         $(this).toggleClass("act-category");
     });
     //   Isotope------------------
- 
+
         function initIsotope() {
     if ($(".gallery-items").length) {
             var agf = $(".gallery-items").isotope({
@@ -264,7 +264,7 @@ function initHomeradar() {
                 $(".gallery-filters a").removeClass("gallery-filter-active");
                 $(this).addClass("gallery-filter-active");
             });
-        }   
+        }
     }
 initIsotope();
     // modal ------------------
@@ -775,7 +775,7 @@ function initparallax() {
         $("#wrap_media").append('<div class="background_image_wrapper" style="background-image: url(/img/pabellonb.jpg);"></div>');
         $("html, body").animate({
             scrollTop: 0
-        }, 1);	
+        }, 1);
 	}
 }
 document.addEventListener('gesturestart', function (e) {
@@ -796,7 +796,7 @@ function compartir_this() {
     $("#input_compartir").val(ruta);
     $('#modal_compartir.modal , #modal_compartir .reg-overlay').fadeIn(200);
     $("#modal_compartir .modal_main").addClass("vis_mr");
-    $("html, body").addClass("hid-body");   
+    $("html, body").addClass("hid-body");
 }
 
 function compartir(elemento) {
@@ -804,7 +804,7 @@ function compartir(elemento) {
     $("#input_compartir").val(ruta);
     $('#modal_compartir.modal , #modal_compartir .reg-overlay').fadeIn(200);
     $("#modal_compartir .modal_main").addClass("vis_mr");
-    $("html, body").addClass("hid-body");   
+    $("html, body").addClass("hid-body");
 }
 
 function compartir_copiar() {
