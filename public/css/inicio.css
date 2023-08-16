@@ -1,0 +1,20 @@
+.slider_section{
+    position: relative;
+}
+
+.slider_scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.slick-dots {
+    left: auto;
+    width: auto;
+    right: 40px;
+}
+
+.slick-dots li button {
+    background: #fff;
+}

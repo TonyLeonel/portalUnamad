@@ -14,15 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 //PORTAL WEB
-
 Route::get('/', [App\Http\Controllers\PortalController::class, 'index']);
+
 Route::get('comunicados/lista', [App\Http\Controllers\PortalController::class, 'comunicados_lista']);
 Route::get('comunicados', [App\Http\Controllers\PortalController::class, 'comunicados']);
 Route::get('comunicados/detalle/{id}', [App\Http\Controllers\PortalController::class, 'comunicado_detalle']);
 Route::get('documentos', [App\Http\Controllers\PortalController::class, 'documentos']);
 
+/*
 Route::get('publicaciones', [App\Http\Controllers\PortalController::class, 'publicaciones']);
 Route::get('publicaciones/{id}/detalles', [App\Http\Controllers\PortalController::class, 'publicacion_detalle']);
+*/
+
 
 //AUTH
 Route::get('login', [App\Http\Controllers\UserController::class, 'ingreso'])->name('login');
@@ -30,11 +33,42 @@ Route::post('login', [App\Http\Controllers\UserController::class, 'login'])->mid
 Route::post('logout', [App\Http\Controllers\UserController::class, 'logout']);
 
 
+/**
+ * PAGINAS
+ */
+
+Route::get('universidad/presentacion', [App\Http\Controllers\PortalController::class, 'presentacion']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Auth::routes();
+
 
 /**
  * PAGINAS GENERADAS
  */
+
+ /*
 // Universidad
 Route::get('universidad/presentacion/unamad', [App\Http\Controllers\PaginaController::class, 'presentacion']);
 Route::get('universidad/autoridades/unamad', [App\Http\Controllers\PaginaController::class, 'autoridades']);
@@ -59,7 +93,7 @@ Route::get('centro-de-idiomas/mision-y-vision', [App\Http\Controllers\PaginaCont
 Route::get('centro-de-idiomas/estructura', [App\Http\Controllers\PaginaController::class, 'idiomas_estructura']);
 Route::get('centro-de-idiomas/personal', [App\Http\Controllers\PaginaController::class, 'idiomas_personal']);
 Route::get('centro-de-idiomas/directorio', [App\Http\Controllers\PaginaController::class, 'idiomas_directorio']);
-
+*/
 /*****BY AG*****/
 /*** OCRI - Oficina de Cooperación y Relaciones. Internacionales - BY AG ***/
 Route::get('ocri', [App\Http\Controllers\PaginaController::class, 'ocri_inicio']);
@@ -124,7 +158,7 @@ Route::get('facultades/{facultad}/{nombre}/docentes', [App\Http\Controllers\Pagi
 
 
 //paginas creadas por base de datos
-Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
+//Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
 
 
 /**

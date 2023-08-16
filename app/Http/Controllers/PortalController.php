@@ -21,20 +21,57 @@ class PortalController extends Controller
     public function index()
     {
         $ahora = Carbon::now();
-        $facultades=Facultad::with('carreras')->get();
-        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-       // $comunicados = Comunicado::where('estado', 1)->whereDate('created_at','<=', $ahora)->whereDate('fecha_fin','>=', $ahora)->orderBy('created_at', 'desc')->get();
-        $comunicados = Comunicado::where('estado', 1)->orderBy('created_at', 'desc')->limit('5')->get();
+        $comunicados = Comunicado::where('estado', 1)->whereDate('created_at','<=', $ahora)->whereDate('fecha_fin','>=', $ahora)->orderBy('created_at', 'desc')->get();        
         $publicaciones = Publicacion::where('estado', 1)->orderBy('created_at', 'desc')->limit('5')->get();
-        return view('portal.index', compact('comunicados','facultades','menus','menus','publicaciones'));
+        return view('portal.index', compact('comunicados','publicaciones'));
     }
+
+    /**
+     * UNIVERSIDAD
+     */
+
+    public function presentacion() {
+        return view('portal.universidad.presentacion');
+    }
+
+
+    /**
+     * FACULTADES
+     */
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function comunicados(Request $request)
     {
         $ahora = Carbon::now();
         $facultades=Facultad::with('carreras')->get();
-        $menus=Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
-        $comunicados = Comunicado::where('estado', 1)->orderBy('created_at', 'desc')->paginate(9);
-        $categorias=Comunicado_categoria::get();
+        $menus = Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
+        $comunicados = Comunicado::where('estado', 1)->orderBy('created_at', 'desc')->paginate(12);
+        $categorias = Comunicado_categoria::get();
         return view('portal.comunicados', compact('comunicados','ahora','facultades','menus','categorias'));
     }
     public function comunicado_detalle(Request $request, $id)

@@ -3,40 +3,126 @@
 @section('titulo', 'Universidad Nacional Amazónica de Madre de Dios')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
+<link href="{{ asset('css/inicio.css') }}" rel="stylesheet"/>
 @endsection
 
 @section('js')
-<script src="{{ asset('js/jquery.flexslider-min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/jquery.imageScroll.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/counter.min.js') }}" type="text/javascript"></script>
-{{-- <script src="https://rawgithub.com/pederan/Parallax-ImageScroll/master/jquery.imageScroll.min.js" type="text/javascript"></script> --}}
-{{-- <script src="{{ asset('js/simpleParallax.min.js') }}" type="text/javascript"></script> --}}
 <script src="{{ asset('js/inicio.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('contenido')
 
-{{-- <p id="screen">Pantalla del dispositivo: ancho: , altura: .</p>
-<p id="window">Ventana del navegador: ancho: , altura: .</p>
-<p id="page">Página web: ancho: , altura: .</p> --}}
+<!-- SLIDER -->
+<section class="slider_section gray-bg">
+    <div class="slider_principal">
+        <img src="{{ asset('img/banners/1.jpg')}}" alt="" style="width: 100%;">    
+        <img src="{{ asset('img/banners/2.jpg')}}" alt="" style="width: 100%;">    
+        <img src="{{ asset('img/banners/3.jpg')}}" alt="" style="width: 100%;">    
+        <img src="{{ asset('img/banners/4.jpg')}}" alt="" style="width: 100%;">           
+    </div>  
+    <div class="slider-progress-bar">
+        <span>
+            <svg class="circ" width="30" height="30">
+                <circle class="circ2" cx="15" cy="15" r="13" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none"/>
+                <circle class="circ1" cx="15" cy="15" r="13" stroke="#fff" stroke-width="2" fill="none"/>
+            </svg>
+        </span>
+    </div>  
+    <div class="slider_scroll">
+        <div class="mousey">
+            <div class="scroller"></div>
+        </div>            
+    </div>   
+</section>
+<!-- COMUNIADOS -->
+@if(count($comunicados) > 0)
+<section class="gray-bg small-padding ">
+    <div class="container">
+        <!--Titulo-->
+        <div class="row">
+            <div class="col-6">
+                <div class="section-title fl-wrap">
+                    <h4>Entérate sobre nuestros</h4>
+                    <h2>Comunicados</h2>
+                </div>
+            </div>
+            <div class="col-6">
+                <a href="{{ url('comunicados') }}" class="btn float-btn-right color-bg small-btn">Ver todos</a>             
+            </div>
+        </div>
+        <div class="clearfix"></div>  
+        @php
+            $izquierda = array();
+            $centro = array();
+            $derecha = array();
+            $contador = 1;
 
-<div class="flexslider">
-    <ul class="slides">
-        <li>
-            <img src="{{ asset('img/images/1.png')}}" alt="rectores" />
-        </li>
-        <li>
-            <img src="{{ asset('img/images/2.png')}}" />
-        </li>
-        <li>
-            <img src="{{ asset('img/images/3.png')}}" />
-        </li>
-        <li>
-            <img src="{{ asset('img/images/4.png')}}" />
-        </li>
-    </ul>
-</div>
+            foreach ($comunicados as $comunicado) {
+                if($contador == 1){
+                    $izquierda[] = $comunicado;
+                } elseif($contador == 2) {
+                    $centro[] = $comunicado;
+                } else {
+                    $derecha[] = $comunicado;
+                }
+                
+                if($contador >= 3)
+                    $contador = 1;
+                else
+                    $contador++;
+            }
+            
+        @endphp 
+        <!--Listado-->
+        <div class="row">
+            <!--izquierda-->
+            <div class="col-md-4">
+            @foreach ($izquierda as $comunicado)
+            <article class="com_item">
+                <div class="com_imagen">
+                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                        <div class="com_overlay"></div>
+                    </a>
+                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                </div>                    
+            </article>
+            @endforeach
+            </div>                                                                                                                              </div> 
+            <!--centro-->
+            @foreach ($centro as $comunicado)
+            <article class="com_item">
+                <div class="com_imagen">
+                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                        <div class="com_overlay"></div>
+                    </a>
+                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                </div>                    
+            </article>
+            @endforeach
+            <!--derecha-->
+            @foreach ($derecha as $comunicado)
+            <article class="com_item">
+                <div class="com_imagen">
+                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                        <div class="com_overlay"></div>
+                    </a>
+                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                </div>                    
+            </article>
+            @endforeach
+        </div> 
+    </div>
+</section>
+@endif
+
 <!-- SERVICIOS -->
 <section class="relative-padding">
     <div class="container">
