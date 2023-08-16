@@ -123,6 +123,23 @@
 </section>
 @endif
 
+<<<<<<< HEAD
+=======
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="{{ asset('img/images/1.png')}}" alt="rectores" />
+        </li>
+        <li>
+            <img src="{{ asset('img/images/2.png')}}" />
+        </li>
+
+        <li>
+            <img src="{{ asset('img/images/4.png')}}" />
+        </li>
+    </ul>
+</div>
+>>>>>>> f459d8f7c4aa3bec6062e7227d5ae0d8515fc755
 <!-- SERVICIOS -->
 <section class="relative-padding">
     <div class="container">
@@ -131,7 +148,7 @@
             <h4>Conoce todos</h4>
             <h2>Nuestros Servicios</h2>
         </div>
-        <!--Listado 01--> 
+        <!--Listado 01-->
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                 <div class="row">
@@ -142,9 +159,9 @@
                                 <a href="https://campus.unamad.edu.pe/" class="tarjeta tarjeta_pink" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fal fa-graduation-cap"></i>      
+                                            <i class="fal fa-graduation-cap"></i>
                                         </div>
-                                        <h4>CAMPUS VIRTUAL</h4>                       
+                                        <h4>CAMPUS VIRTUAL</h4>
                                     </div>
                                 </a>
                             </div>
@@ -158,12 +175,12 @@
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             {{-- <i class="fal fa-graduation-cap"></i> --}}
-                                            <i class="fa fa-book" aria-hidden="true"></i>     
+                                            <i class="fa fa-book" aria-hidden="true"></i>
                                         </div>
-                                        <h4>BIBLIOTECA VIRTUAL</h4>                       
+                                        <h4>BIBLIOTECA VIRTUAL</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -174,12 +191,12 @@
                                 <a href="https://portal.unamad.edu.pe/centro-de-idiomas" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fa fa-language" aria-hidden="true"></i>     
+                                            <i class="fa fa-language" aria-hidden="true"></i>
                                         </div>
-                                        <h4>CENTRO DE IDIOMAS</h4>                       
+                                        <h4>CENTRO DE IDIOMAS</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -208,12 +225,12 @@
                                             {{-- <i class="fa fa-terminal" aria-hidden="true"></i>       --}}
                                             {{-- <i class="fa fa-desktop" aria-hidden="true"></i> --}}
                                             <i class="fas fa-laptop-code"></i>
-                                            
+
                                         </div>
-                                        <h4>CENTRO DE INFORMÁTICA</h4>                       
+                                        <h4>CENTRO DE INFORMÁTICA</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -228,10 +245,10 @@
                                             {{-- <i class="fas fa-palette"></i> --}}
                                             <i class="fas fa-theater-masks"></i>
                                         </div>
-                                        <h4>TALLERES EN ACTIVIDADES ARTÍSTICAS Y CULTURALES</h4>                       
+                                        <h4>TALLERES EN ACTIVIDADES ARTÍSTICAS Y CULTURALES</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -245,10 +262,10 @@
                                             {{-- <i class="fas fa-diploma"></i>       --}}
                                             <i class="fas fa-award"></i>
                                         </div>
-                                        <h4>BECAS</h4>                       
+                                        <h4>BECAS</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -263,10 +280,10 @@
                                             <i class="fas fa-user-nurse"></i>
                                             {{-- <i class="fas fa-stethoscope"></i> --}}
                                         </div>
-                                        <h4>CENTRO DE SALUD INTEGRAL</h4>                       
+                                        <h4>CENTRO DE SALUD INTEGRAL</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -281,10 +298,10 @@
                                             <i class="fas fa-turkey"></i>
                                             {{-- <i class="fas fa-apple-crate"></i> --}}
                                         </div>
-                                        <h4>COMEDOR<br>UNIVERSITARIO</h4>                       
+                                        <h4>COMEDOR<br>UNIVERSITARIO</h4>
                                     </div>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -304,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
@@ -333,7 +350,7 @@
                                             <img src="{{ asset('img/reclamaciones.png') }}" alt="" style="width: 70%;">
                                             {{-- <img src="{{ asset('img/cepre.png') }}" alt="" style="width: 35px;"> --}}
                                         </div>
-                                        <h4>LIBRO DE RECLAMACIONES DIGITAL</h4>                                                       
+                                        <h4>LIBRO DE RECLAMACIONES DIGITAL</h4>
                                     </div>
                                 </a>
                             </div>
@@ -349,69 +366,69 @@
                                 <div class="mb-3">
                                     <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                                 </div>
-                            </div>                    
+                            </div>
                             <div class="tarjeta_wrapper">
                                 <div class="tarjeta tarjeta_yellow">
-                                    <div class="tarjeta_centro">                                
+                                    <div class="tarjeta_centro">
                                         <h4>DOCUMENTOS NORMATIVOS Y DE GESTIÓN</h4>
-                                        
+
                                         <ul class="lista_simple">
                                             <li>
-                                                <a href="https://www.gob.pe/institucion/unamad/normas-legales/tipos/237-resolucion-rectoral" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/normas-legales/tipos/237-resolucion-rectoral" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones Rectorales</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones Rectorales</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10080-resolucion-de-consejo-universitario" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10080-resolucion-de-consejo-universitario" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Consejo Universitario</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Consejo Universitario</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10013-resolucion-de-vicerrectorado-academico" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10013-resolucion-de-vicerrectorado-academico" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Vicerectorado Académico</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Vicerectorado Académico</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10418-resolucion-de-vicerrectorado-de-investigacion" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/10418-resolucion-de-vicerrectorado-de-investigacion" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Vicerectorado de Investigación</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Resoluciones de Vicerectorado de Investigación</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/168-reglamento" class="lista_item"  target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/168-reglamento" class="lista_item"  target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Reglamentos</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Reglamentos</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/normas-legales/tipos/28-directiva" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/normas-legales/tipos/28-directiva" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Directivas</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Directivas</div>
                                                 </a>
-                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/16884-convenios-institucionales" class="lista_item" target="_blank">                                            
+                                                <a href="https://www.gob.pe/institucion/unamad/colecciones/16884-convenios-institucionales" class="lista_item" target="_blank">
                                                     <div class="lista_icono flex-shrink-0">
                                                         <i class="far fa-file-alt"></i>
                                                     </div>
-                                                    <div class="lista_descripcion flex-grow-1"> Convenios Institucionales</div>                                           
+                                                    <div class="lista_descripcion flex-grow-1"> Convenios Institucionales</div>
                                                 </a>
-                                                
+
                                             </li>
-                                        </ul> 
-                                        <a href="{{ url('documentos') }}" class="tarjeta_link_white">Ver más documentos</a> 
+                                        </ul>
+                                        <a href="{{ url('documentos') }}" class="tarjeta_link_white">Ver más documentos</a>
                                     </div>
                                 </div>
-                            </div>                    
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-                     
+
     </div>
 </section>
 <section class="wave-section">
@@ -534,8 +551,8 @@
             <h4>También te puede interesar</h4>
             <h2>Otros enlaces</h2>
         </div>
-    
-    
+
+
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="row">
@@ -546,7 +563,7 @@
                                 <a href="https://www.gob.pe/institucion/unamad/funcionarios" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-user-tie"></i>      
+                                            <i class="fas fa-user-tie"></i>
                                         </div>
                                         <h4>DIRECTORIO DE FUNCIONARIOS</h4>
                                         <p class="text-center">Datos de contacto e información del personal de la UNAMAD.</p>
@@ -562,7 +579,7 @@
                                 <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-download"></i>      
+                                            <i class="fas fa-download"></i>
                                         </div>
                                         <h4>REPOSITORIO DIGITAL</h4>
                                         <p class="text-center">Información intelectual producida y compilada por la comunidad universitaria.</p>
@@ -582,10 +599,10 @@
                                 <a href="https://www.gob.pe/institucion/unamad/informes-publicaciones/tipos/80-convocatorias-de-trabajo" class="tarjeta tarjeta_yellow" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-bullhorn"></i>      
+                                            <i class="fas fa-bullhorn"></i>
                                         </div>
                                         <h4>CONVOCATORIAS</h4>
-                                        <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>                    
+                                        <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>
                                     </div>
                                 </a>
                             </div>
@@ -598,7 +615,7 @@
                                 <a href="http://www.cienciactiva.gob.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-books"></i>      
+                                            <i class="fas fa-books"></i>
                                         </div>
                                         <h4>REVISTAS CIENTIFICAS</h4>
                                         <p class="text-center">Convocatorias a procesos de selección de personal administrativo y docente.</p>
@@ -616,9 +633,9 @@
                                 <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-graduation-cap"></i>      
+                                            <i class="fas fa-graduation-cap"></i>
                                         </div>
-                                        <h4>EGRESADOS Y BOLSA DE TRABAJO</h4>                       
+                                        <h4>EGRESADOS Y BOLSA DE TRABAJO</h4>
                                     </div>
                                 </a>
                             </div>
@@ -633,9 +650,9 @@
                                 <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-book-open"></i>      
+                                            <i class="fas fa-book-open"></i>
                                         </div>
-                                        <h4>LIBRO DE RECLAMACIONES</h4>                       
+                                        <h4>LIBRO DE RECLAMACIONES</h4>
                                     </div>
                                 </a>
                             </div>
@@ -650,9 +667,9 @@
                                 <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-bookmark"></i>      
+                                            <i class="fas fa-bookmark"></i>
                                         </div>
-                                        <h4>CONVENIOS</h4>                       
+                                        <h4>CONVENIOS</h4>
                                     </div>
                                 </a>
                             </div>
@@ -665,7 +682,7 @@
                                 <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-paperclip"></i>    
+                                            <i class="fas fa-paperclip"></i>
                                         </div>
                                         <h4>MESA DE PARTES VIRTUAL</h4>
                                     </div>
@@ -680,9 +697,9 @@
                                 <a href="inicio/bus" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-bus"></i>      
+                                            <i class="fas fa-bus"></i>
                                         </div>
-                                        <h4>RUTA - GPS BUS</h4>                       
+                                        <h4>RUTA - GPS BUS</h4>
                                     </div>
                                 </a>
                             </div>
@@ -695,7 +712,7 @@
                                 <a href="#" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
-                                            <i class="fas fa-flask-potion"></i>      
+                                            <i class="fas fa-flask-potion"></i>
                                         </div>
                                         <h4>OBSERVATORIO PARQUE CIENTIFICO</h4>
                                     </div>
@@ -707,8 +724,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
 </section>
 
 {{-- <section class="relative-padding small-padding"> --}}
@@ -731,7 +748,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
-                    
+
                     <div class="dropdown-menu dropdown-menu-demo"style="padding-bottom: 0px;">
                         <div class="section-title card-header"style="margin-bottom: 5px;">
                             <h2 class="card-title">Videos</h2>
@@ -761,10 +778,10 @@
                             </div>
                         </div>
                     </div>
-                </div>                    <!--Listado-->  
+                </div>                    <!--Listado-->
             </div>
         </div>
-        <div class="row"> 
+        <div class="row">
             <div class="col-lg-6">
                 <div class="row">
                     <div class="col-sm-12 col-lg-12">
@@ -774,29 +791,29 @@
                             </div>
                             <?php $i=0;
                             ?>
-                                @foreach ($comunicados as $comunicado)  
+                                @foreach ($comunicados as $comunicado)
                                     <article class="com_item " style="margin: 0;">
                                         <div class="com_imagen row"style="{{$i==0? 'padding:15px':'padding: 0px 15px 10px 15px'}};margin: 0 -10px;">
                                             <div class="col-2" style="bottom: 10px;left: 10px;background: #ed145b;padding-top: 15px;padding-bottom: 15px;">
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('d')}}</p>
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('M')}}</p>
                                                 <p class="text-fecha">{{ $comunicado->created_at->format('Y')}}</p>
-                                            </div>                       
+                                            </div>
                                             <div class="col-10">
-                                                <a href="{{ url('comunicados/detalle/'.$comunicado->id)}}" style="vertical-allign: middle" class="com_link"  target="_blank">       {{substr($comunicado->titulo,0,150)}}                                                    
+                                                <a href="{{ url('comunicados/detalle/'.$comunicado->id)}}" style="vertical-allign: middle" class="com_link"  target="_blank">       {{substr($comunicado->titulo,0,150)}}
                                                 </a>
                                             </div>
-                                        </div>                    
-                                    </article>                                
-                                    <?php $i++;?>                                     
-                            @endforeach                   
+                                        </div>
+                                    </article>
+                                    <?php $i++;?>
+                            @endforeach
                             <div>
                               <a href="{{url('/comunicados')}}" class="dropdown-item">
                                 Ver más</a>
-                            </div>  
+                            </div>
                         </div>
                     </div>
-                </div>                    <!--Listado-->  
+                </div>                    <!--Listado-->
             </div>
             <div class="col-lg-6">
                 <div class="card">
@@ -812,20 +829,20 @@
                                 <div class="carousel-item active">
                                     <img class="d-block w-100" alt="" src="{{url($publicacion->imagen)}}">
                                 </div>
-                                <?php $i++;?>                                      
+                                <?php $i++;?>
                             @else
                                 <div class="carousel-item">
                                     <img class="d-block w-100" alt="" src="{{url($publicacion->imagen)}}">
-                                </div>  
-                                <?php $i++;?>                                 
+                                </div>
+                                <?php $i++;?>
                             @endif
-                            
+
                         @endforeach
                       </div>
                     </div>
                   </div>
-                </div>          
-            </div>           
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -855,7 +872,7 @@
                     <img src="{{ asset('img/prociencia.png') }}" alt="prociencia" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->							
+            <!--slick-item end -->
             <!--slick-item -->
             <div class="slick-item">
                 <a href="https://portal.concytec.gob.pe/" class="externo_item" target="_blank" title="concytec">
@@ -869,15 +886,15 @@
                     <img src="{{ asset('img/ctivitae.png') }}" alt="ctivitae" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->								
+            <!--slick-item end -->
             <!--slick-item -->
-            
+
             <div class="slick-item">
                 <a href="https://www.pronabec.gob.pe/beca-18/" class="externo_item" target="_blank" title="pronabec">
                     <img src="{{ asset('img/logoPronabec_hd.png') }}" alt="pronabec" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->								
+            <!--slick-item end -->
             <!--slick-item -->
             <div class="slick-item">
                 <a href="https://www.sanciones.gob.pe/rnssc/#/transparencia/acceso" class="externo_item" target="_blank" title="rnssc">
@@ -898,21 +915,21 @@
                     <img src="{{ asset('img/libro_reclamaciones.png') }}" alt="libro_reclamaciones" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->		
+            <!--slick-item end -->
             <!--slick-item -->
             <div class="slick-item">
                 <a href="https://www.sunedu.gob.pe/" class="externo_item" target="_blank" title="sunedu">
                     <img src="{{ asset('img/sunedu.png') }}" alt="sunedu" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->			
+            <!--slick-item end -->
             <!--slick-item -->
             <div class="slick-item">
                 <a href="http://rpu.edu.pe/" class="externo_item" target="_blank">
                     <img src="{{ asset('img/rpu.png') }}" alt="" srcset="">
                 </a>
             </div>
-            <!--slick-item end -->						
+            <!--slick-item end -->
         </div>
     </div>
 </section>
