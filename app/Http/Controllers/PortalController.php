@@ -38,8 +38,15 @@ class PortalController extends Controller
     /**
      * FACULTADES
      */
-
-
+    public function mostrar_carrera($carrera)
+    {
+        // Comprobar si la vista existe antes de cargarla
+        if (view()->exists('portal.paginas.facultades.' . $carrera)) {
+            return view('portal.paginas.facultades.' . $carrera);
+        } else {
+            abort(404); // Otra acción si la vista no existe
+        }
+    }
     
 
 

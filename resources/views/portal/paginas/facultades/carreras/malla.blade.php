@@ -52,39 +52,10 @@
                                         <h2 style="padding-bottom: 50px;">
                                             <strong style="color: rgb(237, 20, 91);padding-bottom:40px">MALLAS CURRICULARES</strong>
                                         </h2>
-                                        <div class="table-responsive">
-                                            <table class="table table-striped table-vcenter">
-                                                <thead>
-                                                    <tr>
-                                                        <th>N°</th>
-                                                        <th>Descripción</th>
-                                                        <th>Fecha</th>
-                                                        <th>Descargar</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Malla curricular 1.</td>
-                                                        <td>03/04/2012</td>
-                                                        <td style="position:relative;">
-                                                            <div class="tarjeta_icon1">
-                                                                <i class="fas fa-file-pdf"></i>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Malla curricular 2.</td>
-                                                        <td>01/02/2017</td>
-                                                        <td style="position:relative;">
-                                                            <div class="tarjeta_icon1">
-                                                                <i class="fas fa-file-pdf"></i>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="module-under-development">
+                                            <div class="gear"></div>
+                                            <p class="message">Módulo en desarrollo</p>
+                                            <p class="sub-message">Estamos trabajando para brindarte una experiencia increíble. ¡Vuelve pronto!</p>
                                         </div>
                                 </div>
                             </div>

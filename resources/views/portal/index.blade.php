@@ -19,7 +19,7 @@
     <div class="slider_principal">
         <img src="{{ asset('img/banners/1.jpg')}}" alt="" style="width: 100%;">    
         <img src="{{ asset('img/banners/2.jpg')}}" alt="" style="width: 100%;">    
-        <img src="{{ asset('img/banners/3.jpg')}}" alt="" style="width: 100%;">    
+           
         <img src="{{ asset('img/banners/4.jpg')}}" alt="" style="width: 100%;">           
     </div>  
     <div class="slider-progress-bar">
@@ -122,6 +122,7 @@
     </div>
 </section>
 @endif
+
 <!-- SERVICIOS -->
 <section class="relative-padding">
     <div class="container">

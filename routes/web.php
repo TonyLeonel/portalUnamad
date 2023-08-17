@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,9 @@ Route::post('logout', [App\Http\Controllers\UserController::class, 'logout']);
  */
 
 Route::get('universidad/presentacion', [App\Http\Controllers\PortalController::class, 'presentacion']);
+
+// FACULTADES
+Route::get('facultades/{carrera}', [PortalController::class, 'mostrar_carrera'])->name('facultades.carrera');
 
 
 

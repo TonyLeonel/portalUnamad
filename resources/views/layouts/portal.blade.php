@@ -186,11 +186,11 @@
                            <a href="#">Facultad de Ingeniería <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
-                                 <a href="{{ url('facultades/agroindustrial') }}" class="{{ request()->is('facultades/agroindustrial') ? 'act-link' : '' }}">Agroindustrial</a>
-                              </li>
-                              <li>
-                                 <a href="{{ url('facultades/forestal') }}" class="{{ request()->is('facultades/forestal') ? 'act-link' : '' }}">Forestal y de Medio Ambiente</a>
-                              </li>
+                                 <a href="{{ url('facultades/agroindustrial') }}"  class="{{ request()->is('facultades/agroindustrial') ? 'act-link' : '' }}">Agroindustrial</a>
+                             </li>
+                             <li>
+                              <a href="{{ url('facultades/forestal') }}"  class="{{ request()->is('facultades/forestal') ? 'act-link' : '' }}">Forestal y de Medio Ambiente</a>
+                           </li>
                               <li>
                                  <a href="{{ url('facultades/sistemas') }}" class="{{ request()->is('facultades/sistemas') ? 'act-link' : '' }}">Sistemas e Informática</a>
                               </li>
@@ -203,7 +203,7 @@
                            <a href="#">Facultad de Educación <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
-                                 <a href="{{ url('facultades/matematicas') }}" class="{{ request()->is('facultades/matematicas') ? 'act-link' : '' }}">Matemática y Computación</a>
+                                 <a href="{{ url('facultades/matematica') }}" class="{{ request()->is('facultades/matematica') ? 'act-link' : '' }}">Matemática y Computación</a>
                               </li>
                               <li>
                                  <a href="{{ url('facultades/derecho') }}" class="{{ request()->is('facultades/derecho') ? 'act-link' : '' }}">Derecho y Ciencias Política</a>
