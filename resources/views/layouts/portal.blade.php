@@ -135,8 +135,9 @@
                                  <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/academicos') ? 'act-link' : '' }}">Asuntos Académicos</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/proyeccion') ? 'act-link' : '' }}">Proyección Social y Extensión Cultural</a>
-                              </li>
+                                 <a href="https://proyeccionsocial.unamad.edu.pe/" target="_blank">Proyección Social y Extensión Cultural</a>
+                             </li>
+                             
                               <li>
                                  <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/bienestar') ? 'act-link' : '' }}">Bienestar Universitario</a>
                               </li>
@@ -236,10 +237,10 @@
                            <a href="{{ url('programas/informatica') }}" class="{{ request()->is('programas/informatica') ? 'act-link' : '' }}">Centro de Informática</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/idiomas') }}" class="{{ request()->is('programas/idiomas') ? 'act-link' : '' }}">Centro de Idiomas</a>
+                           <a href="https://cidiomas.unamad.edu.pe/" target="_blank" class="{{ request()->is('programas/idiomas') ? 'act-link' : '' }}">Centro de Idiomas</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/cepre') }}" class="{{ request()->is('programas/cepre') ? 'act-link' : '' }}">Centro Preuniversitario</a>
+                           <a href="https://cepre.unamad.edu.pe/" target="_blank" class="{{ request()->is('programas/cepre') ? 'act-link' : '' }}">Centro Preuniversitario</a>
                         </li>
                         <li>
                            <a href="{{ url('programas/postgrado') }}" class="{{ request()->is('programas/postgrado') ? 'act-link' : '' }}">Posgrado</a>
