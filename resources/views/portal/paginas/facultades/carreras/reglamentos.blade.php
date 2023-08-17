@@ -53,47 +53,17 @@
                               <div class="container">
                                  <h2 style="padding-bottom: 50px;">
                                     <strong style="color: rgb(237, 20, 91);padding-bottom:40px">Reglamentos</strong>
+                                    <div class="module-under-development">
+                                       <div class="gear"></div>
+                                       <p class="message">Módulo en desarrollo</p>
+                                       <p class="sub-message">Estamos trabajando para brindarte una experiencia increíble. ¡Vuelve pronto!</p>
+                                   </div>
                                  </h2>
-                                 <div class="table-responsive">
-                                    <table class="table-striped table-vcenter table">
-                                       <thead>
-                                          <tr>
-                                             <th>N°</th>
-                                             <th>Descripción</th>
-                                             <th>Fecha</th>
-                                             <th>Descargar</th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td>1</td>
-                                             <td>Reglamento Institucional.</td>
-                                             <td>03/04/2023</td>
-                                             <td style="position:relative;">
-                                                <div class="tarjeta_icon1">
-                                                   <i class="fas fa-file-pdf"></i>
-                                                </div>
-                                             </td>
-                                          </tr>
-                                          <tr>
-                                             <td>2</td>
-                                             <td>Reglamento general.</td>
-                                             <td>01/02/2023</td>
-                                             <td style="position:relative;">
-                                                <div class="tarjeta_icon1">
-                                                   <i class="fas fa-file-pdf"></i>
-                                                </div>
-                                             </td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
+                                
                               </div>
 
                            </div>
-                           <p style="text-align: justify;padding-top:40px">
-                              {!! $carrera->reglamentos !!}
-                           </p>
+                           
                         </div>
                      </div>
                   </div>

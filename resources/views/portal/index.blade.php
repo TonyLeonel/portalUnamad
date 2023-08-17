@@ -19,7 +19,7 @@
     <div class="slider_principal">
         <img src="{{ asset('img/banners/1.jpg')}}" alt="" style="width: 100%;">    
         <img src="{{ asset('img/banners/2.jpg')}}" alt="" style="width: 100%;">    
-        <img src="{{ asset('img/banners/3.jpg')}}" alt="" style="width: 100%;">    
+           
         <img src="{{ asset('img/banners/4.jpg')}}" alt="" style="width: 100%;">           
     </div>  
     <div class="slider-progress-bar">
@@ -123,23 +123,6 @@
 </section>
 @endif
 
-<<<<<<< HEAD
-=======
-<div class="flexslider">
-    <ul class="slides">
-        <li>
-            <img src="{{ asset('img/images/1.png')}}" alt="rectores" />
-        </li>
-        <li>
-            <img src="{{ asset('img/images/2.png')}}" />
-        </li>
-
-        <li>
-            <img src="{{ asset('img/images/4.png')}}" />
-        </li>
-    </ul>
-</div>
->>>>>>> f459d8f7c4aa3bec6062e7227d5ae0d8515fc755
 <!-- SERVICIOS -->
 <section class="relative-padding">
     <div class="container">

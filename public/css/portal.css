@@ -1022,3 +1022,58 @@ section.section-principal-home .section-numeros h2.text-shadow-numeros {
     overflow-x: auto;
 }
 
+.disabled-link {
+    color: gray; /* Cambia el color a uno que parezca deshabilitado */
+    pointer-events: none; /* Esto evitará que el enlace sea clicleable */
+    cursor: default; /* Cambia el cursor a uno por defecto */
+    text-decoration: none; /* Elimina cualquier subrayado del enlace */
+}
+.module-under-development {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    color: #333;
+}
+
+.gear {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ccc;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3498db; /* Color del mensaje */
+}
+
+.sub-message {
+    font-size: 18px;
+    color: #777; /* Color del sub-mensaje */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.custom-blockquote {
+    border-left: 8px solid #db0455; /* Cambia "your-color" al color que desees */
+    padding-left: 15px;
+}
+
+
+
+
+
+
+

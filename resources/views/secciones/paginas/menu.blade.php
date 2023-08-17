@@ -3,7 +3,8 @@
         <div class="box-widget-title fl-wrap mt-1">Navegación</div>
         <div class="faq-nav scroll-init fl-wrap mb-0">
             <ul>
-                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura)) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->abreviatura.'/'.$carrera->abreviatura) }}">INICIO</a></li>
+                
+                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura)) ? 'act-scrlink' : '' }}" href="{{ url('facultades/agroindustrial') }}">INICIO</a></li>
 
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/resena')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/resena') }}">RESEÑA HISTÓRICA</a></li>
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/reglamentos')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/reglamentos') }}">REGLAMENTOS</a></li>
@@ -20,7 +21,7 @@
 
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/plan')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/plan') }}">PLAN DE ESTUDIOS</a></li>
 
-                <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/areas')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/areas') }}">ÁREAS CURRICULARES</a></li>
+                
 
                 <li><a class="{{ (request()->is('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/objetivos')) ? 'act-scrlink' : '' }}" href="{{ url('facultades/'.$carrera->facultad['flag'].'/'.$carrera->abreviatura.'/objetivos') }}">OBJETIVOS ACADÉMICOS</a></li>
                 
@@ -37,15 +38,28 @@
         <div class="contats-list clm fl-wrap">
             <ul class="no-list-style">
                 @if($carrera->telefono!=null)
-                    <li><span><i class="fal fa-phone"></i> Teléfono :</span> <a href="{{$carrera->telefono}}">{{$carrera->telefono}}</a></li>
+                <li>
+                    <span><i class="fal fa-phone"></i> Teléfono :</span>
+                    <a href="#" class="disabled-link">{{$carrera->telefono}}</a>
+                </li>
+                
+                
                 @endif
                 @if($carrera->correo!=null)
-                    <li><span><i class="fal fa-phone"></i> Correo :</span> <a href="{{$carrera->correo}}">{{$carrera->correo}}</a></li>
+                <li>
+                    <span><i class="fal fa-envelope"></i> Correo :</span>
+                    <a href="#" class="disabled-link">{{$carrera->correo}}</a>
+                </li>
+                
                 @endif
                 @if($carrera->direccion!=null)
-                    <li><span><i class="fal fa-phone"></i> Dirección :</span> <a href="{{$carrera->direccion}}">{{$carrera->direccion}}</a></li>
+                <li>
+                    <span><i class="fal fa-map-marker"></i> Dirección :</span>
+                    <a href="#" class="disabled-link">{{$carrera->direccion}}</a>
+                </li>
+                
                 @endif
-                <li><span><i class="fal fa-browser"></i> Web :</span> <a href="https://portal.unamad.edu.pe/facultades/ingenieria/{{$carrera->abreviatura}}">.../facultades/ingenieria/{{$carrera->abreviatura}}</a></li>
+                x
             </ul>
         </div>
         <div class="profile-widget-footer fl-wrap">

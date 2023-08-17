@@ -52,20 +52,101 @@
                                 <div class="col-12 mb-3">
                                     <span style="color: rgb(237, 20, 91);"><strong>PLANA DOCENTE</strong></span>
                                 </div>
-                                @foreach($docentes as $docente)
+                                <div>
                                     <div class="col-md-4 col-xl-3 mb-3">
                                         <div class="card alto">
                                             <div class="card-body text-center">
                                                 <div class="mb-3">
-                                                    <span class="avatar avatar-xl rounded" style="background-image: url(/{{$docente->imagen}})"></span>
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
                                                 </div>
-                                                <div class="card-title mb-1">{{$docente->nombre}}</div>
-                                                <div class="text-muted">{{$docente->especialidad}}</div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
                                             </div>
-                                            <a href="{{$docente->cv}}" target="_blank" class="card-btn">Currículum Vitae</a>
                                         </div>
-                                    </div>                        
-                                @endforeach   
+                                    </div>
+
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3 mb-3">
+                                        <div class="card alto">
+                                            <div class="card-body text-center">
+                                                <div class="mb-3">
+                                                    <i class="fas fa-user fa-5x"></i> <!-- Cambia el tamaño del ícono según tus necesidades -->
+                                                </div>
+                                                <div class="card-title mb-1">Juan Fidel Ttio Huaranca</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                                                                                                                                                                                            
+                                </div>  
                             </div>                      
                         </div>
                     </div>  
