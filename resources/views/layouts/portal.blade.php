@@ -161,7 +161,7 @@
                            <a href="{{ url('oficinas/secretaria') }}" class="{{ request()->is('oficinas/secretaria') ? 'act-link' : '' }}">Secretaría General</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad') ? 'act-link' : '' }}">Gestión de Calidad</a>
+                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad') ? 'act-link' : '' }}">Gestión de la Calidad</a>
                         </li>
                         <li>
                            <a href="{{ url('oficinas/cooperacion') }}" class="{{ request()->is('oficinas/cooperacion') ? 'act-link' : '' }}">Cooperación y Relaciones Internacionales</a>
@@ -184,7 +184,7 @@
                      <a href="#" class="{{ request()->is('facultades*') ? 'act-link' : '' }}">FACULTADES <i class="fas fa-caret-down"></i></a>
                      <ul class="no-list-style">
                         <li>
-                           <a href="#">Facultad de Ingeniería <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Ingeniería <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/agroindustrial') }}"  class="{{ request()->is('facultades/agroindustrial') ? 'act-link' : '' }}">Agroindustrial</a>
@@ -201,7 +201,7 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#">Facultad de Educación <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Educación <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/matematica') }}" class="{{ request()->is('facultades/matematica') ? 'act-link' : '' }}">Matemática y Computación</a>
@@ -215,7 +215,7 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#">Facultad de Ecoturismo <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Ecoturismo <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/ecoturismo') }}" class="{{ request()->is('facultades/ecoturismo') ? 'act-link' : '' }}">Ecoturismo</a>
