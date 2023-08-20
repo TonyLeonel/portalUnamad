@@ -1,14 +1,8 @@
 @extends('layouts.portal')
 
 @section('titulo', 'Comunicados')
-@section('css')    
-    <link href="{{ asset('lib/tabler/css/tabler.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('lib/tabler/css/tabler-vendors.min.css') }}" rel="stylesheet"/>       
-@endsection
+
 @section('js')
-<script src="{{ asset('lib/datatables/DataTables-1.11.5/js/jquery.dataTables.min.js') }}" type="text/javascript"></script>
-<script src="{{ asset('lib/datatables/DataTables-1.11.5/js/dataTables.bootstrap4.min.js') }}" type="text/javascript"></script>
-  <script src="{{ asset('js/utilitarios.js') }}" type="text/javascript"></script>
   <script src="{{ asset('js/portal/comunicados.js') }}" type="text/javascript"></script>
 @endsection
 
@@ -32,7 +26,7 @@
     </div>
 </section>
 <!-- NAVEGACIÓN -->
-<div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap image_bar" style="background: #EDF0F4;">
+<div class="breadcrumbs fw-breadcrumbs sp-brd fl-wrap image_bar">
     <div class="container">
         <div class="breadcrumbs-list">
             <a href="{{ url('/') }}">Inicio</a>  
@@ -46,35 +40,82 @@
     </div>
 </div>
 <!-- CONTENIDO -->
-<section class="relative-padding small-padding image_complete">
+<section class="gray-bg small-padding fl-wrap">    
     <div class="container">    
-        <div class="section-title fl-wrap"style="margin-bottom: 0px;">
-            <h2>Comunicados</h2>
-            <p>A través de este medio usted podrá enterarse de todas la comunicaciones oficiales que emite la Universidad Nacional Amazónica de Madre de Dios</p>
-        </div>          
-        <div class="row row-cards">
-            <div class="col-12">
-                <div class="card">
-                    <div id="t_principal">
-                        <table id="t_comunicados" class="table card-table table-vcenter text-nowrap datatable" width="100%">
-                            <thead>
-                                <tr>    
-                                    <th>CATEGORÍA</th>                              
-                                    <th>TÍTULO</th>
-                                    <th>INICIO</th>
-                                    <th>ACCIONES</th>     
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="6">Cargando...</td>
-                                </tr>
-                            </tbody>
-                        </table>   
+        @php
+        $izquierda = array();
+        $centro = array();
+        $derecha = array();
+        $contador = 1;
+
+        foreach ($comunicados as $comunicado) {
+            if($contador == 1){
+                $izquierda[] = $comunicado;
+            } elseif($contador == 2) {
+                $centro[] = $comunicado;
+            } else {
+                $derecha[] = $comunicado;
+            }
+            
+            if($contador >= 3)
+                $contador = 1;
+            else
+                $contador++;
+        }        
+        @endphp 
+        <!--Listado-->
+        <div class="row">
+            <!--izquierda-->
+            <div class="col-md-4">
+                @foreach ($izquierda as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time {{ ($comunicado->fecha_fin->lt($ahora) ? 'vencido' : '') }}" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
                     </div>                    
-                </div>
+                </article>
+                @endforeach
+            </div>       
+            <!--centro-->
+            <div class="col-md-4">
+                @foreach ($centro as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time {{ ($comunicado->fecha_fin->lt($ahora) ? 'vencido' : '') }}" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                    </div>                    
+                </article>
+                @endforeach
+            </div>    
+            <!--derecha-->
+            <div class="col-md-4">
+                @foreach ($derecha as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time {{ ($comunicado->fecha_fin->lt($ahora) ? 'vencido' : '') }}" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                    </div>                    
+                </article>
+                @endforeach    
+            </div>    
+        </div>
+        <div class="row pt-4">
+            <div class="col-12">
+                {{ $comunicados->links('secciones.paginacion') }}
             </div>
-        </div>    
+        </div>
     </div>
 </section>
 @endsection

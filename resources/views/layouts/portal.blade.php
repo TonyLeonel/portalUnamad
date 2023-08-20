@@ -123,20 +123,20 @@
                            <a href="#">Vicerrectorado Académico <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
-                                 <a href="{{ url('oficinas/admision') }}" class="{{ request()->is('oficinas/admision') ? 'act-link' : '' }}">Dirección de Admisión</a>
+                                 <a href="{{ url('oficinas/admision') }}" class="{{ request()->is('oficinas/admision*') ? 'act-link' : '' }}">Dirección de Admisión</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/biblioteca') ? 'act-link' : '' }}">Biblioteca Central</a>
+                                 <a href="{{ url('oficinas/biblioteca') }}" class="{{ request()->is('oficinas/biblioteca*') ? 'act-link' : '' }}">Biblioteca Central</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/academicos') ? 'act-link' : '' }}">Asuntos Académicos</a>
+                                 <a href="{{ url('oficinas/academicos') }}" class="{{ request()->is('oficinas/academicos*') ? 'act-link' : '' }}">Asuntos Académicos</a>
                               </li>
                               <li>
                                  <a href="https://proyeccionsocial.unamad.edu.pe/" target="_blank">Proyección Social y Extensión Cultural</a>
                              </li>
                              
                               <li>
-                                 <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/bienestar') ? 'act-link' : '' }}">Bienestar Universitario</a>
+                                 <a href="{{ url('oficinas/bienestar') }}" class="{{ request()->is('oficinas/bienestar*') ? 'act-link' : '' }}">Bienestar Universitario</a>
                               </li>
                            </ul>
                         </li>   
@@ -144,36 +144,36 @@
                            <a href="#">Vicerrectorado de Investigación <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
-                                 <a href="{{ url('oficinas/incubadora') }}" class="{{ request()->is('oficinas/incubadora') ? 'act-link' : '' }}">Incubadora de Empresas</a>
+                                 <a href="{{ url('oficinas/incubadora') }}" class="{{ request()->is('oficinas/incubadora*') ? 'act-link' : '' }}">Incubadora de Empresas</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/innovacion') }}" class="{{ request()->is('oficinas/innovacion') ? 'act-link' : '' }}">Innovación y Transferencia Tecnológica</a>
+                                 <a href="{{ url('oficinas/innovacion') }}" class="{{ request()->is('oficinas/innovacion*') ? 'act-link' : '' }}">Innovación y Transferencia Tecnológica</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/investigacion') }}" class="{{ request()->is('oficinas/investigacion') ? 'act-link' : '' }}">Instituto de Investigación</a>
+                                 <a href="{{ url('oficinas/investigacion') }}" class="{{ request()->is('oficinas/investigacion*') ? 'act-link' : '' }}">Instituto de Investigación</a>
                               </li>
                            </ul>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/secretaria') }}" class="{{ request()->is('oficinas/secretaria') ? 'act-link' : '' }}">Secretaría General</a>
+                           <a href="{{ url('oficinas/secretaria') }}" class="{{ request()->is('oficinas/secretaria*') ? 'act-link' : '' }}">Secretaría General</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad') ? 'act-link' : '' }}">Gestión de la Calidad</a>
+                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad*') ? 'act-link' : '' }}">Gestión de la Calidad</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/cooperacion') }}" class="{{ request()->is('oficinas/cooperacion') ? 'act-link' : '' }}">Cooperación y Relaciones Internacionales</a>
+                           <a href="{{ url('oficinas/cooperacion') }}" class="{{ request()->is('oficinas/cooperacion*') ? 'act-link' : '' }}">Cooperación y Relaciones Internacionales</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/ambiental') }}" class="{{ request()->is('oficinas/ambiental') ? 'act-link' : '' }}">Gestión Ambiental</a>
+                           <a href="{{ url('oficinas/ambiental') }}" class="{{ request()->is('oficinas/ambiental*') ? 'act-link' : '' }}">Gestión Ambiental</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/administracion') }}" class="{{ request()->is('oficinas/administracion') ? 'act-link' : '' }}">Dirección General de Administración</a>
+                           <a href="{{ url('oficinas/administracion') }}" class="{{ request()->is('oficinas/administracion*') ? 'act-link' : '' }}">Dirección General de Administración</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/oti') }}" class="{{ request()->is('oficinas/oti') ? 'act-link' : '' }}">Oficina de Tecnologías de la Información</a>
+                           <a href="{{ url('oficinas/oti') }}" class="{{ request()->is('oficinas/oti*') ? 'act-link' : '' }}">Oficina de Tecnologías de la Información</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/planeamiento') }}" class="{{ request()->is('oficinas/planeamiento') ? 'act-link' : '' }}">Oficina de Planeamiento y Presupuesto</a>
+                           <a href="{{ url('oficinas/planeamiento') }}" class="{{ request()->is('oficinas/planeamiento*') ? 'act-link' : '' }}">Oficina de Planeamiento y Presupuesto</a>
                         </li>
                      </ul>
                   </li>                                

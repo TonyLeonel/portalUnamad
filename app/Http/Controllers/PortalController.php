@@ -51,6 +51,145 @@ class PortalController extends Controller
     }
 
 
+    /**
+     * OFICINAS
+     */
+    public function asamblea() {
+        return view('portal.oficinas.asamblea');
+    }
+
+    public function consejo() {
+        return view('portal.oficinas.consejo');
+    }
+
+    public function decanatura() {
+        return view('portal.oficinas.decanatura');
+    }
+
+    public function admision() {
+        return view('portal.oficinas.admision');
+    }
+
+    public function biblioteca() {
+        return view('portal.oficinas.biblioteca');
+    }
+
+    public function academicos() {
+        return view('portal.oficinas.academicos');
+    }
+
+    protected $bienestar_menu = array(
+        array('nombre'  => 'INICIO', 'link' => 'oficinas/bienestar'),
+        array('nombre'  => 'ACTIVIDADES', 'link' => 'oficinas/bienestar/actividades')
+    );    
+
+    public function bienestar() {
+        $menu = $this->bienestar_menu;
+        return view('portal.oficinas.bienestar.index', compact('menu'));
+    }
+
+    public function bienestar_actividades() {
+        $menu = $this->bienestar_menu;
+        return view('portal.oficinas.bienestar.actividades', compact('menu'));
+    }
+
+    public function incubadora() {
+        return view('portal.oficinas.incubadora');
+    }
+
+    public function innovacion() {
+        return view('portal.oficinas.innovacion');
+    }
+
+    public function investigacion() {
+        return view('portal.oficinas.investigacion');
+    }
+
+    public function secretaria() {
+        return view('portal.oficinas.secretaria');
+    }
+
+    public function calidad() {
+        return view('portal.oficinas.calidad');
+    }
+
+    protected $cooperacion_menu = array(
+        array('nombre'  => 'INICIO', 'link' => 'oficinas/cooperacion'),
+        array('nombre'  => 'MISIÓN, VISIÓN, OBJETIVOS', 'link' => 'oficinas/cooperacion/mision'),
+        array('nombre'  => 'ESTRUCTURA ORGÁNICA', 'link' => 'oficinas/cooperacion/estructura'),
+        array('nombre'  => 'PERSONAL ADMINISTRATIVO', 'link' => 'oficinas/cooperacion/personal'),
+        array('nombre'  => 'DIRECTORIO', 'link' => 'oficinas/cooperacion/directorio'),
+        array('nombre'  => 'SERVICIOS', 'link' => 'oficinas/cooperacion/servicios'),
+        array('nombre'  => 'CONVENIOS', 'link' => 'oficinas/cooperacion/convenios')
+    );
+
+    public function cooperacion() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.index', compact('menu'));
+    }
+
+    public function cooperacion_mision() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.mision', compact('menu'));
+    }
+
+    public function cooperacion_estructura() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.estructura', compact('menu'));
+    }
+
+
+    public function cooperacion_personal() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.personal', compact('menu'));
+    }
+
+
+    public function cooperacion_directorio() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.directorio', compact('menu'));
+    }
+
+    public function cooperacion_servicios() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.servicios', compact('menu'));
+    }
+
+    public function cooperacion_convenios() {
+        $menu = $this->cooperacion_menu;
+        return view('portal.oficinas.cooperacion.convenios', compact('menu'));
+    }
+
+    protected $ambiental_menu = array(
+        array('nombre'  => 'INICIO', 'link' => 'oficinas/ambiental'),
+        array('nombre'  => 'ACTIVIDADES', 'link' => 'oficinas/ambiental/actividades')
+    );
+
+    public function ambiental() {
+        $menu = $this->ambiental_menu;
+        return view('portal.oficinas.ambiental.index', compact('menu'));
+    }
+
+    public function ambiental_actividades() {
+        $menu = $this->ambiental_menu;
+        $id = 6;
+        $publicaciones = Publicacion::with(['categoria', 'user'])->where('estado', 1)->where('publicacion_categoria_id', $id)->paginate(10);
+        return view('portal.oficinas.ambiental.actividades', compact('menu','publicaciones'));
+    }
+
+    public function administracion() {
+        return view('portal.oficinas.administracion');
+    }
+
+    public function oti() {
+        return view('portal.oficinas.oti');
+    }
+
+    public function planeamiento() {
+        return view('portal.oficinas.planeamiento');
+    }
+
+
 
     /**
      * FACULTADES
@@ -164,28 +303,16 @@ class PortalController extends Controller
         return view('portal.paginas.transparencia.licenciamiento');
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /**
+     * COMUNICADOS
+     */
 
     public function comunicados(Request $request)
     {
         $ahora = Carbon::now();
-        $facultades=Facultad::with('carreras')->get();
-        $menus = Menu::with('categorias.categorias','categorias.paginas')->where('estado',1)->whereNull('menu_id')->orderBy('posicion')->get();
         $comunicados = Comunicado::where('estado', 1)->orderBy('created_at', 'desc')->paginate(12);
         $categorias = Comunicado_categoria::get();
-        return view('portal.comunicados', compact('comunicados','ahora','facultades','menus','categorias'));
+        return view('portal.comunicados', compact('comunicados','ahora','categorias'));
     }
     public function comunicado_detalle(Request $request, $id)
     {

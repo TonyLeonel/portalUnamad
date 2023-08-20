@@ -39,7 +39,7 @@
         </div>            
     </div>   
 </section>
-<!-- COMUNIADOS -->
+<!-- COMUNICADOS -->
 @if(count($comunicados) > 0)
 <section class="gray-bg small-padding ">
     <div class="container">
@@ -82,45 +82,49 @@
         <div class="row">
             <!--izquierda-->
             <div class="col-md-4">
-            @foreach ($izquierda as $comunicado)
-            <article class="com_item">
-                <div class="com_imagen">
-                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
-                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
-                        <div class="com_overlay"></div>
-                    </a>
-                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
-                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
-                </div>                    
-            </article>
-            @endforeach
+                @foreach ($izquierda as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                    </div>                    
+                </article>
+                @endforeach
             </div>                                                                                                                              </div> 
             <!--centro-->
-            @foreach ($centro as $comunicado)
-            <article class="com_item">
-                <div class="com_imagen">
-                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
-                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
-                        <div class="com_overlay"></div>
-                    </a>
-                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
-                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
-                </div>                    
-            </article>
-            @endforeach
+            <div class="col-md-4">
+                @foreach ($centro as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                    </div>                    
+                </article>
+                @endforeach
+            </div>  
             <!--derecha-->
-            @foreach ($derecha as $comunicado)
-            <article class="com_item">
-                <div class="com_imagen">
-                    <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
-                        <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
-                        <div class="com_overlay"></div>
-                    </a>
-                    <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
-                    <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
-                </div>                    
-            </article>
-            @endforeach
+            <div class="col-md-4">
+                @foreach ($derecha as $comunicado)
+                <article class="com_item">
+                    <div class="com_imagen">
+                        <a href="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_link" target="_blank">
+                            <img src="{{ asset($comunicado->imagen) }}" alt="Comunicado" loading="lazy">                        
+                            <div class="com_overlay"></div>
+                        </a>
+                        <div class="com_time" style="bottom: 10px; left: 10px;">{{ $comunicado->created_at->format('d/m/y') }} - {{ $comunicado->fecha_fin->format('d/m/y') }}</div>                       
+                        <a href="javascript:void(0);" onclick="compartir(this);" data-link="{{ url('comunicados/detalle/'.$comunicado->id) }}" class="com_imagen_btn tolt" data-microtip-position="left" data-tooltip="Compartir" style="top: 10px; right: 10px;"><span><i class="fal fa-random"></i></span></a>                        
+                    </div>                    
+                </article>
+                @endforeach
+            </div>  
         </div> 
     </div>
 </section>
@@ -157,7 +161,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="{{ url('servicios/biblioteca') }}" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="{{ url('oficinas/biblioteca') }}" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fa fa-book" aria-hidden="true"></i>
@@ -172,7 +176,7 @@
                         <div class="tarjeta_container mb-3">
                             <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
                             <div class="tarjeta_wrapper">
-                                <a href="{{ url('programas/idiomas') }}" class="tarjeta tarjeta_white" target="_blank">
+                                <a href="https://cidiomas.unamad.edu.pe/" class="tarjeta tarjeta_white" target="_blank">
                                     <div class="tarjeta_centro">
                                         <div class="tarjeta_icon">
                                             <i class="fa fa-language" aria-hidden="true"></i>

@@ -3,36 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortalController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 //PORTAL WEB
 Route::get('/', [App\Http\Controllers\PortalController::class, 'index']);
-
-Route::get('comunicados/lista', [App\Http\Controllers\PortalController::class, 'comunicados_lista']);
 Route::get('comunicados', [App\Http\Controllers\PortalController::class, 'comunicados']);
 Route::get('comunicados/detalle/{id}', [App\Http\Controllers\PortalController::class, 'comunicado_detalle']);
+//
 Route::get('documentos', [App\Http\Controllers\PortalController::class, 'documentos']);
-
-/*
+//
 Route::get('publicaciones', [App\Http\Controllers\PortalController::class, 'publicaciones']);
 Route::get('publicaciones/{id}/detalles', [App\Http\Controllers\PortalController::class, 'publicacion_detalle']);
-*/
-
-
 //AUTH
 Route::get('login', [App\Http\Controllers\UserController::class, 'ingreso'])->name('login');
 Route::post('login', [App\Http\Controllers\UserController::class, 'login'])->middleware('throttle:limite');
 Route::post('logout', [App\Http\Controllers\UserController::class, 'logout']);
-
 
 /**
  * PAGINAS
@@ -45,12 +28,35 @@ Route::get('universidad/historia', [App\Http\Controllers\PortalController::class
 Route::get('universidad/sedes', [App\Http\Controllers\PortalController::class, 'sedes']);
 Route::get('universidad/politicas', [App\Http\Controllers\PortalController::class, 'politicas']);
 
-
+//OFICINAS
+Route::get('oficinas/asamblea', [App\Http\Controllers\PortalController::class, 'asamblea']);
+Route::get('oficinas/consejo', [App\Http\Controllers\PortalController::class, 'consejo']);
+Route::get('oficinas/decanatura', [App\Http\Controllers\PortalController::class, 'decanatura']);
+Route::get('oficinas/admision', [App\Http\Controllers\PortalController::class, 'admision']);
+Route::get('oficinas/biblioteca', [App\Http\Controllers\PortalController::class, 'biblioteca']);
+Route::get('oficinas/academicos', [App\Http\Controllers\PortalController::class, 'academicos']);
+Route::get('oficinas/bienestar', [App\Http\Controllers\PortalController::class, 'bienestar']);
+Route::get('oficinas/bienestar/actividades', [App\Http\Controllers\PortalController::class, 'bienestar_actividades']);
+Route::get('oficinas/incubadora', [App\Http\Controllers\PortalController::class, 'incubadora']);
+Route::get('oficinas/innovacion', [App\Http\Controllers\PortalController::class, 'innovacion']);
+Route::get('oficinas/investigacion', [App\Http\Controllers\PortalController::class, 'investigacion']);
+Route::get('oficinas/secretaria', [App\Http\Controllers\PortalController::class, 'secretaria']);
+Route::get('oficinas/calidad', [App\Http\Controllers\PortalController::class, 'calidad']);
+Route::get('oficinas/cooperacion', [App\Http\Controllers\PortalController::class, 'cooperacion']);
+Route::get('oficinas/cooperacion/mision', [App\Http\Controllers\PortalController::class, 'cooperacion_mision']);
+Route::get('oficinas/cooperacion/estructura', [App\Http\Controllers\PortalController::class, 'cooperacion_estructura']);
+Route::get('oficinas/cooperacion/personal', [App\Http\Controllers\PortalController::class, 'cooperacion_personal']);
+Route::get('oficinas/cooperacion/directorio', [App\Http\Controllers\PortalController::class, 'cooperacion_directorio']);
+Route::get('oficinas/cooperacion/servicios', [App\Http\Controllers\PortalController::class, 'cooperacion_servicios']);
+Route::get('oficinas/cooperacion/convenios', [App\Http\Controllers\PortalController::class, 'cooperacion_convenios']);
+Route::get('oficinas/ambiental', [App\Http\Controllers\PortalController::class, 'ambiental']);
+Route::get('oficinas/ambiental/actividades', [App\Http\Controllers\PortalController::class, 'ambiental_actividades']);
+Route::get('oficinas/administracion', [App\Http\Controllers\PortalController::class, 'administracion']);
+Route::get('oficinas/oti', [App\Http\Controllers\PortalController::class, 'oti']);
+Route::get('oficinas/planeamiento', [App\Http\Controllers\PortalController::class, 'planeamiento']);
 
 // FACULTADES
 Route::get('facultades/{carrera}', [PortalController::class, 'mostrar_carrera'])->name('facultades.carrera');
-
-
 
 //PROGRAMAS
 Route::get('programas/informatica', [App\Http\Controllers\PortalController::class, 'centro_informatica']);
@@ -77,23 +83,11 @@ Route::get('transparencia/articulo-11', [App\Http\Controllers\PortalController::
 Route::get('transparencia/licenciamiento', [App\Http\Controllers\PortalController::class, 'licenciamiento']);
 
 
-
-
-
-
-
-
-
-
-
-//Auth::routes();
-
-
 /**
  * PAGINAS GENERADAS
  */
 
- 
+/*
 // Universidad
 Route::get('universidad/presentacion/unamad', [App\Http\Controllers\PaginaController::class, 'presentacion']);
 Route::get('universidad/autoridades/unamad', [App\Http\Controllers\PaginaController::class, 'autoridades']);
@@ -118,9 +112,11 @@ Route::get('centro-de-idiomas/mision-y-vision', [App\Http\Controllers\PaginaCont
 Route::get('centro-de-idiomas/estructura', [App\Http\Controllers\PaginaController::class, 'idiomas_estructura']);
 Route::get('centro-de-idiomas/personal', [App\Http\Controllers\PaginaController::class, 'idiomas_personal']);
 Route::get('centro-de-idiomas/directorio', [App\Http\Controllers\PaginaController::class, 'idiomas_directorio']);
+*/
 
 /*****BY AG*****/
 /*** OCRI - Oficina de Cooperación y Relaciones. Internacionales - BY AG ***/
+/*
 Route::get('ocri', [App\Http\Controllers\PaginaController::class, 'ocri_inicio']);
 Route::get('ocri/mision-y-vision', [App\Http\Controllers\PaginaController::class, 'ocri_mision']);
 Route::get('ocri/estructura', [App\Http\Controllers\PaginaController::class, 'ocri_estructura']);
@@ -128,6 +124,7 @@ Route::get('ocri/personal', [App\Http\Controllers\PaginaController::class, 'ocri
 Route::get('ocri/directorio', [App\Http\Controllers\PaginaController::class, 'ocri_directorio']);
 Route::get('ocri/servicios', [App\Http\Controllers\PaginaController::class, 'ocri_servicios']);
 Route::get('ocri/convenios', [App\Http\Controllers\PaginaController::class, 'ocri_convenios']);
+*/
 
 /*** WWF - Fondo Mundial para la Naturaleza - BY AG ***/
 Route::get('wwf', [App\Http\Controllers\PaginaController::class, 'wwf_inicio']);
@@ -137,9 +134,10 @@ Route::get('wwf/personal', [App\Http\Controllers\PaginaController::class, 'wwf_p
 /*********/
 
 
-
+/*
 Route::get('inicio/bibliotecaVirtual', [App\Http\Controllers\PaginaController::class, 'biblioteca_virtual']);
 Route::get('inicio/bus', [App\Http\Controllers\PaginaController::class, 'bus']);
+*/
 
 /*Facultades
 Route::get('facultades/ingenieria/agroindustrial', [App\Http\Controllers\PaginaController::class, 'agroindustrial']);
@@ -179,7 +177,7 @@ Route::get('facultades/{facultad}/{nombre}/docentes', [App\Http\Controllers\Pagi
 
 
 //paginas creadas por base de datos
-Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
+//Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
 
 
 /**
