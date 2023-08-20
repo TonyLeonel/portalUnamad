@@ -200,7 +200,7 @@ $( document ).ready(function() {
     
 
     
-    /*$('#externo-slider').slick({
+    $('#externo-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
@@ -225,7 +225,7 @@ $( document ).ready(function() {
             }
         ]
 
-    });*/
+    });
 
     
 
@@ -236,8 +236,6 @@ $( document ).ready(function() {
     var fecha2000 = new Date(2000, 6, 5);
     var diferenciaAnios = fechaActual.getFullYear() - fecha2000.getFullYear();
     $("#counter-target").attr("data-counter-target", diferenciaAnios);
-    console.log(diferenciaAnios);
-
     new Counter('.counter');
 
 });
@@ -278,9 +276,7 @@ $( document ).ready(function() {
     
 // });
 // $('.img-holder').imageScroll();
-$('.img-holder').imageScroll({
-    coverRatio: 0.5
-});
+
 
 
 // window.addEventListener('load', function() {

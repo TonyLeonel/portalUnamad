@@ -204,29 +204,8 @@ class PaginaController extends Controller
    /*** FIN BY Alex G***/
 
 
-   /**
-    * TRANSPARENCIA
-    */
-   public function indicador_55(Request $request)
-   {
-      $facultades = Facultad::with('carreras')->get();
-      $menus = Menu::with('categorias.categorias', 'categorias.paginas')->where('estado', 1)->whereNull('menu_id')->orderBy('posicion')->get();
-      return view('portal.paginas.transparencia.indicador_55', compact('facultades', 'menus'));
-   }
-
-   public function articulo_11(Request $request)
-   {
-      $facultades = Facultad::with('carreras')->get();
-      $menus = Menu::with('categorias.categorias', 'categorias.paginas')->where('estado', 1)->whereNull('menu_id')->orderBy('posicion')->get();
-      return view('portal.paginas.transparencia.articulo_11', compact('facultades', 'menus'));
-   }
-
-   public function licenciamiento(Request $request)
-   {
-      $facultades = Facultad::with('carreras')->get();
-      $menus = Menu::with('categorias.categorias', 'categorias.paginas')->where('estado', 1)->whereNull('menu_id')->orderBy('posicion')->get();
-      return view('portal.paginas.transparencia.licenciamiento', compact('facultades', 'menus'));
-   }
+ 
+   
    /**
     * CARRERAS
     */

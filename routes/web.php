@@ -38,22 +38,43 @@ Route::post('logout', [App\Http\Controllers\UserController::class, 'logout']);
  * PAGINAS
  */
 
+//UNIVERSIDAD
 Route::get('universidad/presentacion', [App\Http\Controllers\PortalController::class, 'presentacion']);
+Route::get('universidad/autoridades', [App\Http\Controllers\PortalController::class, 'autoridades']);
+Route::get('universidad/historia', [App\Http\Controllers\PortalController::class, 'historia']);
+Route::get('universidad/sedes', [App\Http\Controllers\PortalController::class, 'sedes']);
+Route::get('universidad/politicas', [App\Http\Controllers\PortalController::class, 'politicas']);
+
+
 
 // FACULTADES
 Route::get('facultades/{carrera}', [PortalController::class, 'mostrar_carrera'])->name('facultades.carrera');
 
 
 
+//PROGRAMAS
+Route::get('programas/informatica', [App\Http\Controllers\PortalController::class, 'centro_informatica']);
+Route::get('programas/idiomas', [App\Http\Controllers\PortalController::class, 'centro_idiomas']);
+Route::get('programas/idiomas/mision', [App\Http\Controllers\PortalController::class, 'centro_idiomas_mision']);
+Route::get('programas/idiomas/estructura', [App\Http\Controllers\PortalController::class, 'centro_idiomas_estructura']);
+Route::get('programas/idiomas/personal', [App\Http\Controllers\PortalController::class, 'centro_idiomas_personal']);
+Route::get('programas/idiomas/directorio', [App\Http\Controllers\PortalController::class, 'centro_idiomas_directorio']);
+Route::get('programas/postgrado', [App\Http\Controllers\PortalController::class, 'postgrado']);
 
+//PROYECTOS
+Route::get('proyectos/jardin', [App\Http\Controllers\PortalController::class, 'jardin']);
+Route::get('proyectos/panificadora', [App\Http\Controllers\PortalController::class, 'panificadora']);
+Route::get('proyectos/bus', [App\Http\Controllers\PortalController::class, 'bus']);
+Route::get('proyectos/herbario', [App\Http\Controllers\PortalController::class, 'herbario']);
+Route::get('proyectos/estacion', [App\Http\Controllers\PortalController::class, 'estacion']);
+Route::get('proyectos/aldea', [App\Http\Controllers\PortalController::class, 'aldea']);
+Route::get('proyectos/km16', [App\Http\Controllers\PortalController::class, 'km16']);
+Route::get('proyectos/km18', [App\Http\Controllers\PortalController::class, 'km18']);
 
-
-
-
-
-
-
-
+//TRANSPARENCIA
+Route::get('transparencia/indicador-55', [App\Http\Controllers\PortalController::class, 'indicador_55']);
+Route::get('transparencia/articulo-11', [App\Http\Controllers\PortalController::class, 'articulo_11']);
+Route::get('transparencia/licenciamiento', [App\Http\Controllers\PortalController::class, 'licenciamiento']);
 
 
 
@@ -72,7 +93,7 @@ Route::get('facultades/{carrera}', [PortalController::class, 'mostrar_carrera'])
  * PAGINAS GENERADAS
  */
 
- /*
+ 
 // Universidad
 Route::get('universidad/presentacion/unamad', [App\Http\Controllers\PaginaController::class, 'presentacion']);
 Route::get('universidad/autoridades/unamad', [App\Http\Controllers\PaginaController::class, 'autoridades']);
@@ -97,7 +118,7 @@ Route::get('centro-de-idiomas/mision-y-vision', [App\Http\Controllers\PaginaCont
 Route::get('centro-de-idiomas/estructura', [App\Http\Controllers\PaginaController::class, 'idiomas_estructura']);
 Route::get('centro-de-idiomas/personal', [App\Http\Controllers\PaginaController::class, 'idiomas_personal']);
 Route::get('centro-de-idiomas/directorio', [App\Http\Controllers\PaginaController::class, 'idiomas_directorio']);
-*/
+
 /*****BY AG*****/
 /*** OCRI - Oficina de Cooperación y Relaciones. Internacionales - BY AG ***/
 Route::get('ocri', [App\Http\Controllers\PaginaController::class, 'ocri_inicio']);
@@ -115,10 +136,6 @@ Route::get('wwf/estructura', [App\Http\Controllers\PaginaController::class, 'wwf
 Route::get('wwf/personal', [App\Http\Controllers\PaginaController::class, 'wwf_personal']);
 /*********/
 
-//Transparencia
-Route::get('transparencia/indicador-55', [App\Http\Controllers\PaginaController::class, 'indicador_55']);
-Route::get('transparencia/articulo-11', [App\Http\Controllers\PaginaController::class, 'articulo_11']);
-Route::get('transparencia/licenciamiento', [App\Http\Controllers\PaginaController::class, 'licenciamiento']);
 
 
 Route::get('inicio/bibliotecaVirtual', [App\Http\Controllers\PaginaController::class, 'biblioteca_virtual']);
@@ -162,7 +179,7 @@ Route::get('facultades/{facultad}/{nombre}/docentes', [App\Http\Controllers\Pagi
 
 
 //paginas creadas por base de datos
-//Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
+Route::get('/{flag}/unamad', [App\Http\Controllers\PaginaController::class, 'pagina']);
 
 
 /**

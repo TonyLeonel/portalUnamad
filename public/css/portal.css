@@ -877,6 +877,33 @@ a.link_pink:hover{
     background-repeat: repeat;
     background-size: 350px auto;
 }
+
+
+/*---------------------------------------------------TABLA*/
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla thead th {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+.tabla th, .tabla td {
+    padding: .5rem .5rem;
+    border: 1px solid #cacaca;        
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 /*--------------------------------------------------BREACKPOINTS*/
 
 /* Small devices (landscape phones, 576px and up) */

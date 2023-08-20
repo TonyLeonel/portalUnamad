@@ -34,6 +34,23 @@ class PortalController extends Controller
         return view('portal.universidad.presentacion');
     }
 
+    public function autoridades() {
+        return view('portal.universidad.autoridades');
+    }
+
+    public function historia() {
+        return view('portal.universidad.historia');
+    }
+
+    public function sedes() {
+        return view('portal.universidad.sedes');
+    }
+
+    public function politicas() {
+        return view('portal.universidad.politica');
+    }
+
+
 
     /**
      * FACULTADES
@@ -53,11 +70,100 @@ class PortalController extends Controller
 
 
 
+    /**
+     * PROGRAMAS
+     */
+    public function centro_informatica() {
+        return view('portal.programas.informatica.index');
+    }
 
+    protected $idiomas_menu = array(
+        array('nombre'  => 'INICIO', 'link' => 'programas/idiomas'),
+        array('nombre'  => 'MISIÓN, VISIÓN Y OBJETIVOS', 'link' => 'programas/idiomas/mision'),
+        array('nombre'  => 'ESTRUCTURA ORGÁNICA', 'link' => 'programas/idiomas/estructura'),
+        array('nombre'  => 'PERSONAL ADMINISTRATIVO', 'link' => 'programas/idiomas/personal'),
+        array('nombre'  => 'DIRECTORIO Y CONTÁCTANOS', 'link' => 'programas/idiomas/directorio'),
+    );    
 
+    public function centro_idiomas() {
+        $menu = $this->idiomas_menu;
+        return view('portal.programas.idiomas.index', compact('menu'));
+    }
 
+    public function centro_idiomas_mision() {
+        $menu = $this->idiomas_menu;
+        return view('portal.programas.idiomas.mision', compact('menu'));
+    }
 
+    public function centro_idiomas_estructura() {
+        $menu = $this->idiomas_menu;
+        return view('portal.programas.idiomas.estructura', compact('menu'));
+    }
 
+    public function centro_idiomas_personal() {
+        $menu = $this->idiomas_menu;
+        return view('portal.programas.idiomas.personal', compact('menu'));
+    }
+
+    public function centro_idiomas_directorio() {
+        $menu = $this->idiomas_menu;
+        return view('portal.programas.idiomas.directorio', compact('menu'));
+    }
+
+    public function postgrado() {
+        return view('portal.programas.postgrado.index');
+    }
+
+    /**
+     * PROYECTOS
+     */
+    public function jardin() {
+        return view('portal.proyectos.jardin');
+    }
+
+    public function panificadora() {
+        return view('portal.proyectos.panificadora');
+    }
+
+    public function bus() {
+        return view('portal.proyectos.bus');
+    }
+    
+    public function herbario() {
+        return view('portal.proyectos.herbario');
+    }
+
+    public function estacion() {
+        return view('portal.proyectos.estacion');
+    }
+
+    public function aldea() {
+        return view('portal.proyectos.aldea');
+    }
+
+    public function km16() {
+        return view('portal.proyectos.km16');
+    }
+
+    public function km18() {
+        return view('portal.proyectos.km18');
+    }
+
+    /**
+     * TRANSPARENCIA
+     */
+    public function indicador_55(Request $request) {        
+        return view('portal.paginas.transparencia.indicador_55');
+    }
+
+    public function articulo_11(Request $request) {       
+        return view('portal.paginas.transparencia.articulo_11');
+    }
+
+    public function licenciamiento(Request $request) {
+        return view('portal.paginas.transparencia.licenciamiento');
+    }
+    
 
 
 

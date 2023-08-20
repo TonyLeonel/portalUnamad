@@ -44,20 +44,18 @@
 
    <!-- main -->
    <div id="main">
-      <!-- header -->
+      <!-- HEADER -->
       <header class="main-header">        
          <!--  logo  -->
          <div class="logo-holder"><a href="{{ url('/') }}" title="Inicio">
             <img src="{{ asset('img/logo_horizontal_max2.png') }}" alt="Logo horizontal"></a>
          </div>
-
          <!-- nav-button-wrap-->
          <div class="nav-button-wrap color-bg nvminit">
             <div class="nav-button">
                <span></span><span></span><span></span>
             </div>
          </div>
-
          <!-- ENLACES -->
          <div class="nav-element">
             <a href="https://www.gob.pe/unamad" target="_blank" class="d-none d-md-block" title="Portal GOB.PE UNAMAD">
@@ -77,7 +75,6 @@
                <img src="{{ asset('img/transp_min.jpg') }}" style="height: 30px;" alt="Logo Transparencia">
             </a>
          </div>
-
          <!-- MENU DE NAVEGACION -->
          <div class="nav-holder main-menu">
             <nav>
@@ -233,16 +230,16 @@
                      <a href="#" class="{{ request()->is('programas*') ? 'act-link' : '' }}">PROGRAMAS <i class="fas fa-caret-down"></i></a>
                      <ul class="no-list-style">
                         <li>
-                           <a href="{{ url('programas/informatica') }}" class="{{ request()->is('programas/informatica') ? 'act-link' : '' }}">Centro de Informática</a>
+                           <a href="{{ url('programas/informatica') }}" class="{{ request()->is('programas/informatica*') ? 'act-link' : '' }}">Centro de Informática</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/idiomas') }}" class="{{ request()->is('programas/idiomas') ? 'act-link' : '' }}">Centro de Idiomas</a>
+                           <a href="{{ url('programas/idiomas') }}" class="{{ request()->is('programas/idiomas*') ? 'act-link' : '' }}">Centro de Idiomas</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/cepre') }}" class="{{ request()->is('programas/cepre') ? 'act-link' : '' }}">Centro Preuniversitario</a>
+                           <a href="https://cepre.unamad.edu.pe/" class="">Centro Preuniversitario</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/postgrado') }}" class="{{ request()->is('programas/postgrado') ? 'act-link' : '' }}">Posgrado</a>
+                           <a href="{{ url('programas/postgrado') }}" class="{{ request()->is('programas/postgrado*') ? 'act-link' : '' }}">Posgrado</a>
                         </li>
                      </ul>
                   </li>
@@ -250,25 +247,28 @@
                      <a href="#" class="{{ request()->is('proyectos*') ? 'act-link' : '' }}">PROYECTOS <i class="fas fa-caret-down"></i></a>
                      <ul class="no-list-style">
                         <li>
-                           <a href="{{ url('proyectos/jardin') }}" class="{{ request()->is('proyectos/jardin') ? 'act-link' : '' }}">Cuna Jardín</a>
+                           <a href="{{ url('proyectos/jardin') }}" class="{{ request()->is('proyectos/jardin*') ? 'act-link' : '' }}">Cuna Jardín</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/panificadora') }}" class="{{ request()->is('proyectos/panificadora') ? 'act-link' : '' }}">Panificadora UNAMAD</a>
+                           <a href="{{ url('proyectos/panificadora') }}" class="{{ request()->is('proyectos/panificadora*') ? 'act-link' : '' }}">Panificadora UNAMAD</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/bus') }}" class="{{ request()->is('proyectos/bus') ? 'act-link' : '' }}">Bus Universitario</a>
+                           <a href="{{ url('proyectos/bus') }}" class="{{ request()->is('proyectos/bus*') ? 'act-link' : '' }}">Bus Universitario</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/estacion') }}" class="{{ request()->is('proyectos/estacion') ? 'act-link' : '' }}">Estación Geológica</a>
+                           <a href="{{ url('proyectos/herbario') }}" class="{{ request()->is('proyectos/herbario*') ? 'act-link' : '' }}">Herbario</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/aldea') }}" class="{{ request()->is('proyectos/aldea') ? 'act-link' : '' }}">Aldea Científica</a>
+                           <a href="{{ url('proyectos/estacion') }}" class="{{ request()->is('proyectos/estacion*') ? 'act-link' : '' }}">Estación Geológica</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/km16') }}" class="{{ request()->is('proyectos/km16') ? 'act-link' : '' }}">Campus Km. 16</a>
+                           <a href="{{ url('proyectos/aldea') }}" class="{{ request()->is('proyectos/aldea*') ? 'act-link' : '' }}">Aldea Científica</a>
                         </li>
                         <li>
-                           <a href="{{ url('proyectos/km18') }}" class="{{ request()->is('proyectos/km18') ? 'act-link' : '' }}">Complejo Polideportivo Km. 18</a>
+                           <a href="{{ url('proyectos/km16') }}" class="{{ request()->is('proyectos/km16*') ? 'act-link' : '' }}">Campus Km. 16</a>
+                        </li>
+                        <li>
+                           <a href="{{ url('proyectos/km18') }}" class="{{ request()->is('proyectos/km18*') ? 'act-link' : '' }}">Complejo Polideportivo Km. 18</a>
                         </li>                        
                      </ul>
                   </li>                   
@@ -277,6 +277,9 @@
                      <ul class="no-list-style">
                         <li>
                            <a href="{{ url('transparencia/indicador-55') }}" class="{{ request()->is('transparencia/indicador-55') ? 'act-link' : '' }}">Indicador 55</a>
+                        </li>
+                        <li>
+                           <a href="{{ url('transparencia/articulo-11') }}" class="{{ request()->is('transparencia/articulo-11') ? 'act-link' : '' }}">Artículo 11</a>
                         </li>
                         <li>
                            <a href="{{ url('transparencia/licenciamiento') }}" class="{{ request()->is('transparencia/licenciamiento') ? 'act-link' : '' }}">Licenciamiento Institucional</a>
@@ -320,11 +323,7 @@
                            <div class="footer-widget-logo fl-wrap">
                               <img src="{{ asset('img/logo_horizontal.png') }}" alt="">
                            </div>
-                           <p class="lh-sm">Busca el desarrollo de la educación universitaria, a
-                              traves de
-                              las diferentes carreras profesionales especialmente vinculadas al
-                              desarrollo de
-                              la Región de Madre de Dios.</p>
+                           <p class="lh-sm">Busca el desarrollo de la educación universitaria, a traves de las diferentes carreras profesionales especialmente vinculadas al desarrollo de la Región de Madre de Dios.</p>
                            <div class="fw_hours fl-wrap">
                               <span class="text-center">Lunes - Viernes</span>
                               <span>Horario:<strong> 07:00am - 16:00pm</strong></span>
@@ -412,15 +411,13 @@
                   <div class="copyright"> © UNAMAD 2023 &#183; Todos los derechos reservados.</div>
                   <div class="subfooter-nav">
                      <ul class="no-list-style">
-                        <li><a href="#">Desarrollo</a></li>
-                        <!--<li><a href="#">Blog</a></li>-->
+                        <li><a href="{{ url('oficinas/oti') }}">Oficina de Tecnologías de la Información</a></li>
                      </ul>
                   </div>
                </div>
             </div>
             <!--sub-footer end -->
          </footer>
-
       </div>
 
       <!-- MODAL COMPARTIR -->
