@@ -132,8 +132,9 @@
                                  <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/academicos') ? 'act-link' : '' }}">Asuntos Académicos</a>
                               </li>
                               <li>
-                                 <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/proyeccion') ? 'act-link' : '' }}">Proyección Social y Extensión Cultural</a>
-                              </li>
+                                 <a href="https://proyeccionsocial.unamad.edu.pe/" target="_blank">Proyección Social y Extensión Cultural</a>
+                             </li>
+                             
                               <li>
                                  <a href="{{ url('oficinas/presentacion') }}" class="{{ request()->is('oficinas/bienestar') ? 'act-link' : '' }}">Bienestar Universitario</a>
                               </li>
@@ -157,7 +158,7 @@
                            <a href="{{ url('oficinas/secretaria') }}" class="{{ request()->is('oficinas/secretaria') ? 'act-link' : '' }}">Secretaría General</a>
                         </li>
                         <li>
-                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad') ? 'act-link' : '' }}">Gestión de Calidad</a>
+                           <a href="{{ url('oficinas/calidad') }}" class="{{ request()->is('oficinas/calidad') ? 'act-link' : '' }}">Gestión de la Calidad</a>
                         </li>
                         <li>
                            <a href="{{ url('oficinas/cooperacion') }}" class="{{ request()->is('oficinas/cooperacion') ? 'act-link' : '' }}">Cooperación y Relaciones Internacionales</a>
@@ -180,7 +181,7 @@
                      <a href="#" class="{{ request()->is('facultades*') ? 'act-link' : '' }}">FACULTADES <i class="fas fa-caret-down"></i></a>
                      <ul class="no-list-style">
                         <li>
-                           <a href="#">Facultad de Ingeniería <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Ingeniería <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/agroindustrial') }}"  class="{{ request()->is('facultades/agroindustrial') ? 'act-link' : '' }}">Agroindustrial</a>
@@ -197,7 +198,7 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#">Facultad de Educación <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Educación <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/matematica') }}" class="{{ request()->is('facultades/matematica') ? 'act-link' : '' }}">Matemática y Computación</a>
@@ -211,7 +212,7 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#">Facultad de Ecoturismo <i class="fas fa-caret-down"></i></a>
+                           <a href="#">Ecoturismo <i class="fas fa-caret-down"></i></a>
                            <ul>
                               <li>
                                  <a href="{{ url('facultades/ecoturismo') }}" class="{{ request()->is('facultades/ecoturismo') ? 'act-link' : '' }}">Ecoturismo</a>
@@ -233,10 +234,10 @@
                            <a href="{{ url('programas/informatica') }}" class="{{ request()->is('programas/informatica*') ? 'act-link' : '' }}">Centro de Informática</a>
                         </li>
                         <li>
-                           <a href="{{ url('programas/idiomas') }}" class="{{ request()->is('programas/idiomas*') ? 'act-link' : '' }}">Centro de Idiomas</a>
+                           <a href="https://cidiomas.unamad.edu.pe/" target="_blank">Centro de Idiomas</a>
                         </li>
                         <li>
-                           <a href="https://cepre.unamad.edu.pe/" class="">Centro Preuniversitario</a>
+                           <a href="https://cepre.unamad.edu.pe/" target="_blank">Centro Preuniversitario</a>
                         </li>
                         <li>
                            <a href="{{ url('programas/postgrado') }}" class="{{ request()->is('programas/postgrado*') ? 'act-link' : '' }}">Posgrado</a>

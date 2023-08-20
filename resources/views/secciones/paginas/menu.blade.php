@@ -65,12 +65,14 @@
         <div class="profile-widget-footer fl-wrap">
             <div class="card-info-content_social ">
                 <ul>
+                    <!-- 
                     @if($carrera->facebook!=null)
                         <li><a href="{{$carrera->facebook}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                     @endif
                     @if($carrera->whatsapp!=null)
                         <li><a href="{{$carrera->whatsapp}}" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                     @endif
+                    -->
                 </ul>
             </div>                           
         </div>

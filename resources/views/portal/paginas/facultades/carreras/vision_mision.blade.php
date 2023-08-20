@@ -47,10 +47,22 @@
                <div class="list-single-main-container">
                   <div class="list-single-main-item">
                      <div class="pagina_contenido">
-                        <span><strong style="color: rgb(237, 20, 91);">NUESTRA VISIÓN</strong></span>
-                        <p style="text-align: justify;">{!! $carrera->vision !!}</p>
-                        <span class="mb-3"><strong style="color: rgb(237, 20, 91);">NUESTRA MISIÓN</strong></span>
-                        <p style="text-align: justify;">{!! $carrera->mision !!}</p>
+                        <div>
+                           <span><strong style="color: rgb(237, 20, 91);">NUESTRA VISIÓN</strong></span>
+                        
+                           <blockquote class="custom-blockquote">
+                              <p style="text-align: justify;"> {!! $carrera->vision !!}</p>
+                          </blockquote>
+                        </div>
+                        <div>
+                           <span class="mb-3"><strong style="color: rgb(237, 20, 91);">NUESTRA MISIÓN</strong></span>
+                        
+                           <blockquote class="custom-blockquote">
+                              <p style="text-align: justify;">{!! $carrera->mision !!} </p>
+                          </blockquote>
+                        </div>
+                        
+                       
                      </div>
                   </div>
                </div>
