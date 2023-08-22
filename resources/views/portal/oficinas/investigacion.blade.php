@@ -42,21 +42,27 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Instituto de Investigación</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">El Instituto de Investigación, es el órgano de línea responsable de gestionar, organizar, asesorar, promover y supervisar el desarrollo de las actividades de investigación científica y desarrollo tecnológico (l+D) en el ámbito de la ciencia, tecnología, creación de grupos, redes y semilleros de investigación, acordes con la política institucional y líneas de investigación de la UNAMAD. El Instituto de Investigación gestiona fondos públicos y privados para el desarrollo de actividades de l+D. El Instituto de Investigación ~ gestiona, coordina y supervisa el fondo editorial, institutos, laboratorios y centros de investigación de la UNAMAD.</p>
+                            <p class="text-justify">Son funciones del Instituto de Investigación, las siguientes:</p>
+                            <ul class="lista_base text-justify">
+                                <li>Promover el desarrollo de proyectos de investigación de acuerdo a la política dictada por el Vicerrectorado de Investigación.</li>
+                                <li>Promover, coordinar, supervisar, ejecutar actividades de investigación y desarrollo (l+D) de acuerdo a la política dictada por el Vicerrectorado de Investigación.</li>
+                                <li>Identificar, actualizar y promover las líneas de investigación de la UNAMAD en coordinación con las unidades de investigación de las facultades.</li>
+                                <li>Formular y ejecutar planes de trabajo para gestionar el financiamiento de convocatorias a fondos concursables de la UNAMAD, o externos en el marco de las líneas de investigación, a fin de viabilizar su ejecución y resultados, previa opinión favorable de la Oficina de Planeamiento y Presupuesto.</li>
+                                <li>Formular y actualizar documentos normativos institucionales (reglamentos, directivas, otros) para mejorar la gestión de la l+D, en el marco de la política general de investigación de la UNAMAD.</li>
+                                <li>Gestionar el portafolio de proyectos de investigación durante todo el ciclo de vida (convocatoria, planificación, ejecución, monitoreo y control, cierre).</li>
+                                <li>Promover relaciones de cooperación entre los diferentes proyectos y programas de investigación en los diferentes niveles de formación de la universidad. </li>
+                                <li>Diseñar, implementar y evaluar programas de incentivos para el desarrollo de investigación. </li>
+                                <li>Lanzar convocatorias de publicación científica de los resultados de las investigaciones desarrolladas en la UNAMAD. </li>
+                                <li>Realizar el seguimiento y evaluación de los productos entregables de proyectos de investigación de la UNAMAD. </li>
+                                <li>Administrar y mantener actualizados los sistemas informáticos y bases de datos de investigadores que ejecutan proyectos de investigación y desarrollo (l+D). </li>
+                                <li>Fomentar, supervisar y brindar asistencia técnica para creación y reconocimiento de grupos, redes y semilleros de investigación en la UNAMAD. </li>
+                                <li>Las demás funciones asignadas por el Vicerrectorado de Investigación, o aquellas que sean otorgadas por norma expresa.</li>
+                            </ul>
+                        </div> 
                     </div>
                 </div>
             </div>

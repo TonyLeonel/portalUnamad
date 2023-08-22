@@ -42,20 +42,12 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Herbario</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">Madre de Dios es reconocido como <i>“Un tesoro de biodiversidad para el mundo”</i>  por ende, realizar una colección de plantas o partes de plantas, desecadas, preservadas, identificadas y acompañadas de información como el nombre común, nombre científico, localidad de colecta, hábitat, características particulares de la planta, altitud, fecha, entre otros datos, permitiría difundir el conocimiento y la importancia de su cuidado a estudiantes y público en general a través de proyecciones sociales. Su función principal es servir de referencia o patrón en la investigación botánica y ayudar en actividades como:</p>
+                            <p class="text-justify">Actividades de apoyo a la docencia: Colaborar en Trabajos de Fin de Grado y Trabajos de Fin de Máster de la escuela profesional de Forestal y desarrollar sitios web relacionados con distintas asignaturas.</p>
+                            <p class="text-justify">Actividades de apoyo a la investigación: Colaborar en proyectos y contratos de investigación además de prestar y recibir pliegos para estudios sobre la flora de la región de Madre de Dios.</p>
                         </div>
                     </div>
                 </div>

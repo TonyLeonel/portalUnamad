@@ -42,20 +42,24 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Oficina de Asuntos Académicos</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">La Dirección de Asuntos Académicos es el órgano de línea responsable de organizar el proceso de matrícula, actas de evaluación, archivos académicos, certificados; así como registrar y custodiar la información académica de la Universidad, Además, de mantener vinculación permanente con sus egresados para que participen y se enriquezcan de la actividad académica, de investigación y sociocultural; así como establecer vínculos con entidades del sector público y privado a fin de retroalimentar y conocer la inserción de sus egresados en el mercado laboral.</p>
+                            <p class="text-justify">Son funciones de la Dirección de Asuntos Académicos, las siguientes:</p>
+                            <ul class="lista_base text-justify">
+                                <li>Organizar y sistematizar la información académica de las facultades y programas académicos. </li>
+                                <li>Coordinar y ejecutar las acciones de matrícula, registro, estadística y otras relacionadas con el funcionamiento académico de la universidad.</li>
+                                <li>Organizar y conducir el archivo general de historiales académicos de los estudiantes regulares y egresados, registrar y archivar las actas de evaluación académica.</li>
+                                <li>Procesar y preservar la información académica en los sistemas informáticos y físicos para la emisión de informes académicos.</li>
+                                <li>Mantener y actualizar el registro de planes de estudios de las especialidades de la universidad para la emisión de informes.</li>
+                                <li>Diseñar, proponer, gestionar y asegurar la gestión efectiva del Sistema de Seguimiento al Graduado.</li>
+                                <li>Gestionar el seguimiento de los graduados por carrera profesional, para proponer su inserción en el mercado laboral. </li>
+                                <li>Proponer documentos, protocolos, directivas, manuales, entre otros, para la administración y funcionamiento de los servicios que se brinda al estudiante.</li>
+                                <li>Elaborar y proponer al Vicerrectorado Académico el calendario académico de la universidad.</li>
+                                <li>Proponer normas generales de evaluación pedagógica para estudiantes y docentes de la Universidad. </li>
+                                <li>Las demás funciones asignadas por el Vicerrectorado Académico, o aquellas que sean otorgadas por norma expresa.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

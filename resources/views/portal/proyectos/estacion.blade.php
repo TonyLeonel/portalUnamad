@@ -42,20 +42,11 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Estación Geológica</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">Dentro de las Ciencias de la Tierra la Geología es una de las ramas fundamentales que estudia la composición química, física, mineralógica, petrológica, estratigráfica, estructural, tectónica, que controlan la dinámica interna y externa del planeta; dichos estudios conducen a la localización de sustancias minerales y energéticas necesarias para el desarrollo y sustento de la especie humana.</p>
+                            <p class="text-justify">La Geología como cualquier ciencia está en constante desarrollo, cada vez cuenta con mayores datos del planeta, nuevos y mayor eficiencia de los equipos analíticos, mayor disponibilidad de la información científica gracias al avance de las comunicaciones (publicaciones, revistas científicas en la web).</p>
                         </div>
                     </div>
                 </div>

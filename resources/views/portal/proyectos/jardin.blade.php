@@ -42,20 +42,12 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Cuna Jardin</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">La Educación Inicial ha adquirido en los últimos años una creciente importancia en el sistema educativo peruano, en razón de los beneficios que otorga al desarrollo de los niños, niñas y a sus familias, según confirman distintas experiencias educativas y estudios a nivel nacional o internacional por ello la Ley general de Educación define a la Educación Inicial como el primer nivel de la Educación física regular. La educación es un fenómeno personal histórico social ideológico, nace en la sociedad y es garantía de su supervivencia y progreso. Ella es parte de la realidad social, por tanto, no debe ser un proceso divorciado de su contexto, sino vinculado a su propia dinámica histórica (como proceso socio cultural, facilita y hace posible el desarrollo integral de la persona, lo cual resulta indispensable para el desarrollo socioeconómico de un país.</p>
+                            <p class="text-justify">La calidad y equidad con la que se desarrolle es aquello que permite que un país logre avances económicos y culturales) es la herramienta para el desarrollo de la persona y, por ende, de la familia y de la sociedad promueve la verdadera libertad a través del pensamiento y permite, con el conocimiento, acercar a las personas, romper las barreras del miedo y de la injusticia, que son muchas veces producto de la ignorancia.</p>
+                            <p class="text-justify">Los criterios que deben tenerse en cuenta para el normal funcionamiento de los ambientes especializados y aulas comunes, de modo que puedan estar preparadas para el uso de equipamiento informático, con las normas de seguridad y de exclusividad que exige una enseñanza moderna en el marco de los planteamientos pedagógicos actuales para cada uno de los niveles y modalidades educativos adecuados a la realidad geográfica, urbana, rural periurbano.</p>
                         </div>
                     </div>
                 </div>

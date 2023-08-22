@@ -42,20 +42,23 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Innovación y Transferencia Tecnológica</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">La Dirección de Innovación y Transferencia Tecnología es el órgano de línea responsable de dirigir, coordinar y promover la innovación y transferencia tecnológica en el marco de los objetivos del Sistema Nacional de Ciencia, Tecnología e Innovación (SINACTI). En la UNAMAD, promueve y gestiona la protección intelectual y registro de patentes como resultado de las actividades de investigación e innovación. La Dirección de Innovación y Transferencia Tecnología establece canales de comunicación entre la universidad, empresa y el estado para gestionar fondos públicos y privados que financien el desarrollo de actividades de innovación y transferencia tecnológica. También gestiona, coordina y supervisa el repositorio institucional, los centros de innovación, centros de extensión y transferencia tecnológica de la UNAMAD.</p>
+                            <p class="text-justify">Son funciones de la Dirección de Innovación y Transferencia Tecnológica, las siguientes:</p>
+                            <ul class="lista_base text-justify">
+                                <li>Promover, gestionar y ejecutar acciones de innovación en el marco de los objetivos del Sistema Nacional de Ciencia, Tecnología e Innovación (SINACTI)</li>
+                                <li>Promover, gestionar y ejecutar acciones de transferencia tecnológica en el marco de los objetivos del Sistema Nacional de Ciencia, Tecnología e Innovación (SINACTI).</li>
+                                <li>Diseñar y proponer al Vicerrectorado de Investigación las normas, reglamentos y directivas para el desarrollo de la innovación y transferencia tecnológica dirigidas a la sociedad civil, empresas y el estado.</li>
+                                <li>Generar capacidades para la innovación y transferencia tecnológica; orientadas a la atención de las necesidades y oportunidades del sector productivo de la región y del país.</li>
+                                <li>Promover y gestionar relaciones entre la universidad, la empresa, comunidades e instituciones científicas públicas o privadas, para el financiamiento de actividades de innovación a través de contratos, prestaciones de servicios y asesorías. </li>
+                                <li>Promover la protección del conocimiento generado en el proceso científico, tecnológico y de innovación, a través del registro de la propiedad intelectual y trámite de patentes.</li>
+                                <li>Diseñar, elaborar y difundir las políticas, programas e instrumentos para la transferencia tecnológica e innovación. </li>
+                                <li>Mapear, sistematizar y analizar las experiencias como las buenas prácticas en el diseño y ejecución de políticas, programas e instrumentos para la promoción de la transferencia tecnológica e innovación. </li>
+                                <li>Diseñar, implementar y evaluar programas de incentivos para el desarrollo de innovación y transferencia tecnológica. </li>
+                                <li>Las demás funciones asignadas por el Vicerrectorado de Investigación, o aquellas que sean otorgadas por norma expresa.  </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -42,20 +42,19 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Panificadora</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify mb-3">Crear un programa de investigación, capacitación, asesoría técnica y producción a nivel universitaria especializados en la línea de panadería y pastelería, cumpliendo los estándares de calidad, mediante el mejoramiento continuo de todos los procesos, a fin de contribuir en la formación profesional a través de cursos de capacitación e investigación.</p>
+                            <p class="text-justify fw-bold" style="color: rgb(237, 20, 91);">OBJETIVOS</p>
+                            <ul class="lista_base text-justify">
+                                <li>Realizar trabajos de investigación y desarrollo de productos de panadería y pastelería.</li>
+                                <li>Apoyar a la enseñanza a través de las prácticas pre-profesionales, y a cursos de pre y post grado y tesistas.</li>
+                                <li>Brindar cursos de extensión y proyección social a la comunidad.</li>
+                                <li>Mejorar la gestión administrativa a través de la capacitación del recurso humano para la mejora continua de los procesos productivos y administrativos. Así como la implementación de equipos y maquinarias con tecnología de punta.</li>
+                                <li>Mejorar el sistema de ventas y comercialización de los productos la Molina para su auto sostenimiento.</li>
+                                <li>Ofrecer productos de panificación de calidad y nutritivos para satisfacer a los clientes.</li>
+                            </ul>                            
                         </div>
                     </div>
                 </div>

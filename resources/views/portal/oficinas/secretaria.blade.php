@@ -42,20 +42,22 @@
             <div class="col-12">
                 <div class="list-single-main-container">
                     <div class="list-single-main-item">                        
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div class="col-md-4 py-5">
-                                <div class="pagina_contenido">  
-                                    <div class="text-center">
-                                        <img src="{{ asset('img/construccion.png') }}" alt="" style="width: 80%">
-                                        <h2 class="" style="color: rgb(237, 20, 91);" >Página web en construcción</h2>                                
-                                    </div>                          
-                                </div>    
-                                <div class="d-inline-block">
-                                    <a href="{{ url('/') }}" class="btn small-btn float-btn color-bg">Ir al Inicio</a>
-                                </div>                    
-                                <div class="clearfix"></div>
-                            </div>
+                        <div class="pagina_contenido">                        
+                            <h3 class="fw-bold mb-3" style="color: rgb(237, 20, 91);">Secretaría General</h3>  
+                            <img src="{{ asset('img/back2.jpg') }}" alt="background" class="mb-4" style="width: 100%;">
+                            <p class="text-justify">La Secretaría General es el órgano de apoyo responsable de certificar los documentos oficiales de la universidad en su calidad de fedatario; asimismo, conducir y administrar los procesos resolutivos de la Asamblea Universitaria, Consejo Universitario y Rectorado; así como, dirigir la emisión y otorgamiento de grados académicos y títulos universitarios, preservar el acervo documentario institucional y dirigir y supervisar los procesos de trámite documentario.</p>
+                            <p class="text-justify">Son funciones de la Secretaria General, las siguientes:</p>
+                            <ul class="lista_base text-justify">
+                                <li>Planificar, organizar y conducir la agenda y acuerdos de las sesiones de los órganos de gobierno, y de la Alta Dirección de la universidad.</li>
+                                <li>Formular actas y/o resoluciones. conforme a los acuerdos de las sesiones de los órganos de gobierno, y de la Alta Dirección de la universidad. Asimismo, realizar las respectivas publicaciones en el portal web de las citadas actas y resoluciones.</li>
+                                <li>Dirigir y supervisar los procesos de trámite documentario, archivo y registro de grados académicos y títulos de la universidad. </li>
+                                <li>Certificar las copias de documentos oficiales expedidos por las dependencias autorizadas de la UNAMAD. </li>
+                                <li>Fomentar y sensibilizar sobre las normas de transparencia y acceso a la información pública conforme a la normatividad. </li>
+                                <li>Gestionar la atención de las solicitudes y proporcionar la información requerida en aplicación de la Ley de Transparencia y Acceso a la Información Pública. </li>
+                                <li>Conducir la expedición de diplomas de grados académicos y títulos profesionales; así como distinciones honoríficas. </li>
+                                <li>Administrar el archivo centralizado de la universidad. </li>
+                                <li>Las demás funciones asignadas por el Rectorado, o aquellas que sean otorgadas por norma expresa.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

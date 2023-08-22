@@ -48,77 +48,147 @@
                                     <img style="width: 100%;" class="mb-2" src="{{ asset('img/IMG_21333.JPG') }}" alt="">                                        
                                     <h5><strong>Dr. Hugo Dueñas Liranes</strong></h5>
                                     <h5><strong style="color: rgb(237, 20, 91);">RECTOR</strong></h5>
-                                    <span>fduenas@unamad.edu.pe</span>
+                                    <span>hduenas@unamad.edu.pe</span>
+                                    <div>
+                                        <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=3882" style="color: rgb(237, 20, 91);" target="_blank">WEB INFO.</a>
+                                    </div>
                                 </div>
-                                <div class="col-md-8 mb-3">                                    
-                                    <h3 style="color: rgb(237, 20, 91);">EDUCACIÓN:</h3>
+                                <div class="col-md-8 mb-3">
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">DATOS ACADÉMICOS</h4>
                                     <div class="tabla-responsive mb-3">
                                         <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>GRADO</th>
+                                                    <th>TITULO</th>
+                                                    <th>CENTRO DE ESTUDIOS</th>
+                                                </tr>
+                                            </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>2018</td>
-                                                    <td>Dr. Ciencias Ciencias de la Educación (Mención Distinción)
-                                                    </td>
-                                                    <td>Universidad Enrique Guzman y Valle</td>
+                                                    <td>BACHILLER</td>
+                                                    <td>BACHILLER EN CIENCIAS BIOLÓGICAS</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2014</td>
-                                                    <td>Dr. Ciencias Biológicas</td>
-                                                    <td>Universidad Nacional Mayor de San Marcos</td>
+                                                    <td>LICENCIADO / TÍTULO</td>
+                                                    <td>TITULO DE BIÓLOGO</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>MAGISTER</td>
+                                                    <td>MAGISTER EN CIENCIAS</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DOCTORADO</td>
+                                                    <td>DOCTOR EN CIENCIAS BIOLOGICAS</td>
+                                                    <td>UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS</td>
+                                                </tr>                                                		
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                                <tr>
-                                                    <td>2011</td>
-                                                    <td>Msc Ecología y Recursos Naturales (Mención: Distinción)</td>
-                                                    <td>UNSAAC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1993</td>
-                                                    <td>Biólogo</td>
-                                                    <td>UNSAAC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>1990</td>
-                                                    <td>Bachiller en Ciencias Biológicas</td>
-                                                    <td>UNSAAC</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <h3 style="color: rgb(237, 20, 91);">EXPERIENCIA PROFESIONAL Y AFILIACIONES:</h3>
-                                    <div class="tabla-responsive">
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">EXPERIENCIA LABORAL</h4>
+                                    <div class="tabla-responsive mb-3">
                                         <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>PERIODO</th>
+                                                    <th>CARGO</th>
+                                                    <th>INSTITUCIÓN</th>
+                                                </tr>
+                                            </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Actual 2019</td>
-                                                    <td>Profesor Principal</td>
-                                                    <td>Universidad Nacional Amazónica de Madre de Dios</td>
+                                                    <td>2011-2017</td>
+                                                    <td>DOCENTE (ORDINARIO – PRINCIPAL)</td>
+                                                    <td>UNAMAD</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2012</td>
-                                                    <td>Vice-presidente</td>
-                                                    <td>Sociedad Peruana de Ciencias Forestales y Medio Ambiente
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2011</td>
-                                                    <td>Director</td>
-                                                    <td>Oficina General de Investigación-UNAMAD</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2011</td>
-                                                    <td>Director</td>
-                                                    <td>Centro de Investigación Herbario "Alwyn Gentry"-UNAMAD</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2011-2013</td>
-                                                    <td>Decano</td>
-                                                    <td>Consejo Regional XXI Madre de Dios del Colegio de Biólogos
-                                                        del Perú</td>
+                                                    <td>2021 - Actualidad</td>
+                                                    <td>RECTOR</td>
+                                                    <td>UNAMAD</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
+
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">PRODUCCIÓN CIENTÍFICA Y/O DE INVESTIGACIÓN</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>TIPO PRODUCCIÓN</th>
+                                                    <th>TITULO</th>
+                                                    <th>FECHA</th>
+                                                    <th>FUENTE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>ARTÍCULO EN REVISTA CIENTÍFICA</td>
+                                                    <td>DIFFERENCES IN SOIL INFILTRATION CAPACITY IN TWO VEGETATION COVER TYPES IN THE PERUVIAN AMAZON</td>
+                                                    <td>2022</td>
+                                                    <td>SCOPUS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BOOK</td>
+                                                    <td>LOS BOSQUES DE LA AMAZONÍA PERUANA BIODIVERSIDAD, ECOSISTEMA, POLÍTICAS Y NORMAS</td>
+                                                    <td>2021</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ARTICLE</td>
+                                                    <td>INFLUENCE OF FOREST CONSERVATION ON THE TREE DIVERSITY AND FLORISTIC COMPOSITION IN THE SOUTHWEST PERUVIAN AMAZON</td>
+                                                    <td>2019</td>
+                                                    <td>WEB OF SCIENCE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BOOK</td>
+                                                    <td>FIRST CATALOGUE OF THE AMAZONIAN TREES SPECIES OF MADRE DE DIOS, PERU</td>
+                                                    <td>2019</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JOURNAL_ARTICLE</td>
+                                                    <td>DIVERSIDAD, DOMINANCIA Y DISTRIBUCIÓN ARBÓREA EN MADRE DE DIOS, PERÚ</td>
+                                                    <td>2018</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ARTÍCULO EN REVISTA CIENTÍFICA</td>
+                                                    <td>EFFECTS OF ROAD INFRASTRUCTURE ON FOREST VALUE ACROSS A TRI-NATIONAL AMAZONIAN FRONTIER</td>
+                                                    <td>2015</td>
+                                                    <td>SCOPUS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JOURNAL-ARTICLE</td>
+                                                    <td>EFFECTS OF ROAD INFRASTRUCTURE ON FOREST VALUE ACROSS A TRI-NATIONAL AMAZONIAN FRONTIER</td>
+                                                    <td>2015</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JOURNAL-ARTICLE</td>
+                                                    <td>ESTUDIO PRELIMINAR DEL ECOSISTEMA LINGÜÍSTICO DE MADRE DE DIOS EN LA VARIEDAD DEL CASTELLANO AMAZÓNICO</td>
+                                                    <td>2014</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>JOURNAL-ARTICLE</td>
+                                                    <td>TRADE-OFFS AMONG FOREST VALUE COMPONENTS IN COMMUNITY FORESTS OF SOUTHWESTERN AMAZONIA</td>
+                                                    <td>2014</td>
+                                                    <td>ORCID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ARTÍCULO EN REVISTA CIENTÍFICA</td>
+                                                    <td>TRADE-OFFS AMONG FOREST VALUE COMPONENTS IN COMMUNITY FORESTS OF SOUTHWESTERN AMAZONIA</td>
+                                                    <td>2014</td>
+                                                    <td>SCOPUS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -136,14 +206,99 @@
                                     <img style="width: 100%" class="mb-2" src="{{ asset('img/IMG_21335.JPG') }}" alt="">                                    
                                     <h5><strong>Dr. Joab Maquera Ramírez </strong></h5>
                                     <h5><strong style="color: rgb(237, 20, 91);">VICERRECTOR ACADÉMICO</strong></h5>
+                                    <span>jmaquera@unamad.edu.pe</span>
+                                    <div>
+                                        <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=23590" style="color: rgb(237, 20, 91);" target="_blank">WEB INFO.</a>
+                                    </div>                                    
                                 </div>      
                                 <div class="col-md-8 mb-3">                                
-                                    <h2 class="mb-2">
-                                        <strong style="color: rgb(237, 20, 91);">Presentación</strong>
-                                    </h2>
-                                    <p class="text-justify">Profesor Ordinario en la categoría de Principal en la
-                                        Universidad Nacional Amazónica de Madre de Dios - Perú. Ingeniero de
-                                        Sistemas con grado Académico de Magister y Doctorado.</p>
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">DATOS ACADÉMICOS</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>GRADO</th>
+                                                    <th>TITULO</th>
+                                                    <th>CENTRO DE ESTUDIOS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>BACHILLER</td>
+                                                    <td>BACHILLER EN CIENCIAS DE LA INGENIERÍA DE SISTEMAS</td>
+                                                    <td>UNIVERSIDAD NACIONAL DEL ANTIPLANO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DOCTORADO</td>
+                                                    <td>DOCTOR EN CIENCIAS DE LA EDUCACIÓN</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE EDUCACIÓN ENRIQUE GUZMÁN Y VALLE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MAGISTER</td>
+                                                    <td>MAGISTER SCIENTIAE EN CONTABILIDAD Y ADMINISTRACIÓN</td>
+                                                    <td>UNIVERSIDAD NACIONAL DEL ALTIPLANO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LICENCIADO / TÍTULO</td>
+                                                    <td>INGENIERO DE SISTEMAS</td>
+                                                    <td>UNIVERSIDAD NACIONAL DEL ALTIPLANO</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">EXPERIENCIA LABORAL</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>PERIODO</th>
+                                                    <th>CARGO</th>
+                                                    <th>INSTITUCIÓN</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2005-2021</td>
+                                                    <td>DOCENTE (ORDINARIO – PRINCIPAL)</td>
+                                                    <td>UNAMAD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2021-ACTUALIDAD</td>
+                                                    <td>VICERRECTOR ACADÉMICO</td>
+                                                    <td>UNAMAD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">PRODUCCIÓN CIENTÍFICA Y/O DE INVESTIGACIÓN</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>TIPO PRODUCCIÓN</th>
+                                                    <th>TITULO</th>
+                                                    <th>FECHA</th>
+                                                    <th>FUENTE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>TESIS DOCTORAL</td>
+                                                    <td>Incidencia del recurso didáctico sistema e-learning personalizado en el proceso integral de enseñanza aprendizaje de los estudiantes de Ingeniería de Sistemas e Informática de la Universidad Nacional Amazónica de Madre de Dios, 2015</td>
+                                                    <td>2017</td>
+                                                    <td>ALICIA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MasterThesis</td>
+                                                    <td>Comercio electrónico y la comercialización de la castaña en el Departamento de Madre de Dios</td>
+                                                    <td>2011</td>
+                                                    <td>ALICIA</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -160,57 +315,111 @@
                                 <div class="col-md-4 mb-3 text-center">                                     
                                     <img style="width: 100%" class="mb-2" src="{{ asset('img/IMG_21334.JPG') }}" alt="">                                    
                                     <h5><strong>Dra. Luz Marina Almanza Huamán</strong></h5>
-                                    <h5><strong style="color: rgb(237, 20, 91);">VICERRECTORA DE INVESTIGACIÓN</strong>
-                                    </h5>
+                                    <h5><strong style="color: rgb(237, 20, 91);">VICERRECTORA DE INVESTIGACIÓN</strong></h5>
+                                    <span>lalmanza@unamad.edu.pe</span>
+                                    <div>
+                                        <a href="https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=826642570f15c1f72462218ecdde?id_investigador=86686" style="color: rgb(237, 20, 91);" target="_blank">WEB INFO.</a>
+                                    </div>
                                 </div>      
                                 <div class="col-md-8 mb-3">
-                                    <h2 class="mb-2">
-                                        <strong style="color: rgb(237, 20, 91);">Presentación</strong>
-                                    </h2>
-                                    <div class="tabla-responsive">
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">DATOS ACADÉMICOS</h4>
+                                    <div class="tabla-responsive mb-3">
                                         <table class="tabla">
                                             <thead>
                                                 <tr>
-                                                    <th style="width: 50%;">Título</th>
-                                                    <th>Institución</th>
+                                                    <th>GRADO</th>
+                                                    <th>TITULO</th>
+                                                    <th>CENTRO DE ESTUDIOS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>                                                
+                                                <tr>
+                                                    <td>LICENCIADO / TÍTULO</td>
+                                                    <td>ABOGADO</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BACHILLER</td>
+                                                    <td>BACHILLER EN DERECHO</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LICENCIADO / TÍTULO</td>
+                                                    <td>TITULO DE ABOGADO</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DOCTORADO</td>
+                                                    <td>DOCTOR EN CIENCIAS DE LA EDUCACION</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE EDUCACIÓN ENRIQUE GUZMÁN Y VALLE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MAGISTER</td>
+                                                    <td>MAGISTER EN CIENCIAS DE LA EDUCACION, ESPECIALIDAD: EDUCACION AMBIENTAL.Y.DESARROLLO SOSTENIBLE</td>
+                                                    <td>UNIVERSIDAD NACIONAL DE EDUCACIÓN ENRIQUE GUZMÁN Y VALLE</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>SEGUNDA ESPECIALIDAD EN EDUCACION SUPERIOR Y ANDRAGOGIA</td>
+                                                    <td>UNIVERSIDAD JOSE CARLOS MARIATEGUI</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MAGISTER</td>
+                                                    <td>MAESTRO EN DERECHO CON MENCIÓN EN CIENCIAS PENALES</td>
+                                                    <td>UNIVERSIDAD JOSE CARLOS MARIATEGUI</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">EXPERIENCIA LABORAL</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>PERIODO</th>
+                                                    <th>CARGO</th>
+                                                    <th>INSTITUCIÓN</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Abogada</td>
-                                                    <td>Universidad Nacional San Antonio Abad del Cusco</td>
+                                                    <td>2005-2021</td>
+                                                    <td>DOCENTE (ORDINARIO – PRINCIPAL)</td>
+                                                    <td>UNAMAD</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Maestra en Derecho con mención en Ciencias Penales</td>
-                                                    <td>Universidad José Carlos Mariátegui</td>
+                                                    <td>2021 - Actualidad</td>
+                                                    <td>VICERRECTORA DE INVESTIGACIÓN</td>
+                                                    <td>UNAMAD</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4 class=" mb-2" style="color: rgb(237, 20, 91);">PRODUCCIÓN CIENTÍFICA Y/O DE INVESTIGACIÓN</h4>
+                                    <div class="tabla-responsive mb-3">
+                                        <table class="tabla">
+                                            <thead>
+                                                <tr>
+                                                    <th>TIPO PRODUCCIÓN</th>
+                                                    <th>TITULO</th>
+                                                    <th>FECHA</th>
+                                                    <th>FUENTE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CONDUCCIÓN EN ESTADO DE EBRIEDAD Y LAS TRANSGRESIONES A LA LEY PENAL - CIUDAD DE PUERTO MALDONADO</td>
+                                                    <td>La investigación tuvo por objetivo determinar la asociación entre los factores asociados al consumo de alcohol y la transgresión al Código Penal por conducción de vehículos en estado de ebriedad, en el distrito de Tambopata durante el año 2019.</td>
+                                                    <td>2019</td>
+                                                    <td>ORCID</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Doctora en Ciencias de la Educación</td>
-                                                    <td>Universidad Nacional Enrique Guzmán y Valle</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Becaria del CAF en "Programa de Gobernabilidad e Innovación
-                                                        Pública para Líderes y Lideresas de Latinoamérica"</td>
-                                                    <td>CAF</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Becaria de PMESUT en "Programa de Especialización para
-                                                        Gestores de I+D+i en Universidades Públicas"</td>
-                                                    <td>Consorcio BIOACTIVA de Perú y CAMBIOTEC de México</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Segunda especialidad en Educación Superior y Andragogía</td>
-                                                    <td>Universidad José Carlos Mariátegui</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Especialización en "Entornos Virtuales de Aprendizaje en el
-                                                        Desarrollo Curricular y Didáctica Universitaria"</td>
-                                                    <td>---</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Especialización en "Redacción de Artículos Científicos con
-                                                        Estándares de Calidad Internacional"</td>
-                                                    <td>---</td>
+                                                    <td>LOS CONTRATOS DE LOCACIÓN DE SERVICIO Y SU DESNATURALIZACIÓN Y LA FORMACIÓN DE UN NUEVO CONTRATO EN LA UNIVERSIDAD NACIONAL AMAZÓNICA DE MADRE DE DIOS PERIODO ENERO DEL 2017 AL 31 DE DICIEMBRE 2018</td>
+                                                    <td>La investigación tuvo por objetivo determinar el grado de desnaturalización de contratos de locación de servicios y el nivel de cumplimiento de requisitos para la formación de un nuevo contrato, en la UNAMAD durante el año 2018.</td>
+                                                    <td>2019</td>
+                                                    <td>ORCID</td>
                                                 </tr>
                                             </tbody>
                                         </table>

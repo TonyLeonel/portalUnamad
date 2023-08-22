@@ -904,6 +904,19 @@ a.link_pink:hover{
     background-color: #f2f2f2;
 }
 
+/*-------------------------------------------LISTA*/
+ul.lista_base {
+    list-style: lower-alpha;
+}
+
+ul.lista_base li{
+    list-style: lower-alpha;
+}
+
+ul.lista_base li::marker{    
+    color: rgb(237, 20, 91);
+}
+
 /*--------------------------------------------------BREACKPOINTS*/
 
 /* Small devices (landscape phones, 576px and up) */
