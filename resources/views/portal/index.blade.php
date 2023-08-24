@@ -335,12 +335,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="tarjeta_container mb-3">
-                            <div>
-                                <div class="mb-3">
-                                    <img class="img_fix_height" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'></svg>">
-                                </div>
-                            </div>
-                            <div class="tarjeta_wrapper">
+                            
                                 <div class="tarjeta tarjeta_yellow p-4">
                                     <div class="tarjeta_centro">
                                         <h4 class="my-3">DOCUMENTOS NORMATIVOS Y DE GESTIÓN</h4>
@@ -393,7 +388,8 @@
                                         <a href="{{ url('documentos') }}" class="tarjeta_link_white d-block mb-3">Ver más documentos</a>
                                     </div>
                                 </div>
-                            </div>
+                              
+                            
                         </div>
                     </div>
                 </div>
@@ -418,31 +414,31 @@
             <div class="row numeros-container justify-content-center">
                 <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
                     <img src={{ asset('img/images/investigadores.svg')}} alt="produccion-cientifica-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 data-counter-target="24" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <h2 data-counter-target="24" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">24</h2>
                     <p  class="marco text-center text-shadow-numeros mb-0">DOCENTES</p>
                     <p  class="marco text-center text-shadow-numeros mb-0">INVESTIGADORES</p>
                 </div>
                 <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
                     <img src={{ asset('img/images/fundacion.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 id="counter-target" data-counter-target="0" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <h2 id="counter-target" data-counter-target="0" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">23</h2>
                     <p class="marco text-center text-shadow-numeros mb-0">AÑOS DE FUNDACIÓN</p>
                     <p class="marco text-center text-shadow-numeros mb-0">INSTITUCIONAL</p>
                 </div>
                 <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
                     <img src={{ asset('img/images/matriculados.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 data-counter-target="3917" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <h2 data-counter-target="3917" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">3917</h2>
                     <p class="marco text-center text-shadow-numeros mb-0">ESTUDIANTES</p>
                     <p class="marco text-center text-shadow-numeros mb-0">MATRICULADOS</p>
                 </div>
                 <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
                     <img src={{ asset('img/images/escuelas.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 data-counter-target="10" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <h2 data-counter-target="10" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">10</h2>
                     <p class="marco text-center text-shadow-numeros mb-0">ESCUELAS</p>
                     <p class="marco text-center text-shadow-numeros mb-0">PROFESIONALES</p>
                 </div>
                 <div class="col-12 mb-3 mb-md-0 col-md-2 d-flex justify-content-start flex-column align-items-center mt-3">
                     <img src={{ asset('img/images/convenio.svg')}} alt="icono-carreras-san-marcos-en-numeros" class="sm-numeros"/>
-                    <h2 data-counter-target="139" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">0</h2>
+                    <h2 data-counter-target="139" class="counter title-section text-center text-uppercase font-weight-bold mb-0 text-shadow-numeros">139</h2>
                     <p class="marco text-center text-shadow-numeros mb-0">CONVENIOS</p>
                     <p class="marco text-center text-shadow-numeros mb-0">INSTITUCIONALES</p>
                 </div>

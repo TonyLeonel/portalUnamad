@@ -238,6 +238,9 @@ $( document ).ready(function() {
     $("#counter-target").attr("data-counter-target", diferenciaAnios);
     new Counter('.counter');
 
+
+
+
 });
 
 
